@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this license header, choose License Headers in Project Properties. To change this
+ * template file, choose Tools | Templates and open the template in the editor.
  */
 package Vaccination.Disease;
 
@@ -10,36 +9,37 @@ import java.util.List;
 
 /**
  *
- * @author abhaydeshpande
+ * @author prakruthisomashekar
  */
+
 public class Disease {
 
-    private int diseaseId;
-    private String diseaseName;
-    private List<Variant> diseaseGene;
+    private int disId;
+    private String disName;
+    private List<Variant> disGene;
 
-    public int getDiseaseId() {
-        return diseaseId;
+    public int getDisId() {
+        return disId;
     }
 
-    public void setDiseaseId(int diseaseId) {
-        this.diseaseId = diseaseId;
+    public void setDisId(int diseaseId) {
+        this.disId = disId;
     }
 
-    public String getDiseaseName() {
-        return diseaseName;
+    public String getDisName() {
+        return disName;
     }
 
-    public void setDiseaseName(String diseaseName) {
-        this.diseaseName = diseaseName;
+    public void setDisName(String disName) {
+        this.disName = disName;
     }
 
-    public List<Variant> getDiseaseGene() {
-        return diseaseGene;
+    public List<Variant> getDisGene() {
+        return disGene;
     }
 
-    public void setDiseaseGene(List<Variant> diseaseGene) {
-        this.diseaseGene = diseaseGene;
+    public void setDisGene(List<Variant> disGene) {
+        this.disGene = disGene;
     }
 
 }
