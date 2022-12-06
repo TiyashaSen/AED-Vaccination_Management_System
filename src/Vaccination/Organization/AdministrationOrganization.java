@@ -4,7 +4,7 @@
  */
 package Vaccination.Organization;
 
-import Vaccination.Role.AdminRole;
+import Vaccination.Role.AdministrationRole;
 import Vaccination.Role.Role;
 import java.util.ArrayList;
 

@@ -5,7 +5,7 @@
  */
 package Vaccination.Medicine;
 
-import Vaccination.Vaccine.Vaccine;
+import Vaccine.Vaccine;
 import Vaccination.Variant.Variant;
 
 /**
