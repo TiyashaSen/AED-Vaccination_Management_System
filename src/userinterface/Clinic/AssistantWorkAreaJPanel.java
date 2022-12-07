@@ -4,16 +4,14 @@
  */
 package userinterface.Clinic;
 
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.ClinicOrganization;
-
-import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.ClinicalTrialWorkRequest;
-
-import Business.WorkQueue.WorkRequest;
+import Vaccination.Configuration.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
+import Vaccination.Organization.Clinic;
+import Vaccination.Organization.Organization;
+import Vaccination.UserAccount.UserAccount;
+import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
+import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -29,7 +27,7 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private EcoSystem business;
     private UserAccount userAccount;
-    private ClinicOrganization clinicOrganization;
+    private Clinic clinicOrganization;
     private Network network;
     private Enterprise enterprise;
     private static Logger log = Logger.getLogger(AssistantWorkAreaJPanel.class);
@@ -44,7 +42,7 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
         this.business = business;
-        this.clinicOrganization = (ClinicOrganization) organization;
+        this.clinicOrganization = (Clinic) organization;
         this.enterprise = enterprise;
         this.network = network;
         log.debug(userAccount + " " + "logged in");
@@ -58,7 +56,7 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (WorkRequest request : clinicOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : clinicOrganization.getWq().getWorkRequestList()) {
 
             if (request instanceof ClinicalTrialWorkRequest) {
                 Object[] row = new Object[8];
@@ -68,8 +66,6 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
                 row[3] = request.getMessage();
                 row[4] = request.getEndUser().getEmployee().getName();
                 row[5] = request.getReceiver() == null ? null : request.getReceiver().getEmployee().getName();
-//                String result = ((ClinicalTrialWorkRequest) request).getPatient().getNewVariantHistory().getVariantHistory().getVariantName();
-//                System.out.println(result);
                 row[6] = request.getStatus();
                 if (request.getReceiver() == null || request.getReceiver().equals("Processing")) {
                     row[7] = null;
@@ -105,6 +101,7 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        workRequestJTable.setBackground(new java.awt.Color(102, 102, 102));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -221,7 +218,7 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
         }
         int flag = 0;
 
-        for (WorkRequest request : clinicOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : clinicOrganization.getWq().getWorkRequestList()) {
 
             if (request.getStatus() == null) {
                 continue;
@@ -242,7 +239,7 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
 
         }
         int flag1 = 0;
-        for (WorkRequest request : clinicOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : clinicOrganization.getWq().getWorkRequestList()) {
 
             if (request.getStatus() == null) {
                 continue;

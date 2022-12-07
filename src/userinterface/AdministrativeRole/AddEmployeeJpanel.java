@@ -5,9 +5,9 @@
  */
 package userinterface.AdministrativeRole;
 
-import Business.Employee.Employee;
-import Business.Organization.Organization;
-import Business.Organization.OrganizationDirectory;
+import Vaccination.Worker.Worker;
+import Vaccination.Organization.Organization;
+import Vaccination.Organization.OrganizationList;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -23,12 +23,12 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
     /**
      * Creates new form AddEmployeeJpanel
      */
-    private OrganizationDirectory organizationDir;
+    private OrganizationList organizationDir;
     private JPanel userProcessContainer;
     private static Logger log = Logger.getLogger(AddEmployeeJpanel.class);
     private static final String CLASS_NAME = AddEmployeeJpanel.class.getName();
 
-    public AddEmployeeJpanel(JPanel userProcessContainer, OrganizationDirectory organizationDir) {
+    public AddEmployeeJpanel(JPanel userProcessContainer, OrganizationList organizationDir) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.organizationDir = organizationDir;
@@ -80,6 +80,8 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
         });
         add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, 161, -1));
 
+        organizationTbl.setBackground(new java.awt.Color(102, 102, 102));
+        organizationTbl.setForeground(new java.awt.Color(255, 255, 255));
         organizationTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -169,7 +171,7 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
             return;
         }
         ArrayList<String> namecheck = new ArrayList<>();
-        for (Employee o : organization.getED().getEmployeeList()) {
+        for (Worker o : organization.getEmployeeDirectory().getWorkerArray()) {
             namecheck.add(o.getName().toLowerCase());
 
         }
@@ -178,7 +180,7 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
             return;
         }
         log.debug("Enterprise admin adding following employee \t" + name + "in following Organization \t" + organization + "\t" + CLASS_NAME);
-        organization.getED().createEmployee(name);
+        organization.getEmployeeDirectory().createEmployee(name);
         populateTable(organization);
         nameTextField.setText("");
     }//GEN-LAST:event_addJButtonActionPerformed
@@ -197,7 +199,7 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
     public void populateOrganizationComboBox() {
         organizationComboBox.removeAllItems();
 
-        for (Organization organization : organizationDir.getOrgList()) {
+        for (Organization organization : organizationDir.getOrganizationList()) {
             organizationComboBox.addItem(organization);
         }
     }
@@ -205,7 +207,7 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
     public void populateOrganizationEmpComboBox() {
         organizationEmpComboBox.removeAllItems();
 
-        for (Organization organization : organizationDir.getOrgList()) {
+        for (Organization organization : organizationDir.getOrganizationList()) {
             organizationEmpComboBox.addItem(organization);
         }
     }
@@ -215,10 +217,10 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (Employee employee : organization.getED().getEmployeeList()) {
+        for (Worker worker : organization.getEmployeeDirectory().getWorkerArray()) {
             Object[] row = new Object[2];
-            row[0] = employee.getId();
-            row[1] = employee.getName();
+            row[0] = worker.getId();
+            row[1] = worker.getName();
             model.addRow(row);
         }
     }

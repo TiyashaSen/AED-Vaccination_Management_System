@@ -5,11 +5,11 @@
  */
 package userinterface.AdministrativeRole;
 
-import Business.Employee.Employee;
-import Business.Enterprise.Enterprise;
-import Business.Organization.Organization;
-import Business.Role.Role;
-import Business.UserAccount.UserAccount;
+import Vaccination.Worker.Worker;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Organization.Organization;
+import Vaccination.Role.Role;
+import Vaccination.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -69,7 +69,9 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        userTbl.setBackground(new java.awt.Color(102, 102, 102));
         userTbl.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N
+        userTbl.setForeground(new java.awt.Color(255, 255, 255));
         userTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -186,10 +188,10 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
         String userName = nametxt.getText().trim();
         String password = passwordTxt.getText();
         Organization organization = (Organization) organizationComboBox.getSelectedItem();
-        Employee employee = (Employee) employeeComboBox.getSelectedItem();
+        Worker employee = (Worker) employeeComboBox.getSelectedItem();
         Role role = (Role) roleComboBox.getSelectedItem();
         ArrayList<String> usernamecheck = new ArrayList<>();
-        for (UserAccount e : organization.getUAD().getUserAccountList()) {
+        for (UserAccount e : organization.getUserAccDirectory().getUserAccountList()) {
             usernamecheck.add(e.getUsername());
 
         }
@@ -202,7 +204,7 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
             return;
         }
         log.debug("Enterprise admin creating user with name \t" + userName + "Role" + role + "In Organization" + organization + "\t" + CLASS_NAME);
-        organization.getUAD().createUserAccount(userName, password, employee, role);
+        organization.getUserAccDirectory().createUserAccount(userName, password, employee, role);
 
         populateData();
         nametxt.setText("");
@@ -211,15 +213,15 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
     public void populateEmployeeComboBox(Organization organization) {
         employeeComboBox.removeAllItems();
 
-        for (Employee employee : organization.getED().getEmployeeList()) {
-            employeeComboBox.addItem(employee);
+        for (Worker worker : organization.getEmployeeDirectory().getWorkerArray()) {
+            employeeComboBox.addItem(worker);
         }
     }
 
     public void populateOrganizationComboBox() {
         organizationComboBox.removeAllItems();
 
-        for (Organization organization : enterprise.getOrganizationDirectory().getOrgList()) {
+        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
             organizationComboBox.addItem(organization);
         }
     }
@@ -237,8 +239,8 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (Organization organization : enterprise.getOrganizationDirectory().getOrgList()) {
-            for (UserAccount ua : organization.getUAD().getUserAccountList()) {
+        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+            for (UserAccount ua : organization.getUserAccDirectory().getUserAccountList()) {
                 Object row[] = new Object[2];
                 row[0] = ua;
                 row[1] = ua.getRole();

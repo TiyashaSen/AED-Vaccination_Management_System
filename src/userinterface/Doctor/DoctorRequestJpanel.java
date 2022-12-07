@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.DoctorRole;
+package userinterface.Doctor;
 
-import Business.DoctorClass.Patient;
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.ClinicOrganization;
-import Business.Organization.DoctorOrganization;
-import Business.Organization.LabOrganization;
-import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.ClinicalTrialWorkRequest;
-import Business.WorkQueue.LabTestWorkRequest;
-import Business.WorkQueue.WorkRequest;
+import Vaccination.DoctorClass.Patient;
+import Vaccination.Configuration.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
+import Vaccination.Organization.Clinic;
+import Vaccination.Organization.DoctorOrg;
+import Vaccination.Organization.Laboratory;
+import Vaccination.Organization.Organization;
+import Vaccination.UserAccount.UserAccount;
+import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
+import Vaccination.WorkQueue.LabTestWorkRequest;
+import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.regex.Matcher;
@@ -30,6 +30,7 @@ import org.apache.log4j.Logger;
  *
  * @author prakruthisomashekar
  */
+
 public class DoctorRequestJpanel extends javax.swing.JPanel {
 
     /**
@@ -46,7 +47,7 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
     private static Logger log = Logger.getLogger(DoctorRequestJpanel.class);
     private static final String CLASS_NAME = DoctorRequestJpanel.class.getName();
 
-    public DoctorRequestJpanel(JPanel userProcessContainer, UserAccount account, DoctorOrganization organization, Enterprise enterprise, EcoSystem system, Network network) {
+    public DoctorRequestJpanel(JPanel userProcessContainer, UserAccount account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
         initComponents();
         initComponents();
         this.userProcessContainer = userProcessContainer;
@@ -167,7 +168,9 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
         });
         add(requestTestBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 110, 33));
 
+        doctorRequestTbl.setBackground(new java.awt.Color(102, 102, 102));
         doctorRequestTbl.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N
+        doctorRequestTbl.setForeground(new java.awt.Color(255, 255, 255));
         doctorRequestTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -262,7 +265,9 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
         });
         add(btnClinicalTrial, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 210, 30));
 
+        doctorClinicRequestTbl.setBackground(new java.awt.Color(102, 102, 102));
         doctorClinicRequestTbl.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N
+        doctorClinicRequestTbl.setForeground(new java.awt.Color(255, 255, 255));
         doctorClinicRequestTbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -291,8 +296,8 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 615, 160));
 
+        resultsLbl1.setBackground(new java.awt.Color(0, 0, 0));
         resultsLbl1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        resultsLbl1.setForeground(new java.awt.Color(255, 255, 255));
         resultsLbl1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         resultsLbl1.setText("ADVANCED CLINICAL TRIAL RESULTS");
         add(resultsLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 615, 22));
@@ -370,14 +375,14 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
         request.setPatient(patient);
 
         Organization org = null;
-        for (Organization organization : enterprise.getOrganizationDirectory().getOrgList()) {
-            if (organization instanceof LabOrganization) {
+        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+            if (organization instanceof Laboratory) {
                 org = organization;
                 break;
             }
         }
         if (org != null) {
-            org.getWQ().getWorkRequestList().add(request);
+            org.getWq().getWorkRequestList().add(request);
             account.getWorkQueue().getWorkRequestList().add(request);
             log.debug("Sent request to Lab");
         }
@@ -491,14 +496,14 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
         request.setPatient(patient);
 
         Organization org = null;
-        for (Organization organization : enterprise.getOrganizationDirectory().getOrgList()) {
-            if (organization instanceof ClinicOrganization) {
+        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+            if (organization instanceof Clinic) {
                 org = organization;
                 break;
             }
         }
         if (org != null) {
-            org.getWQ().getWorkRequestList().add(request);
+            org.getWq().getWorkRequestList().add(request);
             account.getWorkQueue().getWorkRequestList().add(request);
             log.debug("Sent request to Clinic");
         }

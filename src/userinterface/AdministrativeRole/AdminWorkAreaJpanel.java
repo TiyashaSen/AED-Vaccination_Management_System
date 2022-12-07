@@ -5,9 +5,9 @@
  */
 package userinterface.AdministrativeRole;
 
-import Business.Employee.Employee;
-import Business.Enterprise.Enterprise;
-import Business.Organization.Organization;
+import Vaccination.Worker.Worker;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Organization.Organization;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -124,7 +124,7 @@ public class AdminWorkAreaJpanel extends javax.swing.JPanel {
     private void manageEmployeebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageEmployeebtnActionPerformed
         // TODO add your handling code here:
         int Organisationcheck = 0;
-        for (Organization o : enterprise.getOrganizationDirectory().getOrgList()) {
+        for (Organization o : enterprise.getOrganizationDirectory().getOrganizationList()) {
             Organisationcheck++;
 
         }
@@ -144,8 +144,8 @@ public class AdminWorkAreaJpanel extends javax.swing.JPanel {
     private void userbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbtnActionPerformed
         // TODO add your handling code here:
         int employeecheck = 0;
-        for (Organization o : enterprise.getOrganizationDirectory().getOrgList()) {
-            for (Employee e : o.getED().getEmployeeList()) {
+        for (Organization o : enterprise.getOrganizationDirectory().getOrganizationList()) {
+            for (Worker w : o.getEmployeeDirectory().getWorkerArray()) {
                 employeecheck++;
             }
 

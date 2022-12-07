@@ -5,15 +5,15 @@
  */
 package userinterface.AdministrativeRole;
 
-import Business.Enterprise.VaccineEnterprise;
-import Business.Enterprise.MedicineEnterprise;
-import Business.Enterprise.Enterprise;
-import Business.Enterprise.HospitalEnterprise;
-import Business.Enterprise.PharmacyEnterprise;
-import Business.Enterprise.SampleEnterprise;
-import Business.Organization.Organization;
-import Business.Organization.Organization.Type;
-import Business.Organization.OrganizationDirectory;
+import Vaccination.Enterprise.VaccineEnterprise;
+import Vaccination.Enterprise.MedicineEnterprise;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Enterprise.HospitalEnterprise;
+import Vaccination.Enterprise.PharmacyEnterprise;
+import Vaccination.Enterprise.SampleEnterprise;
+import Vaccination.Organization.Organization;
+import Vaccination.Organization.Organization.Type;
+import Vaccination.Organization.OrganizationList;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -25,7 +25,7 @@ import org.apache.log4j.Logger;
  */
 public class AddOrganizationJpanel extends javax.swing.JPanel {
 
-    private OrganizationDirectory organizationDir;
+    private OrganizationList organizationDir;
     private JPanel userProcessContainer;
     private Enterprise enterprise;
     private static Logger log = Logger.getLogger(AddOrganizationJpanel.class);
@@ -34,7 +34,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
     /**
      * Creates new form ManageOrganizationJpanel
      */
-    public AddOrganizationJpanel(JPanel userProcessContainer, OrganizationDirectory organizationDir, Enterprise enterprise) {
+    public AddOrganizationJpanel(JPanel userProcessContainer, OrganizationList organizationDir, Enterprise enterprise) {
         initComponents();
         this.organizationDir = organizationDir;
         this.userProcessContainer = userProcessContainer;
@@ -52,7 +52,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
                 if (enterprise instanceof HospitalEnterprise) {
 
                     organizationComboBox.addItem(Organization.Type.Doctor);
-                    organizationComboBox.addItem(Organization.Type.Lab);
+                    organizationComboBox.addItem(Organization.Type.Laboratory);
                     organizationComboBox.addItem(Organization.Type.Clinic);
                     break;
                 } else if (enterprise instanceof PharmacyEnterprise) {
@@ -80,9 +80,9 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
 
         model.setRowCount(0);
 
-        for (Organization organization : organizationDir.getOrgList()) {
+        for (Organization organization : organizationDir.getOrganizationList()) {
             Object[] row = new Object[2];
-            row[0] = organization.getOrgID();
+            row[0] = organization.getOrganizationIdID();
             row[1] = organization.getName();
 
             model.addRow(row);
@@ -115,7 +115,9 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
         manageorglbl.setText("MANAGE ORGANIZATION");
         add(manageorglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 50, 454, -1));
 
+        organizationtbl.setBackground(new java.awt.Color(102, 102, 102));
         organizationtbl.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N
+        organizationtbl.setForeground(new java.awt.Color(255, 255, 255));
         organizationtbl.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -148,7 +150,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
 
         orglbl.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 14)); // NOI18N
         orglbl.setText("ORGANIZATION TYPE:");
-        add(orglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 410, -1, -1));
+        add(orglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, -1, -1));
 
         organizationComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -156,9 +158,11 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
                 organizationComboBoxActionPerformed(evt);
             }
         });
-        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 410, 129, -1));
+        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, 129, -1));
 
+        backbtn.setBackground(new java.awt.Color(0, 0, 0));
         backbtn.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 14)); // NOI18N
+        backbtn.setForeground(new java.awt.Color(255, 255, 255));
         backbtn.setText("BACK");
         backbtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         backbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -166,9 +170,11 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
                 backbtnActionPerformed(evt);
             }
         });
-        add(backbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 70, 32));
+        add(backbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 450, 70, 32));
 
+        addBtn.setBackground(new java.awt.Color(0, 0, 0));
         addBtn.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 14)); // NOI18N
+        addBtn.setForeground(new java.awt.Color(255, 255, 255));
         addBtn.setText("ADD ORGANIZATION");
         addBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         addBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -176,7 +182,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
                 addBtnActionPerformed(evt);
             }
         });
-        add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 460, -1, 32));
+        add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 450, -1, 32));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/partners.png"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 460, 530));
@@ -192,7 +198,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
     private void addBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addBtnActionPerformed
 
         Type type = (Type) organizationComboBox.getSelectedItem();
-        organizationDir.createOrganization(type);
+        organizationDir.createOrg(type);
         log.debug("Enterprise admin adding the following Organization" + type);
         populateTable();
 

@@ -6,7 +6,7 @@
 package Vaccination.Enterprise;
 
 import Vaccination.Organization.Organization;
-import Vaccination.Organization.OrganizationDirectory;
+import Vaccination.Organization.OrganizationList;
 
 /**
  *
@@ -15,9 +15,9 @@ import Vaccination.Organization.OrganizationDirectory;
 public abstract class Enterprise extends Organization {
 
     private EnterpriseType enterpriseType;
-    private OrganizationDirectory organizationDirectory;
+    private OrganizationList organizationDirectory;
 
-    public OrganizationDirectory getOrganizationDirectory() {
+    public OrganizationList getOrganizationDirectory() {
         return organizationDirectory;
     }
 
@@ -55,6 +55,6 @@ public abstract class Enterprise extends Organization {
     public Enterprise(String name, EnterpriseType type) {
         super(name);
         this.enterpriseType = type;
-        organizationDirectory = new OrganizationDirectory();
+        organizationDirectory = new OrganizationList();
     }
 }

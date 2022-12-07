@@ -2,16 +2,16 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.DoctorRole;
+package userinterface.Doctor;
 
-import Business.DoctorClass.Doctor;
-import Business.DoctorClass.OrderList;
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.DoctorOrganization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.DoctorWorkRequest;
+import Vaccination.Doctor.Doctor;
+import Vaccination.Doctor.OrderArray;
+import Vaccination.Configuration.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
+import Vaccination.Organization.DoctorOrg;
+import Vaccination.UserAccount.UserAccount;
+import Vaccination.WorkQueue.DoctorWorkRequest;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import org.apache.log4j.Logger;
@@ -23,11 +23,11 @@ import org.apache.log4j.Logger;
 public class DoctorMainAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
-    private DoctorOrganization organization;
+    private DoctorOrg organization;
     private Enterprise enterprise;
     private UserAccount userAccount;
     private Doctor doctor;
-    private OrderList list;
+    private OrderArray list;
     private DoctorWorkRequest docreq;
     private Network network;
     private EcoSystem system;
@@ -37,7 +37,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public DoctorMainAreaJPanel(JPanel userProcessContainer, UserAccount account, DoctorOrganization organization, Enterprise enterprise, EcoSystem system, Network network) {
+    public DoctorMainAreaJPanel(JPanel userProcessContainer, UserAccount account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
@@ -114,7 +114,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
     private void labTestBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_labTestBtnActionPerformed
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         log.debug("inside doctor's lab request");
-        userProcessContainer.add("TestJPanel", new userinterface.DoctorRole.DoctorRequestJpanel(userProcessContainer, userAccount, organization, enterprise, system, network));
+        userProcessContainer.add("TestJPanel", new userinterface.Doctor.DoctorRequestJpanel(userProcessContainer, userAccount, organization, enterprise, system, network));
         layout.next(userProcessContainer);
     }//GEN-LAST:event_labTestBtnActionPerformed
 

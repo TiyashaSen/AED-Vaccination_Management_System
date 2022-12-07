@@ -27,7 +27,7 @@ public class OrganizationList {
     public Organization createOrg(Type type) {
         Organization organization = null;
         if (type.getValue().equals(Type.Doctor.getValue())) {
-            organization = new Doctor();
+            organization = new DoctorOrg();
             organizationList.add(organization);
         } else if (type.getValue().equals(Type.Laboratory.getValue())) {
             organization = new Laboratory();

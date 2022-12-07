@@ -4,16 +4,16 @@
  */
 package userinterface.Clinic;
 
-import Business.DoctorClass.Patient;
-import Business.Enterprise.Enterprise;
-import Business.Variant.Variant;
-import Business.Network.Network;
-import Business.Organization.ClinicOrganization;
+import Vaccination.DoctorClass.Patient;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Variant.Variant;
+import Vaccination.Network.Network;
+import Vaccination.Organization.Clinic;
 
-import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.ClinicalTrialWorkRequest;
-import Business.WorkQueue.MedicineWorkRequest;
+import Vaccination.Organization.Organization;
+import Vaccination.UserAccount.UserAccount;
+import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
+import Vaccination.WorkQueue.MedicineWorkRequest;
 
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -24,13 +24,13 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author bhuva
+ * @author prakruthisomashekar
  */
 public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private ClinicalTrialWorkRequest request;
-    private ClinicOrganization clinicOrganization;
+    private Clinic clinicOrganization;
     private UserAccount userAccount;
     private Network network;
     private static Logger log = Logger.getLogger(ProcessWorkRequestJPanel.class);
@@ -45,7 +45,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         this.request = request;
         this.userAccount = userAccount;
         this.network = network;
-        this.clinicOrganization = (ClinicOrganization) organization;
+        this.clinicOrganization = (Clinic) organization;
         patientTxtField.setText(request.getPatientName());
         this.setSize(1920, 1080);
         System.out.println(request.getStatus());
@@ -72,6 +72,7 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         submitBtn.setBackground(new java.awt.Color(0, 0, 0));
         submitBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -83,13 +84,16 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 submitBtnActionPerformed(evt);
             }
         });
+        add(submitBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 224, -1, 35));
 
         resultLbl.setBackground(new java.awt.Color(0, 0, 0));
         resultLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         resultLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         resultLbl.setText("CLINICAL TRIAL RESULTS FOR SAMPLE DETECTION");
+        add(resultLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 80, 474, -1));
 
         patientTxtField.setEditable(false);
+        add(patientTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 128, 134, -1));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -101,10 +105,12 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 224, 64, 35));
 
         patientNameLbl.setBackground(new java.awt.Color(0, 0, 0));
         patientNameLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         patientNameLbl.setText("PATIENT NAME:");
+        add(patientNameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(308, 131, -1, -1));
 
         addSampleBtn.setBackground(new java.awt.Color(0, 0, 0));
         addSampleBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -116,75 +122,22 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
                 addSampleBtnActionPerformed(evt);
             }
         });
+        add(addSampleBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 188, 194, 30));
 
         geneLbl.setBackground(new java.awt.Color(0, 0, 0));
         geneLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         geneLbl.setText("NEW SAMPLE DETECTED:");
+        add(geneLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 160, -1, -1));
 
         genetxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 genetxtFieldActionPerformed(evt);
             }
         });
+        add(genetxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 157, 134, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/chemical-reaction.png"))); // NOI18N
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(192, 192, 192)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(geneLbl)
-                            .addComponent(patientNameLbl))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(genetxtField)
-                            .addComponent(patientTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(addSampleBtn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(submitBtn, javax.swing.GroupLayout.Alignment.TRAILING))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(201, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(resultLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 474, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(105, 105, 105))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(255, 255, 255))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(resultLbl)
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(patientNameLbl)
-                    .addComponent(patientTxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(geneLbl)
-                    .addComponent(genetxtField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(8, 8, 8)
-                .addComponent(addSampleBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(submitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49)
-                .addComponent(jLabel1)
-                .addContainerGap(301, Short.MAX_VALUE))
-        );
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 308, 233, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -218,14 +171,14 @@ public class ProcessWorkRequestJPanel extends javax.swing.JPanel {
         userAccount.getWorkQueue().getWorkRequestList().add(medReq);
         for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
             System.out.println("***** Organization Name:" + enterprise.getName());
-            for (Organization organization : enterprise.getOrganizationDirectory().getOrgList()) {
+            for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
                 System.out.println("***** Organization Name:" + organization.getName());
                 if (organization.getName().equals("Medicine Organization") || organization.getName().equals("Lab Organization")| organization.getName().equals("Clinic Organization")) {
                     System.out.println("True");
 
                     System.out.println("***** organization Name" + organization.getName());
 
-                    organization.getWQ().getWorkRequestList().add(medReq);
+                    organization.getWq().getWorkRequestList().add(medReq);
                 }
             }
 

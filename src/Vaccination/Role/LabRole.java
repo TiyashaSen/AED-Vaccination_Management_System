@@ -7,7 +7,7 @@ package Vaccination.Role;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
-import Vaccination.Organization.Lab;
+import Vaccination.Organization.Laboratory;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAccount;
 import userinterface.LabAssistantRole.LabAssistantWorkAreaJPanel;

@@ -35,7 +35,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
     public MainJFrame() {
         initComponents();
-        system = dB4OUtil.retrieveSystem();
+        system = dB4OUtil.getSystem();
         logoutBtn.setBackground(Color.blue);
         loginBtn.setBackground(Color.blue);
 
@@ -67,33 +67,34 @@ public class MainJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jSplitPane1.setBackground(new java.awt.Color(255, 255, 255));
-        jSplitPane1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1,
-                new java.awt.Color(0, 0, 255)));
+        jSplitPane1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 0, 255)));
         jSplitPane1.setDividerSize(10);
 
         jPanel1.setBackground(new java.awt.Color(233, 235, 204));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         loginBtn.setBackground(new java.awt.Color(204, 204, 255));
         loginBtn.setForeground(new java.awt.Color(255, 255, 255));
         loginBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/login.png"))); // NOI18N
         loginBtn.setText("LOGIN");
-        loginBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1,
-                new java.awt.Color(255, 255, 255)));
+        loginBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         loginBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginBtnActionPerformed(evt);
             }
         });
+        jPanel1.add(loginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 702, 206, 39));
 
         userNameTxt.setBackground(new java.awt.Color(204, 204, 255));
         userNameTxt.setForeground(new java.awt.Color(255, 255, 255));
-        userNameTxt.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1,
-                new java.awt.Color(255, 255, 255)));
+        userNameTxt.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
+        jPanel1.add(userNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 390, 225, 55));
 
         passwordTxt.setBackground(new java.awt.Color(204, 204, 255));
         passwordTxt.setForeground(new java.awt.Color(255, 255, 255));
-        passwordTxt.setBorder(
-                javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        passwordTxt.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        jPanel1.add(passwordTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 488, 225, 48));
+        jPanel1.add(loginJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 741, -1, -1));
 
         logoutBtn.setBackground(new java.awt.Color(255, 204, 204));
         logoutBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -106,21 +107,21 @@ public class MainJFrame extends javax.swing.JFrame {
                 logoutBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(logoutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 780, 206, 40));
+        jPanel1.add(logoutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 773, 206, 40));
 
         jLabel4.setBackground(new java.awt.Color(255, 204, 204));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/username.jpeg"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 390, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/padlock_2_55x55.png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, 64, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 488, -1, 48));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/images.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, -1, 170));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 92, -1, 148));
 
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 25)); // NOI18N
         jLabel7.setText("Vaccination Management System");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 12, -1, 62));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 12, -1, 74));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
@@ -132,7 +133,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setRightComponent(container);
 
-        getContentPane().add(jSplitPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1313, 1690));
+        getContentPane().add(jSplitPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, -5, 1310, 1370));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -143,7 +144,7 @@ public class MainJFrame extends javax.swing.JFrame {
         String password = String.valueOf(passwordCharArray);
 
         //Step1: Check in the system admin user account directory if you have the user
-        UserAccount userAccount = system.getUAD().authenticateUser(userName, password);
+        UserAccount userAccount = system.getUserAccDirectory().authenticateUser(userName, password);
 
         Enterprise inEnterprise = null;
         Organization inOrganization = null;
@@ -151,14 +152,14 @@ public class MainJFrame extends javax.swing.JFrame {
 
         if (userAccount == null) {
             //Step 2: Go inside each network and check each enterprise
-            for (Network network : system.getNetworkList()) {
+            for (Network network : system.getNetworkArray()) {
                 //Step 2.a: check against each enterprise
                 for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-                    userAccount = enterprise.getUAD().authenticateUser(userName, password);
+                    userAccount = enterprise.getUserAccDirectory().authenticateUser(userName, password);
                     if (userAccount == null) {
                         //Step 3:check against each organization for each enterprise
-                        for (Organization organization : enterprise.getOrganizationDirectory().getOrgList()) {
-                            userAccount = organization.getUAD().authenticateUser(userName, password);
+                        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                            userAccount = organization.getUserAccDirectory().authenticateUser(userName, password);
                             if (userAccount != null) {
                                 inEnterprise = enterprise;
                                 inOrganization = organization;
@@ -217,7 +218,7 @@ public class MainJFrame extends javax.swing.JFrame {
         container.add("blank", blankJP);
         CardLayout crdLyt = (CardLayout) container.getLayout();
         crdLyt.next(container);
-        dB4OUtil.storeSystem(system);
+        dB4OUtil.saveSystem(system);
     }//GEN-LAST:event_logoutBtnActionPerformed
 
     /**
