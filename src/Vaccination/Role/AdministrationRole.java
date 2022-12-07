@@ -4,7 +4,7 @@
  */
 package Vaccination.Role;
 
-import Vaccination.EcoSystem;
+import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
@@ -22,5 +22,7 @@ public class AdministrationRole extends Role {
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
         return new AdminWorkAreaJpanel(userProcessContainer, enterprise);
     }
+
+ 
 
 }

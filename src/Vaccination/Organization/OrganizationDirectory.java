@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author deepa
+ * @author abhaydeshpande
  */
 public class OrganizationDirectory {
 
@@ -28,7 +28,7 @@ public class OrganizationDirectory {
         if (type.getValue().equals(Type.Doctor.getValue())) {
             organization = new Doctor();
             orgList.add(organization);
-        } else if (type.getValue().equals(Type.Lab.getValue())) {
+        } else if (type.getValue().equals(Type.Laboratory.getValue())) {
             organization = new Lab();
             orgList.add(organization);
         } else if (type.getValue().equals(Type.Pharmacy.getValue())) {

@@ -4,7 +4,7 @@
  */
 package Vaccination.Role;
 
-import Vaccination.EcoSystem;
+import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;

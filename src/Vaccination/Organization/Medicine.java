@@ -14,11 +14,11 @@ import java.util.ArrayList;
  *
  * @author prakruthisomashekar
  */
-public class MedicineOrganization extends Organization {
+public class Medicine extends Organization {
 
     private ArrayList<VaccineMixture> vaccineArray;
 
-    public MedicineOrganization() {
+    public Medicine() {
 
         super(Organization.Type.Medicine.getValue());
         vaccineArray = new ArrayList<VaccineMixture>();

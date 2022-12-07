@@ -5,16 +5,16 @@
  */
 package Vaccination.Configuration;
 
-import Vaccine.Medicine.Medicine;
-import Vaccine.Vaccine.VaccineDirectory;
-import Vaccine.Medicine.MedicinesDirectory;
-import Vaccine.Variant.VariantHistory;
-import Vaccine.Network.Network;
-import Vaccine.Organization.Organization;
-import Vaccine.Role.Role;
-import Vaccine.Role.SystemAdminRole;
-import Vaccine.Vaccine.Vaccine;
-import Vaccine.Variant.Variant;
+import Vaccination.Medicine.Medicine;
+import Vaccine.VaccineDirectory;
+import Vaccination.Medicine.MedicinesDirectory;
+import Vaccination.Variant.VariantHistory;
+import Vaccination.Network.Network;
+import Vaccination.Organization.Organization;
+import Vaccination.Role.Role;
+import Vaccination.Role.SystemAdminRole;
+import Vaccine.Vaccine;
+import Vaccination.Variant.Variant;
 import java.util.ArrayList;
 
 /**
@@ -68,7 +68,7 @@ public class EcoSystem extends Organization {
     }
 
     public boolean UniqueUserCheck(String userName) {
-        if (!this.getUAD().UniqueUsernameCheck(userName)) {
+        if (!this.getUserAccDirectory().UniqueUsernameCheck(userName)) {
             return false;
         }
         for (Network network : networkArray) {
@@ -139,7 +139,7 @@ public class EcoSystem extends Organization {
     }
 
     public ArrayList<Medicine> addtoListofM(Medicine m) {
-        if (m == null) {
+        if (m == null) {             
             ArrayList<Medicine> listofMedicine = new ArrayList<Medicine>();
             listofMedicine.add(m);
             return listofMedicine;

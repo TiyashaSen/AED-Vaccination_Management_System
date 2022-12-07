@@ -6,19 +6,18 @@ import Vaccination.UserAccount.UserAccount;
 
 /**
  *
- * @author prakruthisomashekar
+ * @author abhaydeshpande
  */
-
-public class AdminSystemConfigure {
+public class ConfigureASystem {
 
     public static EcoSystem configure() {
 
         EcoSystem system = EcoSystem.getInstance();
 
-
         Worker employee = system.getEmployeeDirectory().createEmployee("RRH");
 
-        UserAccount ua = system.getUserAccDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        UserAccount ua = system.getUserAccDirectory().createUserAccount("sysadmin", "sysadmin", employee,
+                new SystemAdminRole());
 
         return system;
     }

@@ -6,10 +6,10 @@
 package Vaccination.Role;
 
 
-import Vaccination.EcoSystem;
+import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
-import Vaccination.Organization.SampleOrganization;
+import Vaccination.Organization.Sample;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAccount;
 import javax.swing.JPanel;
@@ -23,7 +23,7 @@ public class SampleRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
-        return new SampleWorkArea(userProcessContainer, account, (SampleOrganization) organization, enterprise, business, network);
+        return new SampleWorkArea(userProcessContainer, account, (Sample) organization, enterprise, business, network);
 
     }
 
