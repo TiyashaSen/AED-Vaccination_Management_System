@@ -1,6 +1,5 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template, choose Tools | Templates and open the template in the editor.
  */
 package Vaccination.Organization;
 
@@ -24,14 +23,10 @@ public abstract class Organization {
     private static int counter = 0;
 
     public enum Type {
-        Admin("Admin Organization"),
-        Doctor("Doctor Organization"),
-        Laboratory("Laboratory Organization"),
-        Pharmacy("Pharmacy Organization"),
-        Medicine("Medicine Organization"),
-        Vaccine("Vaccine Organization"),
-        Sample("Sample Organization"),
-        Clinic("Clinic Organization");
+        Admin("Admin Organization"), Doctor("Doctor Organization"), Laboratory(
+                "Laboratory Organization"), Pharmacy("Pharmacy Organization"), Medicine(
+                        "Medicine Organization"), Vaccine("Vaccine Organization"), Sample(
+                                "Sample Organization"), Clinic("Clinic Organization");
 
         private String value;
 
