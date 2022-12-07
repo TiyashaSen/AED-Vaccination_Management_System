@@ -31,7 +31,7 @@ public class AdministrationOrganization extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new AdminRole());
+        roles.add(new AdministrationRole());
         return roles;
     }
 

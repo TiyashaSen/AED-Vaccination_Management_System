@@ -12,9 +12,9 @@ import java.util.ArrayList;
  *
  * @author prakruthisomashekar
  */
-public class LaboratoryOrganization extends Organization {
+public class Laboratory extends Organization {
 
-    public LaboratoryOrganization() {
+    public Laboratory() {
         super(Organization.Type.Laboratory.getValue());
     }
 

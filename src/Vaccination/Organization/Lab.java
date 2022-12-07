@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Lab extends Organization {
 
     public Lab() {
-        super(Organization.Type.Lab.getValue());
+        super(Organization.Type.Laboratory.getValue());
     }
 
     @Override

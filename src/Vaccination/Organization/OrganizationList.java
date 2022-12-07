@@ -27,25 +27,25 @@ public class OrganizationList {
     public Organization createOrg(Type type) {
         Organization organization = null;
         if (type.getValue().equals(Type.Doctor.getValue())) {
-            organization = new DoctorOrganization();
+            organization = new Doctor();
             organizationList.add(organization);
         } else if (type.getValue().equals(Type.Laboratory.getValue())) {
-            organization = new LaboratoryOrganization();
+            organization = new Laboratory();
             organizationList.add(organization);
         } else if (type.getValue().equals(Type.Pharmacy.getValue())) {
-            organization = new PharmacyOrganization();
+            organization = new Pharmacy();
             organizationList.add(organization);
         } else if (type.getValue().equals(Type.Medicine.getValue())) {
-            organization = new MedicineOrganization();
+            organization = new Medicine();
             organizationList.add(organization);
         } else if (type.getValue().equals(Type.Vaccine.getValue())) {
-            organization = new VaccineOrganization();
+            organization = new Vaccine();
             organizationList.add(organization);
         } else if (type.getValue().equals(Type.Sample.getValue())) {
-            organization = new SampleOrganization();
+            organization = new Sample();
             organizationList.add(organization);
         } else if (type.getValue().equals(Type.Clinic.getValue())) {
-            organization = new ClinicOrganization();
+            organization = new Clinic();
             organizationList.add(organization);
         }
         return organization;

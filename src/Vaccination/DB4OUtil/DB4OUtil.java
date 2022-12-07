@@ -61,14 +61,14 @@ public class DB4OUtil {
     }
 
     public void deleteSystem(ObjectContainer connection) {
-        ObjectSet<EcoSystem> systems = Connection.query(new Predicate<EcoSystem>() {
+        ObjectSet<EcoSystem> systems = connection.query(new Predicate<EcoSystem>() {
             @Override
             public boolean match(EcoSystem et) {
                 return true;
             }
         });
         for (EcoSystem ecoSystem : systems) {
-            Connection.delete(ecoSystem);
+            connection.delete(ecoSystem);
         }
     }
 
@@ -77,7 +77,7 @@ public class DB4OUtil {
         ObjectSet<EcoSystem> systems = Connection.query(EcoSystem.class); // Change to the object you want to save
         EcoSystem system;
         if (systems.size() == 0) {
-            system = ConfigureASystem.configure();  // If there's no System in the record, create a new one
+            system = AdminSystemConfigure.configure();  // If there's no System in the record, create a new one
         } else {
             system = systems.get(systems.size() - 1);
         }
