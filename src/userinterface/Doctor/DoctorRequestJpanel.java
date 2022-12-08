@@ -38,7 +38,7 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
      */
     private JPanel userProcessContainer;
     private UserAccount account;
-    private DoctorOrganization docOrganization;
+    private DoctorOrg docOrganization;
     private Enterprise enterprise;
 
     private Network network;
