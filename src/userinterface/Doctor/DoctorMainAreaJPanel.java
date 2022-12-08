@@ -106,7 +106,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
     private void PrecriptionBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrecriptionBtnActionPerformed
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         log.debug("inside doctor role");
-        userProcessContainer.add("PrescriptionJPanel", new userinterface.Doctor.AddPrescriptionMedicineJPanel(userProcessContainer, list, userAccount, enterprise, organization, system, network));
+        userProcessContainer.add("PrescriptionJPanel", new userinterface.DoctorRole.AddPrescriptionMedicineJPanel(userProcessContainer, list, userAccount, enterprise, organization, system, network));
         layout.next(userProcessContainer);
 
     }//GEN-LAST:event_PrecriptionBtnActionPerformed
