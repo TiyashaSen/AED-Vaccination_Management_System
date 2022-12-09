@@ -97,12 +97,15 @@ public class GoogleMap extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jXMapViewer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         comboMapType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Open Stree", "Virtual Earth", "Hybrid", "Satellite" }));
         comboMapType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboMapTypeActionPerformed(evt);
             }
         });
+        jXMapViewer.add(comboMapType, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 6, 127, 31));
 
         cmdAdd.setText("Add Waypoint");
         cmdAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +113,7 @@ public class GoogleMap extends javax.swing.JFrame {
                 cmdAddActionPerformed(evt);
             }
         });
+        jXMapViewer.add(cmdAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 10, -1, -1));
 
         cmdClear.setText("Clear Waypoint");
         cmdClear.addActionListener(new java.awt.event.ActionListener() {
@@ -117,30 +121,7 @@ public class GoogleMap extends javax.swing.JFrame {
                 cmdClearActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jXMapViewerLayout = new javax.swing.GroupLayout(jXMapViewer);
-        jXMapViewer.setLayout(jXMapViewerLayout);
-        jXMapViewerLayout.setHorizontalGroup(
-            jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jXMapViewerLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(cmdAdd)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(cmdClear)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 319, Short.MAX_VALUE)
-                .addComponent(comboMapType, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
-        );
-        jXMapViewerLayout.setVerticalGroup(
-            jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jXMapViewerLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(comboMapType, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cmdAdd)
-                    .addComponent(cmdClear))
-                .addContainerGap(313, Short.MAX_VALUE))
-        );
+        jXMapViewer.add(cmdClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 10, -1, -1));
 
         getContentPane().add(jXMapViewer, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, 710, 350));
 
