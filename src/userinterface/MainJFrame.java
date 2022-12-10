@@ -249,6 +249,7 @@ public class MainJFrame extends javax.swing.JFrame {
         //</editor-fold>
         log.debug("Entering Main JFrame\t" + CLASS_NAME);
         /* Create and display the form */
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
