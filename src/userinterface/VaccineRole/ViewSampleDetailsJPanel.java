@@ -11,10 +11,20 @@ import Vaccination.MedicalInventory.MedicalInventoryList;
 import Vaccination.Organization.Vaccine;
 import Vaccination.UserAccount.UserAcc;
 import java.awt.CardLayout;
+import java.awt.Color;
 import java.awt.Component;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import org.apache.log4j.Logger;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
@@ -33,8 +43,12 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
     private SampleCompound mi;
     private static Logger log = Logger.getLogger(ViewSampleDetailsJPanel.class);
     private static final String CLASS_NAME = ViewSampleDetailsJPanel.class.getName();
-
-    public ViewSampleDetailsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, SampleCompound mi) {
+    //Barchart implementation
+    private HashMap dataHashMap=new HashMap();
+    static float COVACCINE_QTY,COVISHIELD_QTY,SPUTNIK_QTY;
+    
+    
+    public ViewSampleDetailsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, SampleCompound mi) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
@@ -61,6 +75,88 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "No Update Access.");
         }
     }
+    
+    
+    public void showBarChart(String chemicalNameField, int availableQuantityForBar) {
+        if(chemicalNameField.equalsIgnoreCase("Covaccine")){
+            COVACCINE_QTY=COVACCINE_QTY + availableQuantityForBar;
+        }
+         if(chemicalNameField.equalsIgnoreCase("Covishield")){
+            COVISHIELD_QTY=COVISHIELD_QTY + availableQuantityForBar;
+        }
+          if(chemicalNameField.equalsIgnoreCase("Sputnik")){
+            SPUTNIK_QTY=SPUTNIK_QTY + availableQuantityForBar;
+        }
+          
+          dataHashMap.clear();
+          dataHashMap.put("Covaccine", COVACCINE_QTY);
+          dataHashMap.put("Covishield", COVISHIELD_QTY);
+          dataHashMap.put("Sputnik", SPUTNIK_QTY);
+          this.updateChart();
+    }
+    
+    private void updateChart(){
+        DefaultCategoryDataset dcd= new DefaultCategoryDataset();
+        
+        Set keys=dataHashMap.keySet();
+        Iterator prodInfoLtr=keys.iterator();
+        
+        while(prodInfoLtr.hasNext()){
+            String productName=(String)prodInfoLtr.next();
+            int prodQty=(int) dataHashMap.get(dataHashMap);
+            dcd.setValue(prodQty, "Sales", productName);
+        }
+        JFreeChart jchart=ChartFactory.createBarChart("Sales report", "Product name", "Total Sales", dcd, PlotOrientation.HORIZONTAL, true, true, true);
+        
+        CategoryPlot plot=jchart.getCategoryPlot();
+        plot.setRangeGridlinePaint(Color.black);
+        
+        ChartPanel chartPanel=new ChartPanel(jchart);
+        jPanelChart.removeAll();
+        jPanelChart.add(chartPanel);
+        jPanelChart.updateUI();
+    }
+
+    
+    public void showBarChart(String chemicalNameField, int availableQuantityForBar) {
+        if(chemicalNameField.equalsIgnoreCase("Covaccine")){
+            COVACCINE_QTY=COVACCINE_QTY + availableQuantityForBar;
+        }
+         if(chemicalNameField.equalsIgnoreCase("Covishield")){
+            COVISHIELD_QTY=COVISHIELD_QTY + availableQuantityForBar;
+        }
+          if(chemicalNameField.equalsIgnoreCase("Sputnik")){
+            SPUTNIK_QTY=SPUTNIK_QTY + availableQuantityForBar;
+        }
+          
+          dataHashMap.clear();
+          dataHashMap.put("Covaccine", COVACCINE_QTY);
+          dataHashMap.put("Covishield", COVISHIELD_QTY);
+          dataHashMap.put("Sputnik", SPUTNIK_QTY);
+          this.updateChart();
+    }
+    
+    private void updateChart(){
+        DefaultCategoryDataset dcd= new DefaultCategoryDataset();
+        
+        Set keys=dataHashMap.keySet();
+        Iterator prodInfoLtr=keys.iterator();
+        
+        while(prodInfoLtr.hasNext()){
+            String productName=(String)prodInfoLtr.next();
+            int prodQty=(int) dataHashMap.get(dataHashMap);
+            dcd.setValue(prodQty, "Sales", productName);
+        }
+        JFreeChart jchart=ChartFactory.createBarChart("Sales report", "Product name", "Total Sales", dcd, PlotOrientation.HORIZONTAL, true, true, true);
+        
+        CategoryPlot plot=jchart.getCategoryPlot();
+        plot.setRangeGridlinePaint(Color.black);
+        
+        ChartPanel chartPanel=new ChartPanel(jchart);
+        jPanelChart.removeAll();
+        jPanelChart.add(chartPanel);
+        jPanelChart.updateUI();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -71,6 +167,8 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFreeChartResources1 = new org.jfree.chart.resources.JFreeChartResources();
+        jFreeChartResources2 = new org.jfree.chart.resources.JFreeChartResources();
         serialNumLabel = new javax.swing.JLabel();
         serialNumTextField = new javax.swing.JTextField();
         drugLabel = new javax.swing.JLabel();
@@ -81,7 +179,9 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
         saveButton = new javax.swing.JButton();
         updateButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jPanelChart = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -95,6 +195,11 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
         serialNumTextField.setBackground(new java.awt.Color(102, 102, 255));
         serialNumTextField.setForeground(new java.awt.Color(255, 255, 255));
         serialNumTextField.setBorder(null);
+        serialNumTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                serialNumTextFieldActionPerformed(evt);
+            }
+        });
         add(serialNumTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 170, 130, 30));
 
         drugLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -165,10 +270,15 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(51, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("VACCINE DETAILS");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 90, 260, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 120, 260, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/employee-3.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 520, 520));
+        jButton1.setText("SHOW CHART");
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 500, -1, -1));
+
+        jPanelChart.setBackground(new java.awt.Color(204, 204, 204));
+        jPanelChart.setLayout(new javax.swing.BoxLayout(jPanelChart, javax.swing.BoxLayout.LINE_AXIS));
+        add(jPanelChart, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 480, 470));
+        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 90, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void availQuantityTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_availQuantityTextFieldActionPerformed
@@ -217,6 +327,17 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
 
         JOptionPane.showMessageDialog(null, "Medicine updated Successfully", "Warning", JOptionPane.INFORMATION_MESSAGE);
         log.debug(userAccount + " " + "updated chemical details successfully");
+        
+        try{
+            int availableQuantityForBar = Integer.parseInt(availQuantityTextField.getText());
+            String chemicalNameTextFieldReal=chemicalNameTextField.getText();
+        this.showBarChart(chemicalNameTextFieldReal, availableQuantityForBar);
+        }
+        catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Bar not getting generated");
+            return;
+        }
+        
     }//GEN-LAST:event_saveButtonActionPerformed
 
     private void updateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateButtonActionPerformed
@@ -228,6 +349,10 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
         saveButton.setEnabled(true);
     }//GEN-LAST:event_updateButtonActionPerformed
 
+    private void serialNumTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serialNumTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_serialNumTextFieldActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel availLabel;
@@ -235,8 +360,12 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backButton;
     private javax.swing.JTextField chemicalNameTextField;
     private javax.swing.JLabel drugLabel;
+    private javax.swing.JButton jButton1;
+    private org.jfree.chart.resources.JFreeChartResources jFreeChartResources1;
+    private org.jfree.chart.resources.JFreeChartResources jFreeChartResources2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanelChart;
     private javax.swing.JButton saveButton;
     private javax.swing.JLabel serialNumLabel;
     private javax.swing.JTextField serialNumTextField;

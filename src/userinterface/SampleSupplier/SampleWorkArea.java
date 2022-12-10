@@ -31,14 +31,14 @@ public class SampleWorkArea extends javax.swing.JPanel {
      */
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAcc userAccount;
+    private UserAccount userAccount;
     private Sample sampleOrganization;
     private Enterprise enterprise;
     private Network network;
     private static Logger log = Logger.getLogger(SampleWorkArea.class);
     private static final String CLASS_NAME = SampleWorkArea.class.getName();
 
-    public SampleWorkArea(JPanel userProcessContainer, UserAcc userAccount, Sample sampleOrganization, Enterprise enterprise, EcoSystem business, Network network) {
+    public SampleWorkArea(JPanel userProcessContainer, UserAccount userAccount, Sample sampleOrganization, Enterprise enterprise, EcoSystem business, Network network) {
 
         initComponents();
         this.userProcessContainer = userProcessContainer;

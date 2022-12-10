@@ -4,40 +4,87 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/SystemAdminWorkArea/ManageEnterpriseJPanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/PharmacyRole/ViewDetailsJPanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Enterprise/HospitalEnterprise.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/SampleRole.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/WorkQueue.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/LabAssistant/LabAssistantMainWorkAreaJPanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/MedicineManufactureResearch/PlaceVaccineRequestsJPanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/Sample.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/SystemAdminWorkArea/ManageNetworkJPanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Enterprise/SampleEnterprise.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/MainJFrame.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/NewJFramerwrwr.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/VaccineInventory/VaccineMixture.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Medicine/MedicinesDirectory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/Organization.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Vaccine/VaccineDirectory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Configuration/EcoSystem.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/VaccineWorkArea.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/VaccineInventory/VaccineMixtureDirectory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/DB4OUtil/DB4OUtil.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/MedicalInventory/MedicalInventoryList.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Medicine/Medicine.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/MedicineWorkRequest.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/LabAssistant/LabProcessWorkRequestJPanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/UserAccount/UserAccount.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/AdministrationOrganization.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Variant/VariantDirect.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Sample/SampleDirectory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Network/Network.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/OrganizationList.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/WorkRequest.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Configuration/DataGenerator.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/ClinicalTrialResultsJpanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Worker/WorkerDirectory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/PharmacyWorkRequest.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/Pharmacy.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Variant/VariantHistory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/MedicalInventory/MedicalInventory.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccine/Organization/Sample.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Enterprise/MedicineEnterprise.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/ViewRequestsSampleJPanel.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/PharmacyRole.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/AdministrativeRole/AddEmployeeJpanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/PharmacyRole/ViewRequestsJPanel.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/ViewSampleDetailsJPanel.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/Role.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Waypoint/ButtonWaypoint.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/WorkQueue.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/SystemAdminWorkArea/SystemAdminWorkAreaJPanel.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/SampleSupplier/SampleProcessRequestJpanel.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/SystemAdminWorkArea/ManageNetworkJPanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Enterprise/EnterpriseDirectory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/AdministrativeRole/AdminWorkAreaJpanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/VaccineRole.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/SampleInventory/SampleCompoundList.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/Medicine.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/Laboratory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Variant/Variant.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/VaccineProcessRequestJpanel.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Employee/EmployeeDirectory.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Waypoint/MyWaypoint.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/DoctorClass/Doctor.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/SampleWorkRequest.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/VaccineWorkRequest.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/LabRole.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/LabTestWorkRequest.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/AdministrationRole.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Sample/Sample.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/VaccineWorkArea.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/DoctorClass/OrderList.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Employee/Employee.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccine/Organization/Organization.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/AdministrativeRole/AddOrganizationJpanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Vaccine/Vaccine.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/ClinicalTrialWorkRequest.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/UserAccount/UserAccountDirectory.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/UserAccount/UserAccount.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccine/Vaccine.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/SampleSupplier/SampleWorkArea.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/ClinicRole.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/ViewSampleRequestsJPanel.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Sample/SampleDirectory.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/WorkRequest.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/ClinicalTrialResultsJpanel.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/SampleInventory/SampleCompound.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Notify/SendEmail.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Disease/Disease.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/SystemAdminRole.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Waypoint/WaypointRender.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccine/Organization/Pharmacy.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/DoctorClass/Order.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Enterprise/Enterprise.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/DoctorOrg.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Role/DoctorRole.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/WorkQueue/DoctorWorkRequest.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/SystemAdminWorkArea/ManageEnterpriseAdminJPanel.java</file>
-            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccine/VaccineDirectory.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Configuration/AdminSystemConfigure.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Organization/Vaccine.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Enterprise/PharmacyEnterprise.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/PharmacyRole/PharmacyWorkArea.java</file>
             <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/userinterface/VaccineRole/GoogleMap.java</file>
+            <file>file:/Users/tiyashasen/Documents/INFO-5100/Aed_Final/src/Vaccination/Worker/Worker.java</file>
         </group>
     </open-files>
 </project-private>

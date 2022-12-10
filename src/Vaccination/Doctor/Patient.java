@@ -5,8 +5,8 @@
  */
 package Vaccination.Doctor;
 
-import Vaccination.Vaccine.VaccineList;
-import Vaccination.Medicine.Medicine;
+import Vaccination.Vaccine.VaccineDirectory;
+import Vaccination.Medicine.Drug;
 import Vaccination.Variant.Variant;
 import Vaccination.Variant.VariantHistory;
 import java.util.ArrayList;

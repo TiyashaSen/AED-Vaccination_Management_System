@@ -189,10 +189,10 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         jLabel6.setForeground(new java.awt.Color(0, 0, 204));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("MANAGE ENTERPRISE");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 413, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 413, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/lab.png"))); // NOI18N
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 30, -1, 166));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, 166));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/clinic.png"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 523, 175, 166));

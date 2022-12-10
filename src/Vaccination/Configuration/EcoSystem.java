@@ -5,9 +5,9 @@
  */
 package Vaccination.Configuration;
 
-import Vaccination.Medicine.Medicine;
-import Vaccination.Vaccine.VaccineList;
-import Vaccination.Medicine.MedicinesList;
+import Vaccination.Medicine.Drug;
+import Vaccination.Vaccine.VaccineDirectory;
+import Vaccination.Medicine.DrugList;
 import Vaccination.Variant.VariantHistory;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
@@ -25,13 +25,13 @@ public class EcoSystem extends Organization {
 
     private static EcoSystem business;
     private ArrayList<Network> networkArray;
-    private VaccineList vaccineArray;
-    private MedicinesList medArray;
+    private VaccineDirectory vaccineArray;
+    private DrugList medArray;
     private VariantHistory variantArray;
-    private Medicine medicine;
+    private Drug medicine;
     private Vaccine vaccine;
     private Variant variant;
-    private ArrayList<Medicine> listofMedicine = new ArrayList<Medicine>();
+    private ArrayList<Drug> listofMedicine = new ArrayList<Drug>();
 
     public static EcoSystem getInstance() {
         if (business == null) {
@@ -77,16 +77,16 @@ public class EcoSystem extends Organization {
         return true;
     }
 
-    public MedicinesList getMedArray() {
+    public DrugList getMedArray() {
         if (medArray == null) {
-            MedicinesList mL = new MedicinesList();
+            DrugList mL = new DrugList();
             return mL;
         }
 
         return medArray;
     }
 
-    public void setMediList(MedicinesList medArray) {
+    public void setMediList(DrugList medArray) {
         this.medArray = medArray;
     }
 
@@ -106,11 +106,11 @@ public class EcoSystem extends Organization {
         this.variantArray = variantArray;
     }
 
-    public Medicine getMedicine() {
+    public Drug getMedicine() {
         return medicine;
     }
 
-    public void setMedicine(Medicine medicine) {
+    public void setMedicine(Drug medicine) {
         this.medicine = medicine;
     }
 
@@ -130,17 +130,17 @@ public class EcoSystem extends Organization {
         this.variant = variant;
     }
 
-    public ArrayList<Medicine> getListofMedicine() {
+    public ArrayList<Drug> getListofMedicine() {
         return listofMedicine;
     }
 
-    public void setListofMedicine(ArrayList<Medicine> listofMedicine) {
+    public void setListofMedicine(ArrayList<Drug> listofMedicine) {
         this.listofMedicine = listofMedicine;
     }
 
-    public ArrayList<Medicine> addtoListofM(Medicine m) {
+    public ArrayList<Drug> addtoListofM(Drug m) {
         if (m == null) {             
-            ArrayList<Medicine> listofMedicine = new ArrayList<Medicine>();
+            ArrayList<Drug> listofMedicine = new ArrayList<Drug>();
             listofMedicine.add(m);
             return listofMedicine;
         } else {

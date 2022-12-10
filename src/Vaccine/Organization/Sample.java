@@ -3,10 +3,11 @@
 * To change this template file, choose Tools | Templates
 * and open the template in the editor.
 */
-package Vaccination.Organization;
 
 
 
+
+import Vaccination.Organization.Organization;
 import Vaccination.Role.Role;
 import Vaccination.Role.SampleRole;
 import java.util.ArrayList;

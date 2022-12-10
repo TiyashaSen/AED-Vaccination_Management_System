@@ -12,7 +12,7 @@ import Vaccination.Variant.Variant;
  *
  * @author tiyashasen
  */
-public class Medicine {
+public class Drug {
 
     private int medID;
     private String medName;
@@ -20,7 +20,7 @@ public class Medicine {
     private Variant variant;
     private static int counter = 0;
 
-    public Medicine() {
+    public Drug() {
         vaccine = new Vaccine();
         variant = new Variant();
         medID = counter;

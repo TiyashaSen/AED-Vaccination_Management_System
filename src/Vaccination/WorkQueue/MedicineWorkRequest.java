@@ -7,7 +7,7 @@ package Vaccination.WorkQueue;
 
 import Vaccination.Vaccine.Vaccine;
 import Vaccination.Doctor.Patient;
-import Vaccination.Medicine.Medicine;
+import Vaccination.Medicine.Drug;
 import Vaccination.Variant.Variant;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +23,7 @@ public class MedicineWorkRequest extends WorkRequest {
     private String TOD;
     private Patient patient;
     private Map<Variant, Vaccine> geneChemical;
-    private Map<Medicine, List<Vaccine>> drugChemical;
+    private Map<Drug, List<Vaccine>> drugChemical;
 
     public Patient getPatient() {
         return patient;
@@ -65,11 +65,11 @@ public class MedicineWorkRequest extends WorkRequest {
         this.geneChemical = geneChemical;
     }
 
-    public Map<Medicine, List<Vaccine>> getDrugChemical() {
+    public Map<Drug, List<Vaccine>> getDrugChemical() {
         return drugChemical;
     }
 
-    public void setDrugChemical(Map<Medicine, List<Vaccine>> drugChemical) {
+    public void setDrugChemical(Map<Drug, List<Vaccine>> drugChemical) {
         this.drugChemical = drugChemical;
     }
 

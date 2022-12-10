@@ -90,22 +90,12 @@ public class GoogleMap extends javax.swing.JFrame {
     private void initComponents() {
 
         jXMapViewer = new org.jxmapviewer.JXMapViewer();
-        comboMapType = new javax.swing.JComboBox<>();
         cmdAdd = new javax.swing.JButton();
         cmdClear = new javax.swing.JButton();
+        comboMapType = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jXMapViewer.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        comboMapType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Open Stree", "Virtual Earth", "Hybrid", "Satellite" }));
-        comboMapType.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboMapTypeActionPerformed(evt);
-            }
-        });
-        jXMapViewer.add(comboMapType, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 6, 127, 31));
 
         cmdAdd.setText("Add Waypoint");
         cmdAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -113,7 +103,7 @@ public class GoogleMap extends javax.swing.JFrame {
                 cmdAddActionPerformed(evt);
             }
         });
-        jXMapViewer.add(cmdAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 10, -1, -1));
+        jXMapViewer.add(cmdAdd);
 
         cmdClear.setText("Clear Waypoint");
         cmdClear.addActionListener(new java.awt.event.ActionListener() {
@@ -121,13 +111,32 @@ public class GoogleMap extends javax.swing.JFrame {
                 cmdClearActionPerformed(evt);
             }
         });
-        jXMapViewer.add(cmdClear, new org.netbeans.lib.awtextra.AbsoluteConstraints(131, 10, -1, -1));
+        jXMapViewer.add(cmdClear);
 
-        getContentPane().add(jXMapViewer, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, 710, 350));
+        comboMapType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Open Stree", "Virtual Earth", "Hybrid", "Satellite" }));
+        comboMapType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboMapTypeActionPerformed(evt);
+            }
+        });
+        jXMapViewer.add(comboMapType);
+
+        getContentPane().add(jXMapViewer, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 350));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void cmdClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdClearActionPerformed
+        // TODO add your handling code here:
+        clearWaypoint();
+    }//GEN-LAST:event_cmdClearActionPerformed
+
+    private void cmdAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdAddActionPerformed
+        // TODO add your handling code here:
+        addWaypoint( new MyWaypoint("Test 001", new GeoPosition(42.343, -71.0896)));
+        addWaypoint( new MyWaypoint("Test 002", new GeoPosition(42.343, -71.089)));
+    }//GEN-LAST:event_cmdAddActionPerformed
 
     private void comboMapTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboMapTypeActionPerformed
         TileFactoryInfo info;
@@ -142,23 +151,11 @@ public class GoogleMap extends javax.swing.JFrame {
             info = new VirtualEarthTileFactoryInfo(VirtualEarthTileFactoryInfo.HYBRID);
         }
         else{
-             info = new VirtualEarthTileFactoryInfo(VirtualEarthTileFactoryInfo.SATELLITE);
+            info = new VirtualEarthTileFactoryInfo(VirtualEarthTileFactoryInfo.SATELLITE);
         }
         DefaultTileFactory tileFactory= new DefaultTileFactory(info);
         jXMapViewer.setTileFactory(tileFactory);
-             
     }//GEN-LAST:event_comboMapTypeActionPerformed
-
-    private void cmdAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdAddActionPerformed
-        // TODO add your handling code here:
-        addWaypoint( new MyWaypoint("Test 001", new GeoPosition(42.343, -71.0896)));
-       addWaypoint( new MyWaypoint("Test 002", new GeoPosition(42.343, -71.089)));
-    }//GEN-LAST:event_cmdAddActionPerformed
-
-    private void cmdClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdClearActionPerformed
-        // TODO add your handling code here:
-        clearWaypoint();
-    }//GEN-LAST:event_cmdClearActionPerformed
 
     /**
      * @param args the command line arguments

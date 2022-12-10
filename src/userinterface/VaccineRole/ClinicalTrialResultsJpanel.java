@@ -5,8 +5,8 @@
  */
 package userinterface.VaccineRole;
 
-import Vaccination.Vaccine.VaccineList;
-import Vaccination.Medicine.MedicinesList;
+import Vaccination.Vaccine.VaccineDirectory;
+import Vaccination.Medicine.DrugList;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.VariantDirect;
@@ -38,7 +38,7 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
     private EcoSystem business;
     private UserAcc userAccount;
     private Organization vaccineOrganization;
-    private MedicinesList dl;
+    private DrugList dl;
     private VariantDirect variantDirectory;
     private VaccineList vaccineDirectory;
     private Enterprise enterprise;
