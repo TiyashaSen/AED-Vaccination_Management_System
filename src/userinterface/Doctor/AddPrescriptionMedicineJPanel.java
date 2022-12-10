@@ -10,11 +10,11 @@ import Vaccination.Doctor.Order;
 import Vaccination.Doctor.OrderArray;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.DoctorOrg;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Pharmacy;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.DoctorWorkRequest;
 import Vaccination.WorkQueue.PharmacyWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
@@ -47,16 +47,16 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
     private OrderArray orderList;
     private DoctorOrg doctorOrganization;
     private Enterprise enterprise;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private JPanel userProcessContainer;
     private Order order;
     private DoctorWorkRequest docWR;
-    private Network network;
+    private Connection network;
     private EcoSystem system;
     private static Logger log = Logger.getLogger(AddPrescriptionMedicineJPanel.class);
     private static final String CLASS_NAME = AddPrescriptionMedicineJPanel.class.getName();
 
-    public AddPrescriptionMedicineJPanel(JPanel userProcessContainer, OrderArray List, UserAccount account, Enterprise enterprise, DoctorOrg organization, EcoSystem system, Network network) {
+    public AddPrescriptionMedicineJPanel(JPanel userProcessContainer, OrderArray List, UserAcc account, Enterprise enterprise, DoctorOrg organization, EcoSystem system, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;

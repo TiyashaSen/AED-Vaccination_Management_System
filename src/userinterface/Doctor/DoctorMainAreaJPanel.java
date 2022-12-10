@@ -8,7 +8,7 @@ import Vaccination.Doctor.Doctor;
 import Vaccination.Doctor.OrderArray;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.DoctorOrg;
 import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.DoctorWorkRequest;
@@ -29,7 +29,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
     private Doctor doctor;
     private OrderArray list;
     private DoctorWorkRequest docreq;
-    private Network network;
+    private Connection network;
     private EcoSystem system;
     private static Logger log = Logger.getLogger(DoctorMainAreaJPanel.class);
     private static final String CLASS_NAME = DoctorMainAreaJPanel.class.getName();
@@ -37,7 +37,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public DoctorMainAreaJPanel(JPanel userProcessContainer, UserAcc account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
+    public DoctorMainAreaJPanel(JPanel userProcessContainer, UserAcc account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;

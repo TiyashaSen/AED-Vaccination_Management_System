@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vaccination.Network;
+package Vaccination.Connection;
 
 import Vaccination.Enterprise.EnterpriseList;
 
 /**
  *
- * @author abhaydeshpande
+ * @author tiyashasen
  */
-public class Network {
+public class Connection {
 
     private String name;
     private EnterpriseList enterpriseDirectory;
 
-    public Network() {
+    public Connection() {
         enterpriseDirectory = new EnterpriseList();
     }
 

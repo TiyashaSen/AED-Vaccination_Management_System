@@ -6,7 +6,7 @@ package Vaccination.Role;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAcc;
 import javax.swing.JPanel;
@@ -42,7 +42,7 @@ public abstract class Role {
             UserAcc account,
             Organization organization,
             Enterprise enterprise,
-            EcoSystem business, Network network);
+            EcoSystem business, Connection network);
 
     @Override
     public String toString() {

@@ -8,7 +8,7 @@ package userinterface.PharmacyRole;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.MedicalInventory.MedicalInventory;
 import Vaccination.MedicalInventory.MedicalInventoryList;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Pharmacy;
 import Vaccination.UserAccount.UserAcc;
@@ -36,11 +36,11 @@ public class PharmacyWorkArea extends javax.swing.JPanel {
     private MedicalInventoryList medInvList;
     private Organization org;
     private Pharmacy pharmorg;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(PharmacyWorkArea.class);
     private static final String CLASS_NAME = PharmacyWorkArea.class.getName();
 
-    public PharmacyWorkArea(JPanel userProcessContainer, UserAcc userAccount, Pharmacy organization, Enterprise enterprise, Network network) {
+    public PharmacyWorkArea(JPanel userProcessContainer, UserAcc userAccount, Pharmacy organization, Enterprise enterprise, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

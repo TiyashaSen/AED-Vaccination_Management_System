@@ -26,7 +26,7 @@ import org.jfree.chart.plot.PiePlot3D;
 
 /**
  *
- * @author deepa
+ * @author tiyashasen
  */
 public class ViewCovidReportsJPanel extends javax.swing.JPanel {
 

@@ -8,7 +8,7 @@ package userinterface.Doctor;
 import Vaccination.Doctor.Patient;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Clinic;
 import Vaccination.Organization.DoctorOrg;
 import Vaccination.Organization.Laboratory;
@@ -41,13 +41,13 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
     private DoctorOrg docOrganization;
     private Enterprise enterprise;
 
-    private Network network;
+    private Connection network;
     private EcoSystem system;
     private Enterprise.EnterpriseType enterpriseType;
     private static Logger log = Logger.getLogger(DoctorRequestJpanel.class);
     private static final String CLASS_NAME = DoctorRequestJpanel.class.getName();
 
-    public DoctorRequestJpanel(JPanel userProcessContainer, UserAcc account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
+    public DoctorRequestJpanel(JPanel userProcessContainer, UserAcc account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Connection network) {
         initComponents();
         initComponents();
         this.userProcessContainer = userProcessContainer;

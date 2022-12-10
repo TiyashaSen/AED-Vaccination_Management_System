@@ -6,7 +6,7 @@ package userinterface.LabAssistant;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Laboratory;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAcc;
@@ -28,7 +28,7 @@ public class LabAssistantMainWorkAreaJPanel extends javax.swing.JPanel {
     private EcoSystem business;
     private UserAcc userAccount;
     private Laboratory labOrganization;
-    private Network network;
+    private Connection network;
     private Enterprise enterprise;
     private static Logger log = Logger.getLogger(LabAssistantMainWorkAreaJPanel.class);
     private static final String CLASS_NAME = LabAssistantMainWorkAreaJPanel.class.getName();
@@ -36,7 +36,7 @@ public class LabAssistantMainWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form LabAssistantWorkAreaJPanel
      */
-    public LabAssistantMainWorkAreaJPanel(JPanel userProcessContainer, UserAcc userAccount, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+    public LabAssistantMainWorkAreaJPanel(JPanel userProcessContainer, UserAcc userAccount, Organization organization, Enterprise enterprise, EcoSystem business, Connection network) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

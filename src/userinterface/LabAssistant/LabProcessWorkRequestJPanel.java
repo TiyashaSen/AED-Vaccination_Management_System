@@ -7,7 +7,7 @@ package userinterface.LabAssistant;
 import Vaccination.Doctor.Patient;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.Variant;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Laboratory;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAcc;
@@ -30,7 +30,7 @@ public class LabProcessWorkRequestJPanel extends javax.swing.JPanel {
     private LabTestWorkRequest request;
     private Laboratory labOrganization;
     private UserAcc userAccount;
-    private Network network;
+    private Connection network;
     String filePath = "./genes data.txt";
     private static Logger log = Logger.getLogger(LabProcessWorkRequestJPanel.class);
     private static final String CLASS_NAME = LabProcessWorkRequestJPanel.class.getName();
@@ -38,7 +38,7 @@ public class LabProcessWorkRequestJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ProcessWorkRequestJPanel
      */
-    public LabProcessWorkRequestJPanel(JPanel userProcessContainer, LabTestWorkRequest request, Organization organization, UserAcc userAccount, Network network) {
+    public LabProcessWorkRequestJPanel(JPanel userProcessContainer, LabTestWorkRequest request, Organization organization, UserAcc userAccount, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.request = request;

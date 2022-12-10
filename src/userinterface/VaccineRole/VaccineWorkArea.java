@@ -7,7 +7,7 @@ package userinterface.VaccineRole;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Vaccine;
 import Vaccination.UserAccount.UserAcc;
@@ -35,11 +35,11 @@ public class VaccineWorkArea extends javax.swing.JPanel {
     private UserAcc userAccount;
     private Organization vaccineOrganization;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(VaccineWorkArea.class);
     private static final String CLASS_NAME = VaccineWorkArea.class.getName();
 
-    public VaccineWorkArea(JPanel userProcessContainer, UserAcc userAccount, Organization vaccineOrganization, Enterprise enterprise, EcoSystem business, Network network) {
+    public VaccineWorkArea(JPanel userProcessContainer, UserAcc userAccount, Organization vaccineOrganization, Enterprise enterprise, EcoSystem business, Connection network) {
 
         initComponents();
         this.userProcessContainer = userProcessContainer;

@@ -5,7 +5,7 @@
  */
 package userinterface.MedicineManufactureResearch;
 
-import Vaccination.Vaccine.VaccineDirectory;
+import Vaccination.Vaccine.VaccineList ;
 import Vaccination.Doctor.Patient;
 import Vaccination.Medicine.DrugList;
 import Vaccination.Medicine.Drug;
@@ -13,9 +13,9 @@ import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.Variant;
 import Vaccination.Variant.VariantDirect;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Medicine;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.Vaccine.Vaccine;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
@@ -28,30 +28,27 @@ import javax.swing.table.DefaultTableModel;
 import org.apache.log4j.Logger;
 
 /**
- * ;
- * import javax.swing.JOptionPane; import javax.swing.JPanel; import
- * javax.swing.table.DefaultTableModel; import org.apache.log4j.Lo
  *
- * @author deepa
+ * @author tiyashasen
  */
 public class TestLabResultsJpanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Medicine medicineOrganization;
     private DrugList dl;
     private VariantDirect variantDirectory;
-    private VaccineDirectory vaccineDirectory;
+    private VaccineList vaccineDirectory;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(TestLabResultsJpanel.class);
     private static final String CLASS_NAME = TestLabResultsJpanel.class.getName();
 
     /**
      * Creates new form LabResultsJpanel
      */
-    public TestLabResultsJpanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Medicine medicineOrganization, Network network, EcoSystem business) {
+    public TestLabResultsJpanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Medicine medicineOrganization, Connection network, EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
@@ -247,17 +244,17 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
         }
         
         if(flag = true){
-        Medicine m = new Medicine();
-        m.set(med);
+        Drug m = new Drug();
+        m.setMedName(med);
         Variant g = new Variant();
         g.setVariantName(VN);
         m.setVariant(g);
         System.out.println(m.getVariant().getVariantName());
         Vaccine v = new Vaccine();
-        v.setVaccineName(chem);
-        m.getVaccineArray().setVaccineName(chem);
+        v.setVaccinationName(chem);
+        m.getVaccineList().setVaccinationName(chem);
         business.addtoListofM(m);
-        System.out.println(m.getVaccineArray().getVaccineName());
+        System.out.println(m.getVaccineList().getVaccinationName());
         System.out.println(m);
 
         JOptionPane.showMessageDialog(null, "Added medicine and vaccine for New variant. ");
@@ -292,7 +289,7 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
             Object[] row = new Object[3];
             row[0] = business.getListofMedicine().get(i).getMedName();
             row[1] = business.getListofMedicine().get(i).getVariant().getVariantName();
-            row[2] = business.getListofMedicine().get(i).getVaccineList().getVaccineName();
+            row[2] = business.getListofMedicine().get(i).getVaccineList().getVaccinationName();
             model.addRow(row);
         }
 

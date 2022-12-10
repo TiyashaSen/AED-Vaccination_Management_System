@@ -7,7 +7,7 @@ package userinterface.SystemAdminWorkArea;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import java.awt.CardLayout;
 import java.util.ArrayList;
@@ -147,7 +147,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
     private void btnManageAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageAdminActionPerformed
         int i = 0;
-        for (Network n : ecosystem.getNetworkArray()) {
+        for (Connection n : ecosystem.getNetworkArray()) {
             for (Enterprise e : n.getEnterpriseDirectory().getEnterpriseList()) {
                 i++;
 

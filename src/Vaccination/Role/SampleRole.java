@@ -8,7 +8,7 @@ package Vaccination.Role;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Sample;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAcc;
@@ -22,7 +22,7 @@ import userinterface.SampleSupplier.SampleWorkArea;
 public class SampleRole extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, Organization organization, Enterprise enterprise, EcoSystem business, Connection network) {
         return new SampleWorkArea(userProcessContainer, account, (Sample) organization, enterprise, business, network);
 
     }

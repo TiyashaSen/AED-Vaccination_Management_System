@@ -6,10 +6,10 @@
 package Vaccination.Configuration;
 
 import Vaccination.Medicine.Drug;
-import Vaccination.Vaccine.VaccineDirectory;
+import Vaccination.Vaccine.VaccineList;
 import Vaccination.Medicine.DrugList;
 import Vaccination.Variant.VariantHistory;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import Vaccination.Role.Role;
 import Vaccination.Role.SystemAdminRole;
@@ -24,8 +24,8 @@ import java.util.ArrayList;
 public class EcoSystem extends Organization {
 
     private static EcoSystem business;
-    private ArrayList<Network> networkArray;
-    private VaccineDirectory vaccineArray;
+    private ArrayList<Connection> networkArray;
+    private VaccineList vaccineArray;
     private DrugList medArray;
     private VariantHistory variantArray;
     private Drug medicine;
@@ -40,8 +40,8 @@ public class EcoSystem extends Organization {
         return business;
     }
 
-    public Network createAndAddNetwork() {
-        Network network = new Network();
+    public Connection createAndAddNetwork() {
+        Connection network = new Connection();
         networkArray.add(network);
         return network;
     }
@@ -55,15 +55,15 @@ public class EcoSystem extends Organization {
 
     private EcoSystem() {
         super(null);
-        networkArray = new ArrayList<Network>();
+        networkArray = new ArrayList<Connection>();
 
     }
 
-    public ArrayList<Network> getNetworkArray() {
+    public ArrayList<Connection> getNetworkArray() {
         return networkArray;
     }
 
-    public void setNetworkList(ArrayList<Network> networkArray) {
+    public void setNetworkList(ArrayList<Connection> networkArray) {
         this.networkArray = networkArray;
     }
 
@@ -71,7 +71,7 @@ public class EcoSystem extends Organization {
         if (!this.getUserAccDirectory().UniqueUsernameCheck(userName)) {
             return false;
         }
-        for (Network network : networkArray) {
+        for (Connection network : networkArray) {
 
         }
         return true;

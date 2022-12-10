@@ -48,7 +48,7 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
     static float COVACCINE_QTY,COVISHIELD_QTY,SPUTNIK_QTY;
     
     
-    public ViewSampleDetailsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, SampleCompound mi) {
+    public ViewSampleDetailsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, SampleCompound mi) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
@@ -118,45 +118,9 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
     }
 
     
-    public void showBarChart(String chemicalNameField, int availableQuantityForBar) {
-        if(chemicalNameField.equalsIgnoreCase("Covaccine")){
-            COVACCINE_QTY=COVACCINE_QTY + availableQuantityForBar;
-        }
-         if(chemicalNameField.equalsIgnoreCase("Covishield")){
-            COVISHIELD_QTY=COVISHIELD_QTY + availableQuantityForBar;
-        }
-          if(chemicalNameField.equalsIgnoreCase("Sputnik")){
-            SPUTNIK_QTY=SPUTNIK_QTY + availableQuantityForBar;
-        }
-          
-          dataHashMap.clear();
-          dataHashMap.put("Covaccine", COVACCINE_QTY);
-          dataHashMap.put("Covishield", COVISHIELD_QTY);
-          dataHashMap.put("Sputnik", SPUTNIK_QTY);
-          this.updateChart();
-    }
+
     
-    private void updateChart(){
-        DefaultCategoryDataset dcd= new DefaultCategoryDataset();
-        
-        Set keys=dataHashMap.keySet();
-        Iterator prodInfoLtr=keys.iterator();
-        
-        while(prodInfoLtr.hasNext()){
-            String productName=(String)prodInfoLtr.next();
-            int prodQty=(int) dataHashMap.get(dataHashMap);
-            dcd.setValue(prodQty, "Sales", productName);
-        }
-        JFreeChart jchart=ChartFactory.createBarChart("Sales report", "Product name", "Total Sales", dcd, PlotOrientation.HORIZONTAL, true, true, true);
-        
-        CategoryPlot plot=jchart.getCategoryPlot();
-        plot.setRangeGridlinePaint(Color.black);
-        
-        ChartPanel chartPanel=new ChartPanel(jchart);
-        jPanelChart.removeAll();
-        jPanelChart.add(chartPanel);
-        jPanelChart.updateUI();
-    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

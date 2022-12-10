@@ -5,12 +5,12 @@
  */
 package userinterface.VaccineRole;
 
-import Vaccination.Vaccine.VaccineDirectory;
+import Vaccination.Vaccine.VaccineList;
 import Vaccination.Medicine.DrugList;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.VariantDirect;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Clinic;
 import Vaccination.Organization.Medicine;
 import Vaccination.Organization.Organization;
@@ -42,14 +42,14 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
     private VariantDirect variantDirectory;
     private VaccineList vaccineDirectory;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(ClinicalTrialResultsJpanel.class);
     private static final String CLASS_NAME = ClinicalTrialResultsJpanel.class.getName();
 
     /**
      * Creates new form LabResultsJpanel
      */
-    public ClinicalTrialResultsJpanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Organization vaccineOrganization, Network network, EcoSystem business) {
+    public ClinicalTrialResultsJpanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Organization vaccineOrganization, Connection network, EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
