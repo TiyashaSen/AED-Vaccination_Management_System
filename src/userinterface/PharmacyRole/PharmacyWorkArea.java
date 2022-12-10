@@ -401,7 +401,7 @@ public class PharmacyWorkArea extends javax.swing.JPanel {
 
                     for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
                         System.out.println("***** Organization Name:" + enterprise.getName());
-                        for (Organization organization : enterprise.getOrganizationDirectory().getOrgList()) {
+                        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
                             System.out.println("***** Organization Name:" + organization.getName());
                             if (organization.getName().equals("Medicine Organization")) {
                                 System.out.println("True");

@@ -4,7 +4,7 @@
  */
 package userinterface.Clinic;
 
-import Vaccination.DoctorClass.Patient;
+import Vaccination.Doctor.Patient;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.Variant;
 import Vaccination.Network.Network;

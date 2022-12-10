@@ -5,7 +5,7 @@
  */
 package Vaccination.Configuration;
 
-import Vaccination.DoctorClass.Order;
+import Vaccination.Doctor.Order;
 import Vaccination.Organization.AdministrationOrganization;
 import java.util.Random;
 

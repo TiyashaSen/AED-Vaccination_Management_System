@@ -5,7 +5,7 @@
  */
 package userinterface.Doctor;
 
-import Vaccination.DoctorClass.Patient;
+import Vaccination.Doctor.Patient;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
@@ -367,11 +367,11 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
         request.setStatus("Sent");
         request.setPatientName(patientName);
         Patient patient = new Patient();
-        patient.setPatientName(patientName);
+        patient.setPName(patientName);
         patient.setAge(age);
         patient.setTest(message);
         patient.setSex(sex);
-        patient.setEmail(email);
+        patient.setMail(email);
         request.setPatient(patient);
 
         Organization org = null;
@@ -488,11 +488,11 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
         request.setStatus("Sent");
         request.setPatientName(patientName);
         Patient patient = new Patient();
-        patient.setPatientName(patientName);
+        patient.setPName(patientName);
         patient.setAge(age);
         patient.setTest(message);
         patient.setSex(sex);
-        patient.setEmail(email);
+        patient.setMail(email);
         request.setPatient(patient);
 
         Organization org = null;

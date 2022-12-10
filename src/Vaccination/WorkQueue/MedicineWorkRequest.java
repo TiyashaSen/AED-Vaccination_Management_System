@@ -6,7 +6,7 @@
 package Vaccination.WorkQueue;
 
 import Vaccination.Vaccine.Vaccine;
-import Vaccination.DoctorClass.Patient;
+import Vaccination.Doctor.Patient;
 import Vaccination.Medicine.Medicine;
 import Vaccination.Variant.Variant;
 import java.util.List;

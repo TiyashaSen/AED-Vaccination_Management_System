@@ -5,7 +5,7 @@
  */
 package Vaccination.WorkQueue;
 
-import Vaccination.DoctorClass.Patient;
+import Vaccination.Doctor.Patient;
 
 /**
  *
