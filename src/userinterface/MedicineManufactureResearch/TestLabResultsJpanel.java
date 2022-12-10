@@ -54,7 +54,9 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
      */
 
 
-    public TestLabResultsJpanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Medicine medicineOrganization, Connection network, EcoSystem business) {
+    public TestLabResultsJpanel(JPanel userProcessContainer, UserAcc userAccount,
+            Enterprise enterprise, Medicine medicineOrganization, Connection network,
+            EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
@@ -89,9 +91,11 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 0, 255));
+        setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        workRequestJTable.setBackground(new java.awt.Color(102, 102, 102));
+        workRequestJTable.setForeground(new java.awt.Color(255, 255, 255));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(new Object[][] {
 
         }, new String[] {"PATIENT NAME", "AGE", "GENDER", "MESSAGE", "SENDER",

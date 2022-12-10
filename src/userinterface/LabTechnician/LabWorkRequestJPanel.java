@@ -82,7 +82,7 @@ public class LabWorkRequestJPanel extends javax.swing.JPanel {
                 submitBtnActionPerformed(evt);
             }
         });
-        add(submitBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 218, 193, 30));
+        add(submitBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 220, 193, 30));
 
         resultLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         resultLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -120,7 +120,7 @@ public class LabWorkRequestJPanel extends javax.swing.JPanel {
                 addGeneBtnActionPerformed(evt);
             }
         });
-        add(addGeneBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 180, 193, 29));
+        add(addGeneBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 220, 193, 29));
 
         geneLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         geneLbl.setText("VARIANT NAME:");

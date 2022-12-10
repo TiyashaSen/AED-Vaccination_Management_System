@@ -124,7 +124,6 @@ public class GetVaccineRequestsJPanel extends javax.swing.JPanel {
         add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 79, 30));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("VIEW REQUESTS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 108, 655, -1));
