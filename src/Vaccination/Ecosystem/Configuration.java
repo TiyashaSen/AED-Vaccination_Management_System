@@ -1,7 +1,7 @@
 package Vaccination.Ecosystem;
 
 import Vaccination.Employee.Employee;
-import Vaccination.Roles.SystemAdminRole;
+import Vaccination.Role.SystemAdminRole;
 import Vaccination.UserAccount.UserAccount;
 
 /**

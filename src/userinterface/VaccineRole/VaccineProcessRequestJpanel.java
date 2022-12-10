@@ -5,8 +5,8 @@
  */
 package userinterface.VaccineRole;
 
-import Business.WorkQueue.VaccineWorkRequest;
-import Business.WorkQueue.MedicineWorkRequest;
+import Vaccination.WorkQueue.VaccineWorkRequest;
+import Vaccination.WorkQueue.MedicineWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.Calendar;

@@ -5,22 +5,22 @@
  */
 package userinterface.VaccineRole;
 
-import Business.Vaccine.VaccineDirectory;
-import Business.Medicine.MedicinesDirectory;
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Variant.VariantDirect;
-import Business.Network.Network;
-import Business.Organization.ClinicOrganization;
-import Business.Organization.MedicineOrganization;
-import Business.Organization.Organization;
-import Business.Organization.VaccineOrganization;
+import Vaccination.Vaccine.VaccineDirectory;
+import Vaccination.Medicine.MedicinesDirectory;
+import Vaccination.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Variant.VariantDirect;
+import Vaccination.Network.Network;
+import Vaccination.Organization.ClinicOrganization;
+import Vaccination.Organization.MedicineOrganization;
+import Vaccination.Organization.Organization;
+import Vaccination.Organization.VaccineOrganization;
 
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.ClinicalTrialWorkRequest;
-import Business.WorkQueue.MedicineWorkRequest;
-import Business.WorkQueue.VaccineWorkRequest;
-import Business.WorkQueue.WorkRequest;
+import Vaccination.UserAccount.UserAccount;
+import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
+import Vaccination.WorkQueue.MedicineWorkRequest;
+import Vaccination.WorkQueue.VaccineWorkRequest;
+import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;

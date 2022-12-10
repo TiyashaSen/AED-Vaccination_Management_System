@@ -5,14 +5,14 @@
  */
 package userinterface.VaccineRole;
 
-import Business.SampleInventory.SampleCompound;
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.VaccineOrganization;
-import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.SampleWorkRequest;
+import Vaccination.SampleInventory.SampleCompound;
+import Vaccination.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
+import Vaccination.Organization.VaccineOrganization;
+import Vaccination.Organization.Organization;
+import Vaccination.UserAccount.UserAccount;
+import Vaccination.WorkQueue.SampleWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;

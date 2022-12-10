@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Organization;
+package Vaccine.Organization;
 
 import Vaccination.Employee.EmployeeDirectory;
-import Vaccination.Roles.Role;
+import Vaccination.Role.Role;
 import Vaccination.UserAccount.UserAccountDirectory;
 import Vaccination.WorkQueue.WorkQueue;
 import java.util.ArrayList;

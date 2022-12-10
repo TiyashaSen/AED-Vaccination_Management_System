@@ -5,11 +5,11 @@
  */
 package userinterface.VaccineRole;
 
-import Business.SampleInventory.SampleCompound;
-import Business.Enterprise.Enterprise;
-import Business.MedicalInventory.MedicalInventoryList;
-import Business.Organization.VaccineOrganization;
-import Business.UserAccount.UserAccount;
+import Vaccination.SampleInventory.SampleCompound;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.MedicalInventory.MedicalInventoryList;
+import Vaccination.Organization.VaccineOrganization;
+import Vaccination.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;

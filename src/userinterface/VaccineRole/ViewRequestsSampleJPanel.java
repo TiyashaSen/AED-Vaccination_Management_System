@@ -5,12 +5,12 @@
  */
 package userinterface.VaccineRole;
 
-import Business.Enterprise.Enterprise;
-import Business.Organization.VaccineOrganization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.VaccineWorkRequest;
-import Business.WorkQueue.SampleWorkRequest;
-import Business.WorkQueue.WorkRequest;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Organization.VaccineOrganization;
+import Vaccination.UserAccount.UserAccount;
+import Vaccination.WorkQueue.VaccineWorkRequest;
+import Vaccination.WorkQueue.SampleWorkRequest;
+import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JPanel;

@@ -4,9 +4,9 @@
  */
 package userinterface.SystemAdminWorkArea;
 
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
+import Vaccination.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;

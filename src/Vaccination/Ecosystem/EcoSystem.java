@@ -10,7 +10,7 @@ import Vaccination.Vaccine.VaccineDirectory;
 import Vaccination.Medicine.MedicinesDirectory;
 import BusineVaccinationss.Variant.VariantHistory;
 import Vaccination.Network.Network;
-import Organization.Organization;
+import Vaccine.Organization.Organization;
 import Vaccination.Role.Role;
 import Vaccination.Role.SystemAdminRole;
 import Vaccination.Vaccine.Vaccine;

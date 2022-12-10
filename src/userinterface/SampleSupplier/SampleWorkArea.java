@@ -6,13 +6,13 @@
 package userinterface.SampleSupplier;
 
 import userinterface.SampleSupplier.*;
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.SampleOrganization;
-import Business.UserAccount.UserAccount;
-import Business.WorkQueue.SampleWorkRequest;
-import Business.WorkQueue.WorkRequest;
+import Vaccination.Configuration.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
+import Vaccination.Organization.Sample;
+import Vaccination.UserAccount.UserAccount;
+import Vaccination.WorkQueue.SampleWorkRequest;
+import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -21,7 +21,7 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author bhuva
+ * @author tiyashasen
  */
 public class SampleWorkArea extends javax.swing.JPanel {
 

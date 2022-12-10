@@ -5,7 +5,7 @@
 package Vaccination.UserAccount;
 
 import Vaccination.Employee.Employee;
-import Vaccination.Roles.Role;
+import Vaccination.Role.Role;
 import Business.WorkQueue.WorkQueue;
 
 /**

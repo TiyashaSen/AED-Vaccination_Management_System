@@ -6,7 +6,7 @@
 package userinterface.SampleSupplier;
 
 import userinterface.VaccineRole.VaccineWorkArea;
-import Business.WorkQueue.SampleWorkRequest;
+import Vaccination.WorkQueue.SampleWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.Calendar;
@@ -17,7 +17,7 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author deepa
+ * @author tiyashasen
  */
 public class SampleProcessRequestJpanel extends javax.swing.JPanel {
 
@@ -65,7 +65,7 @@ public class SampleProcessRequestJpanel extends javax.swing.JPanel {
 
         datedeliveryBtn.setForeground(new java.awt.Color(255, 255, 255));
         datedeliveryBtn.setText("SELECT DATE OF DELIVERY : ");
-        add(datedeliveryBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, -1, -1));
+        add(datedeliveryBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, -1, -1));
 
         dateTxt.setEditable(false);
         dateTxt.setBackground(new java.awt.Color(102, 102, 255));

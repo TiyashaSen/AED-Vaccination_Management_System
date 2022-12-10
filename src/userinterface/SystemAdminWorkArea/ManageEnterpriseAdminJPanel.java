@@ -4,12 +4,12 @@
  */
 package userinterface.SystemAdminWorkArea;
 
-import Business.EcoSystem;
-import Business.Employee.Employee;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Role.AdminRole;
-import Business.UserAccount.UserAccount;
+import Vaccination.EcoSystem;
+import Vaccination.Worker.Worker;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
+import Vaccination.Role.AdminstrationRole;
+import Vaccination.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;

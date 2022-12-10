@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Vaccination.Roles;
+package Vaccination.Role;
 
 import Vaccination.Ecosystem.EcoSystem;
 import Business.Enterprise.Enterprise;
