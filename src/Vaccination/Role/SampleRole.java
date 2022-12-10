@@ -17,7 +17,7 @@ import userinterface.SampleSupplier.SampleWorkArea;
 
 /**
  *
- * @author abhaydeshpande
+ * @author prakruthisomashekar
  */
 public class SampleRole extends Role {
 

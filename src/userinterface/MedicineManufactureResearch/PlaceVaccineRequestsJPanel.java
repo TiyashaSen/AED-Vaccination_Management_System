@@ -22,7 +22,7 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author bhuva
+ * @author tiyashasen
  */
 public class PlaceVaccineRequestsJPanel extends javax.swing.JPanel {
 

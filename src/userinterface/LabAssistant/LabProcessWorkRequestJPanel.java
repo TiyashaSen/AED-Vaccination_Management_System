@@ -22,7 +22,7 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author bhuva
+ * @author tiyashasen
  */
 public class LabProcessWorkRequestJPanel extends javax.swing.JPanel {
 
@@ -71,7 +71,7 @@ public class LabProcessWorkRequestJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         emailReport = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 0, 255));
+        setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         submitBtn.setBackground(new java.awt.Color(0, 0, 255));

@@ -12,11 +12,11 @@ import Vaccination.Organization.Medicine;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.MedicineManufactureResearch.MedicineManufactureWorkArea;
+//import userinterface.MedicineManufactureResearch.MedicineManufactureWorkArea;
 
 /**
  *
- * @author abhaydeshpande
+ * @author tiyashasen
  */
 public class MedicineRole extends Role {
 

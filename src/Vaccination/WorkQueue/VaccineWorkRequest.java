@@ -9,7 +9,7 @@ import Vaccination.Doctor.Patient;
 
 /**
  *
- * @author abhaydeshpande
+ * @author prakruthisomashekar
  */
 public class VaccineWorkRequest extends WorkRequest {
 

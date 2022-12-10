@@ -10,7 +10,7 @@ import Vaccination.Variant.Variant;
 
 /**
  *
- * @author abhaydeshpande
+ * @author tiyashasen
  */
 public class Medicine {
 

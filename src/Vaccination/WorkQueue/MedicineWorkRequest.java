@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  *
- * @author abhaydeshpande
+ * @author prakruthisomashekar
  */
 public class MedicineWorkRequest extends WorkRequest {
 

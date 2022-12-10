@@ -7,14 +7,14 @@ package userinterface.VaccineRole;
 
 import Vaccination.Vaccine.VaccineDirectory;
 import Vaccination.Medicine.MedicinesDirectory;
-import Vaccination.EcoSystem;
+import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.VariantDirect;
 import Vaccination.Network.Network;
-import Vaccination.Organization.ClinicOrganization;
-import Vaccination.Organization.MedicineOrganization;
+import Vaccination.Organization.Clinic;
+import Vaccination.Organization.Medicine;
 import Vaccination.Organization.Organization;
-import Vaccination.Organization.VaccineOrganization;
+import Vaccination.Organization.Vaccine;
 
 import Vaccination.UserAccount.UserAccount;
 import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
@@ -53,7 +53,7 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
-        this.vaccineOrganization = (VaccineOrganization) vaccineOrganization;
+        this.vaccineOrganization = (Vaccine) vaccineOrganization;
         this.enterprise = enterprise;
         this.network = network;
         this.business = business;
@@ -166,7 +166,7 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
             DefaultTableModel model = (DefaultTableModel) workRequestJTable.getModel();
             model.setRowCount(0);
 
-            for (WorkRequest request : vaccineOrganization.getWQ().getWorkRequestList()) {
+            for (WorkRequest request : vaccineOrganization.getWq().getWorkRequestList()) {
 
                 if (request instanceof VaccineWorkRequest) {
 

@@ -20,7 +20,7 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author bhuva
+ * @author tiyashasen
  */
 public class LabAssistantMainWorkAreaJPanel extends javax.swing.JPanel {
 

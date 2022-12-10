@@ -7,7 +7,7 @@ package Vaccination.WorkQueue;
 
 /**
  *
- * @author abhaydeshpande
+ * @author prakruthisomashekar
  */
 public class SampleWorkRequest extends WorkRequest {
 

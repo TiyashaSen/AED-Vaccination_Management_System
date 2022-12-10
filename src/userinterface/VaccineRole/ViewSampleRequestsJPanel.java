@@ -6,10 +6,10 @@
 package userinterface.VaccineRole;
 
 import Vaccination.SampleInventory.SampleCompound;
-import Vaccination.EcoSystem;
+import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
-import Vaccination.Organization.VaccineOrganization;
+import Vaccination.Organization.Vaccine;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAccount;
 import Vaccination.WorkQueue.SampleWorkRequest;
@@ -29,7 +29,7 @@ public class ViewSampleRequestsJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private EcoSystem business;
     private UserAccount userAccount;
-    private VaccineOrganization drugOrganization;
+    private Vaccine drugOrganization;
     private Enterprise enterprise;
     private Network network;
     private static Logger log = Logger.getLogger(ViewSampleRequestsJPanel.class);
@@ -42,7 +42,7 @@ public class ViewSampleRequestsJPanel extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
-        this.drugOrganization = (VaccineOrganization) drugOrganization;
+        this.drugOrganization = (Vaccine) drugOrganization;
         this.enterprise = enterprise;
         this.network = network;
         this.business = business;
@@ -343,14 +343,14 @@ public class ViewSampleRequestsJPanel extends javax.swing.JPanel {
                     userAccount.getWorkQueue().getWorkRequestList().add(request);
                     for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
                         System.out.println("***** Organization Name:" + enterprise.getName());
-                        for (Organization organization : enterprise.getOrganizationDirectory().getOrgList()) {
+                        for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
                             System.out.println("***** Organization Name:" + organization.getName());
                             if (organization.getName().equals("Sample Organization")) {
                                 System.out.println("True");
 
                                 System.out.println("***** organization Name" + organization.getName());
 
-                                organization.getWQ().getWorkRequestList().add(request);
+                                organization.getWq().getWorkRequestList().add(request);
                                 log.debug("vaccine request has been sent to chemical organization");
                             }
                         }

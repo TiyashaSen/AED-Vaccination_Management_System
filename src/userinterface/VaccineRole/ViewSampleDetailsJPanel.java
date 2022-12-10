@@ -8,7 +8,7 @@ package userinterface.VaccineRole;
 import Vaccination.SampleInventory.SampleCompound;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.MedicalInventory.MedicalInventoryList;
-import Vaccination.Organization.VaccineOrganization;
+import Vaccination.Organization.Vaccine;
 import Vaccination.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -29,7 +29,7 @@ public class ViewSampleDetailsJPanel extends javax.swing.JPanel {
     private UserAccount userAccount;
     private Enterprise enterprise;
     private MedicalInventoryList mil;
-    private VaccineOrganization drugOrg;
+    private Vaccine drugOrg;
     private SampleCompound mi;
     private static Logger log = Logger.getLogger(ViewSampleDetailsJPanel.class);
     private static final String CLASS_NAME = ViewSampleDetailsJPanel.class.getName();

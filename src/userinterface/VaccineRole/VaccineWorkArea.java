@@ -5,11 +5,11 @@
  */
 package userinterface.VaccineRole;
 
-import Vaccination.EcoSystem;
+import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
-import Vaccination.Organization.VaccineOrganization;
+import Vaccination.Organization.Vaccine;
 import Vaccination.UserAccount.UserAccount;
 import Vaccination.WorkQueue.VaccineWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
@@ -44,7 +44,7 @@ public class VaccineWorkArea extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
-        this.vaccineOrganization = (VaccineOrganization) vaccineOrganization;
+        this.vaccineOrganization = (Vaccine) vaccineOrganization;
         this.enterprise = enterprise;
         this.network = network;
         this.business = business;
@@ -56,7 +56,7 @@ public class VaccineWorkArea extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) workRequestTbl.getModel();
         model.setRowCount(0);
 
-        for (WorkRequest request : vaccineOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : vaccineOrganization.getWq().getWorkRequestList()) {
             Object[] row = new Object[6];
             row[0] = ((VaccineWorkRequest) request);
             row[1] = ((VaccineWorkRequest) request).getQty();
@@ -208,7 +208,7 @@ public class VaccineWorkArea extends javax.swing.JPanel {
         }
 
         int flag = 0;
-        for (WorkRequest request : vaccineOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : vaccineOrganization.getWq().getWorkRequestList()) {
 
             if (request.getStatus() == null) {
                 continue;
@@ -223,7 +223,7 @@ public class VaccineWorkArea extends javax.swing.JPanel {
 
         }
         int flag1 = 0;
-        for (WorkRequest request : vaccineOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : vaccineOrganization.getWq().getWorkRequestList()) {
 
             if (request.getStatus() == null) {
                 continue;
