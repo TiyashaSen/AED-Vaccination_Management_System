@@ -5,7 +5,7 @@
  */
 package Vaccination.Doctor;
 
-import Vaccine.VaccineDirectory;
+import Vaccination.Vaccine.VaccineDirectory;
 import Vaccination.Medicine.Medicine;
 import Vaccination.Variant.Variant;
 import Vaccination.Variant.VariantHistory;

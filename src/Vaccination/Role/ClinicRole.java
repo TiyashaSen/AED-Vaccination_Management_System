@@ -11,7 +11,7 @@ import Vaccination.Organization.Clinic;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAccount;
 import javax.swing.JPanel;
-import userinterface.ClinicalTrial.ClinicAssistantWorkAreaJPanel;
+import userinterface.Clinic.AssistantWorkAreaJPanel;
 
 /**
  *
@@ -21,7 +21,7 @@ public class ClinicRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
-        return new ClinicAssistantWorkAreaJPanel(userProcessContainer, account, (Clinic) organization, enterprise, business, network);
+        return new AssistantWorkAreaJPanel(userProcessContainer, account, (Clinic) organization, enterprise, business, network);
     }
 
 }

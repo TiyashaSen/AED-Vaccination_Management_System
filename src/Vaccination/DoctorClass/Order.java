@@ -18,7 +18,15 @@ public class Order {
     private String issue;
     private String medName;
     private String email;
+    private String gender;
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
     private Date orderDate;
     private String networkName;
 

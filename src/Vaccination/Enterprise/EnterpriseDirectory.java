@@ -5,7 +5,7 @@
  */
 package Vaccination.Enterprise;
 
-import Vaccination.Organization.OrganizationDirectory;
+import Vaccination.Organization.OrganizationList;
 import java.util.ArrayList;
 
 /**

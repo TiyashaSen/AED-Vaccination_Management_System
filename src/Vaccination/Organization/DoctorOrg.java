@@ -13,11 +13,11 @@ import java.util.ArrayList;
  *
  * @author abhaydeshpande
  */
-public class Doctor extends Organization {
+public class DoctorOrg extends Organization {
 
     private ArrayList<Order> orderList;
 
-    public Doctor() {
+    public DoctorOrg() {
         super(Organization.Type.Doctor.getValue());
 
         orderList = new ArrayList<Order>();
