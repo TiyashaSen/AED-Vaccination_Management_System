@@ -6,7 +6,7 @@ package Vaccination.Employee;
 
 /**
  *
- * @author tiyasha
+ * @author tiyashasen
  */
 public class Employee {
 

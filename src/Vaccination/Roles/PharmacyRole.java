@@ -16,7 +16,7 @@ import userinterface.PharmacyRole.PharmacyWorkArea;
 
 /**
  *
- * @author tiyasha
+ * @author tiyashasen
  */
 public class PharmacyRole extends Role {
 
