@@ -6,14 +6,14 @@
 package Vaccination.Configuration;
 
 import Vaccination.Medicine.Medicine;
-import Vaccine.VaccineDirectory;
+import Vaccination.Vaccine.VaccineDirectory;
 import Vaccination.Medicine.MedicinesDirectory;
 import Vaccination.Variant.VariantHistory;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
 import Vaccination.Role.Role;
 import Vaccination.Role.SystemAdminRole;
-import Vaccine.Vaccine;
+import Vaccination.Vaccine.Vaccine;
 import Vaccination.Variant.Variant;
 import java.util.ArrayList;
 
