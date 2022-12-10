@@ -4,11 +4,11 @@
  */
 package userinterface.SystemAdminWorkArea;
 
-import Vaccination.EcoSystem;
+import Vaccination.Configuration.EcoSystem;
 import Vaccination.Worker.Worker;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
-import Vaccination.Role.AdminstrationRole;
+import Vaccination.Role.AdministrationRole;
 import Vaccination.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -46,9 +46,9 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             DefaultTableModel model = (DefaultTableModel) enterpriseJTable.getModel();
 
             model.setRowCount(0);
-            for (Network network : system.getNetworkList()) {
+            for (Network network : system.getNetworkArray()) {
                 for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-                    for (UserAccount userAccount : enterprise.getUAD().getUserAccountList()) {
+                    for (UserAccount userAccount : enterprise.getUserAccDirectory().getUserAccountList()) {
                         Object[] row = new Object[3];
                         row[0] = enterprise.getName();
                         row[1] = network.getName();
@@ -66,7 +66,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     private void populateNetworkComboBox() {
         networkJComboBox.removeAllItems();
 
-        for (Network network : system.getNetworkList()) {
+        for (Network network : system.getNetworkArray()) {
             networkJComboBox.addItem(network);
         }
     }
@@ -247,7 +247,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         String password = String.valueOf(passwordJPasswordField.getPassword());
         String name = nameJTextField.getText();
         ArrayList<String> userNameChck = new ArrayList<String>();
-        for (UserAccount u : enterprise.getUAD().getUserAccountList()) {
+        for (UserAccount u : enterprise.getUserAccDirectory().getUserAccountList()) {
             userNameChck.add(u.getUsername());
 
         }
@@ -257,9 +257,9 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         }
 
         log.debug("name of the USER is: \t" + username + "name of the enterprise is: \t" + name + "name of network is\t" + network + "\t" + CLASS_NAME);
-        Employee employee = enterprise.getED().createEmployee(name);
+        Worker worker = enterprise.getEmployeeDirectory().createEmployee(name);
 
-        UserAccount account = enterprise.getUAD().createUserAccount(username, password, employee, new AdminRole());
+        UserAccount account = enterprise.getUserAccDirectory().createUserAccount(username, password, worker, new AdministrationRole());
         populateTable();
         usernameJTextField.setText("");
         passwordJPasswordField.setText("");

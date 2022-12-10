@@ -4,7 +4,7 @@
  */
 package userinterface.SystemAdminWorkArea;
 
-import Vaccination.EcoSystem;
+import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import java.awt.CardLayout;
@@ -43,7 +43,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
             DefaultTableModel model = (DefaultTableModel) enterpriseJTable.getModel();
 
             model.setRowCount(0);
-            for (Network network : system.getNetworkList()) {
+            for (Network network : system.getNetworkArray()) {
                 for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
                     Object[] row = new Object[3];
                     row[0] = enterprise.getName();
@@ -62,7 +62,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         networkJComboBox.removeAllItems();
         enterpriseTypeJComboBox.removeAllItems();
 
-        for (Network network : system.getNetworkList()) {
+        for (Network network : system.getNetworkArray()) {
             networkJComboBox.addItem(network);
         }
 

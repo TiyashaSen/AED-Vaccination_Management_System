@@ -32,13 +32,13 @@ public class SampleWorkArea extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private EcoSystem business;
     private UserAccount userAccount;
-    private SampleOrganization sampleOrganization;
+    private Sample sampleOrganization;
     private Enterprise enterprise;
     private Network network;
     private static Logger log = Logger.getLogger(SampleWorkArea.class);
     private static final String CLASS_NAME = SampleWorkArea.class.getName();
 
-    public SampleWorkArea(JPanel userProcessContainer, UserAccount userAccount, SampleOrganization sampleOrganization, Enterprise enterprise, EcoSystem business, Network network) {
+    public SampleWorkArea(JPanel userProcessContainer, UserAccount userAccount, Sample sampleOrganization, Enterprise enterprise, EcoSystem business, Network network) {
 
         initComponents();
         this.userProcessContainer = userProcessContainer;
@@ -55,7 +55,7 @@ public class SampleWorkArea extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) workRequestTbl.getModel();
         model.setRowCount(0);
 
-        for (WorkRequest request : sampleOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : sampleOrganization.getWq().getWorkRequestList()) {
             if(request instanceof SampleWorkRequest){
             Object[] row = new Object[6];
             row[0] = ((SampleWorkRequest) request);
@@ -198,7 +198,7 @@ public class SampleWorkArea extends javax.swing.JPanel {
         }
 
         int flag = 0;
-        for (WorkRequest request : sampleOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : sampleOrganization.getWq().getWorkRequestList()) {
 
             if (request.getStatus() == null) {
                 continue;
@@ -213,7 +213,7 @@ public class SampleWorkArea extends javax.swing.JPanel {
 
         }
         int flag1 = 0;
-        for (WorkRequest request : sampleOrganization.getWQ().getWorkRequestList()) {
+        for (WorkRequest request : sampleOrganization.getWq().getWorkRequestList()) {
 
             if (request.getStatus() == null) {
                 continue;
