@@ -1,16 +1,15 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template, choose Tools | Templates and open the template in the editor.
  */
 package Vaccination.UserAccount;
 
-import Vaccination.Employee.Employee;
+import Vaccination.Worker.Worker;
 import Vaccination.Role.Role;
 import java.util.ArrayList;
 
 /**
  *
- * @author tiyashasen
+ * @author abhaydeshpande
  */
 public class UserAccountDirectory {
 
@@ -25,9 +24,10 @@ public class UserAccountDirectory {
     }
 
     public UserAccount authenticateUser(String username, String password) {
-    
+
         for (UserAccount ua : userAccountList) {
-            System.out.println("the user account details"+ ua.getUsername()+"---"+ua.getPassword()+userAccountList.size());
+            System.out.println("the user account details" + ua.getUsername() + "---"
+                    + ua.getPassword() + userAccountList.size());
             if (ua.getUsername().equals(username) && ua.getPassword().equals(password)) {
                 return ua;
             }
@@ -35,7 +35,8 @@ public class UserAccountDirectory {
         return null;
     }
 
-    public UserAccount createUserAccount(String username, String password, Employee employee, Role role) {
+    public UserAccount createUserAccount(String username, String password, Worker employee,
+            Role role) {
         UserAccount userAccount = new UserAccount();
         userAccount.setUsername(username);
         userAccount.setPassword(password);

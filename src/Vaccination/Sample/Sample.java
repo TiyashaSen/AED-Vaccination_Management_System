@@ -1,23 +1,25 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Vaccination.Sample;
 
+import Vaccination.Sample.*;
+
 /**
  *
- * @author tiyashasen
+ * @author abhaydeshpande
  */
-
-    public class Sample {
+public class Sample {
 
     private String sampleName;
-    private int sampleId;
-    private static int sampleCount = 1;
+    private int ID;
+    private static int count = 1;
 
     public Sample() {
-        sampleId = sampleCount;
-        sampleCount++;
+        ID = count;
+        count++;
     }
 
     public String getSampleName() {
@@ -28,36 +30,17 @@ package Vaccination.Sample;
         this.sampleName = sampleName;
     }
 
-    public int getSampleId() {
-        return sampleId;
+    public int getID() {
+        return ID;
     }
 
-    public void setSampleId(int sampleId) {
-        this.sampleId = sampleId;
+    public void setID(int ID) {
+        this.ID = ID;
     }
-
-    public static int getSampleCount() {
-        return sampleCount;
-    }
-
-    public static void setSampleCount(int sampleCount) {
-        Sample.sampleCount = sampleCount;
-    }
-
-    
-
-    public static int getCount() {
-        return sampleCount;
-    }
-
-    public static void setCount(int count) {
-        Sample.sampleCount = count;
-    }
-
-   
 
     @Override
     public String toString() {
-        return "Sample{" + "samplename=" + sampleName + ", id=" + sampleId + '}';
+        return "Sample{" + "sampleName=" + sampleName + ", id=" + ID + '}';
     }
+
 }

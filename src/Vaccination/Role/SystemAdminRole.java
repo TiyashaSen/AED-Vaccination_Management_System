@@ -4,17 +4,17 @@
  */
 package Vaccination.Role;
 
-import Vaccination.Ecosystem.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.Organization;
-import Business.UserAccount.UserAccount;
+import Vaccination.Configuration.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
+import Vaccination.Organization.Organization;
+import Vaccination.UserAccount.UserAccount;
 import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import javax.swing.JPanel;
 
 /**
  *
- * @author tiyashasen
+ * @author abhaydeshpande
  */
 public class SystemAdminRole extends Role {
 

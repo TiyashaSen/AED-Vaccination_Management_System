@@ -1,22 +1,21 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template, choose Tools | Templates and open the template in the editor.
  */
 package Vaccination.UserAccount;
 
-import Vaccination.Employee.Employee;
+import Vaccination.Worker.Worker;
 import Vaccination.Role.Role;
-import Business.WorkQueue.WorkQueue;
+import Vaccination.WorkQueue.WorkQueue;
 
 /**
  *
- * @author tiyashasen
+ * @author abhaydeshpande
  */
 public class UserAccount {
 
     private String username;
     private String password;
-    private Employee employee;
+    private Worker employee;
     private Role role;
     private WorkQueue workQueue;
 
@@ -44,7 +43,7 @@ public class UserAccount {
         return role;
     }
 
-    public void setEmployee(Employee employee) {
+    public void setEmployee(Worker employee) {
         this.employee = employee;
     }
 
@@ -52,7 +51,7 @@ public class UserAccount {
         this.role = role;
     }
 
-    public Employee getEmployee() {
+    public Worker getEmployee() {
         return employee;
     }
 

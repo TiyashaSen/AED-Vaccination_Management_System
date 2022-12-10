@@ -5,24 +5,24 @@
  */
 package Vaccination.Role;
 
-import Business.EcoSystem;
-import Business.Enterprise.Enterprise;
-import Business.Network.Network;
-import Business.Organization.Organization;
-import Business.Organization.PharmacyOrganization;
-import Business.UserAccount.UserAccount;
+import Vaccination.Configuration.EcoSystem;
+import Vaccination.Enterprise.Enterprise;
+import Vaccination.Network.Network;
+import Vaccination.Organization.Organization;
+import Vaccination.Organization.Pharmacy;
+import Vaccination.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import userinterface.PharmacyRole.PharmacyWorkArea;
 
 /**
  *
- * @author tiyashasen
+ * @author abhaydeshpande
  */
 public class PharmacyRole extends Role {
 
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
-        return new PharmacyWorkArea(userProcessContainer, account, (PharmacyOrganization) organization, enterprise, network);
+        return new PharmacyWorkArea(userProcessContainer, account, (Pharmacy) organization, enterprise, network);
 
     }
 }

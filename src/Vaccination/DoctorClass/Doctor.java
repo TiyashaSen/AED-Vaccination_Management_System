@@ -7,7 +7,7 @@ package Vaccination.DoctorClass;
 
 /**
  *
- * @author tiyashasen
+ * @author abhaydeshpande
  */
 public class Doctor {
 
