@@ -11,7 +11,7 @@ import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Vaccine;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.SampleWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -28,7 +28,7 @@ public class ViewSampleRequestsJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Vaccine drugOrganization;
     private Enterprise enterprise;
     private Network network;
@@ -38,7 +38,7 @@ public class ViewSampleRequestsJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ViewSampleRequestsJPanel
      */
-    public ViewSampleRequestsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Organization drugOrganization, Network network, EcoSystem business) {
+    public ViewSampleRequestsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Organization drugOrganization, Network network, EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

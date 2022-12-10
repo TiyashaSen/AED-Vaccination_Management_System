@@ -11,7 +11,7 @@ import Vaccination.WorkQueue.WorkQueue;
  *
  * @author abhaydeshpande
  */
-public class UserAccount {
+public class UserAcc {
 
     private String username;
     private String password;
@@ -19,7 +19,7 @@ public class UserAccount {
     private Role role;
     private WorkQueue workQueue;
 
-    public UserAccount() {
+    public UserAcc() {
         workQueue = new WorkQueue();
     }
 

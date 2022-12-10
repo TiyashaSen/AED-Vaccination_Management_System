@@ -5,8 +5,8 @@
  */
 package userinterface.VaccineRole;
 
-import Vaccination.Vaccine.VaccineDirectory;
-import Vaccination.Medicine.MedicinesDirectory;
+import Vaccination.Vaccine.VaccineList;
+import Vaccination.Medicine.MedicinesList;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.VariantDirect;
@@ -16,7 +16,7 @@ import Vaccination.Organization.Medicine;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Vaccine;
 
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 import Vaccination.WorkQueue.VaccineWorkRequest;
@@ -36,11 +36,11 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Organization vaccineOrganization;
-    private MedicinesDirectory dl;
+    private MedicinesList dl;
     private VariantDirect variantDirectory;
-    private VaccineDirectory vaccineDirectory;
+    private VaccineList vaccineDirectory;
     private Enterprise enterprise;
     private Network network;
     private static Logger log = Logger.getLogger(ClinicalTrialResultsJpanel.class);
@@ -49,7 +49,7 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
     /**
      * Creates new form LabResultsJpanel
      */
-    public ClinicalTrialResultsJpanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Organization vaccineOrganization, Network network, EcoSystem business) {
+    public ClinicalTrialResultsJpanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Organization vaccineOrganization, Network network, EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

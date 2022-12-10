@@ -5,7 +5,6 @@
  */
 package Vaccination.Organization;
 
-import Vaccination.Role.VaccineRole;
 
 import Vaccination.Role.Role;
 import Vaccination.SampleInventory.SampleCompound;
@@ -28,7 +27,7 @@ public class Vaccine extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new VaccineRole());
+        roles.add(new Vaccination.Role.VaccineRole());
         return roles;
     }
 

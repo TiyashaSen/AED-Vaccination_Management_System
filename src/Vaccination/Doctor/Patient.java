@@ -5,7 +5,7 @@
  */
 package Vaccination.Doctor;
 
-import Vaccination.Vaccine.VaccineDirectory;
+import Vaccination.Vaccine.VaccineList;
 import Vaccination.Medicine.Medicine;
 import Vaccination.Variant.Variant;
 import Vaccination.Variant.VariantHistory;
@@ -27,13 +27,13 @@ public class Patient {
     private String sex;
     private String med;
     private VariantHistory newVariantHistory;
-    private VaccineDirectory newVaccineArray;
+    private VaccineList newVaccineArray;
 
     public Patient() {
 
         variantHistory = new VariantHistory();
         newVariantHistory = new VariantHistory();
-        newVaccineArray = new VaccineDirectory();
+        newVaccineArray = new VaccineList();
     }
 
     public String getMed() {

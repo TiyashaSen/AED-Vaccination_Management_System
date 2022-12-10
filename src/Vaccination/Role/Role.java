@@ -8,7 +8,7 @@ import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import javax.swing.JPanel;
 
 /**
@@ -39,7 +39,7 @@ public abstract class Role {
     }
 
     public abstract JPanel createWorkArea(JPanel userProcessContainer,
-            UserAccount account,
+            UserAcc account,
             Organization organization,
             Enterprise enterprise,
             EcoSystem business, Network network);

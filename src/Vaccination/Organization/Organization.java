@@ -3,9 +3,9 @@
  */
 package Vaccination.Organization;
 
-import Vaccination.Worker.WorkerDirectory;
+import Vaccination.Worker.WorkersList;
 import Vaccination.Role.Role;
-import Vaccination.UserAccount.UserAccountDirectory;
+import Vaccination.UserAccount.UserAccList;
 import Vaccination.WorkQueue.WorkQueue;
 import java.util.ArrayList;
 
@@ -17,8 +17,8 @@ public abstract class Organization {
 
     private String name;
     private WorkQueue wq;
-    private WorkerDirectory employeeDirectory;
-    private UserAccountDirectory userAccDirectory;
+    private WorkersList employeeDirectory;
+    private UserAccList userAccDirectory;
     private int organizationId;
     private static int counter = 0;
 
@@ -42,15 +42,15 @@ public abstract class Organization {
     public Organization(String name) {
         this.name = name;
         wq = new WorkQueue();
-        employeeDirectory = new WorkerDirectory();
-        userAccDirectory = new UserAccountDirectory();
+        employeeDirectory = new WorkersList();
+        userAccDirectory = new UserAccList();
         organizationId = counter;
         ++counter;
     }
 
     public abstract ArrayList<Role> getSupportedRole();
 
-    public UserAccountDirectory getUserAccDirectory() {
+    public UserAccList getUserAccDirectory() {
         return userAccDirectory;
     }
 
@@ -58,7 +58,7 @@ public abstract class Organization {
         return organizationId;
     }
 
-    public WorkerDirectory getEmployeeDirectory() {
+    public WorkersList getEmployeeDirectory() {
         return employeeDirectory;
     }
 

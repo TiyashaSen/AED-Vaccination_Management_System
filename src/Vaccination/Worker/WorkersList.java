@@ -10,11 +10,11 @@ import java.util.ArrayList;
  *
  * @author prakruthisomashekar
  */
-public class WorkerDirectory {
+public class WorkersList {
 
     private ArrayList<Worker> workerArray;
 
-    public WorkerDirectory() {
+    public WorkersList() {
         workerArray = new ArrayList();
     }
 

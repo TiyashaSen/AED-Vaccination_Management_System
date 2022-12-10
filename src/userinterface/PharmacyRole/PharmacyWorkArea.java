@@ -11,7 +11,7 @@ import Vaccination.MedicalInventory.MedicalInventoryList;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Pharmacy;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 import Vaccination.WorkQueue.PharmacyWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
@@ -31,7 +31,7 @@ public class PharmacyWorkArea extends javax.swing.JPanel {
      * Creates new form PharmacyWorkArea
      */
     JPanel userProcessContainer;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Enterprise enterprise;
     private MedicalInventoryList medInvList;
     private Organization org;
@@ -40,7 +40,7 @@ public class PharmacyWorkArea extends javax.swing.JPanel {
     private static Logger log = Logger.getLogger(PharmacyWorkArea.class);
     private static final String CLASS_NAME = PharmacyWorkArea.class.getName();
 
-    public PharmacyWorkArea(JPanel userProcessContainer, UserAccount userAccount, Pharmacy organization, Enterprise enterprise, Network network) {
+    public PharmacyWorkArea(JPanel userProcessContainer, UserAcc userAccount, Pharmacy organization, Enterprise enterprise, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

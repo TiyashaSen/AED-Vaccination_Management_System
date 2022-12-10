@@ -6,8 +6,8 @@
 package Vaccination.Configuration;
 
 import Vaccination.Medicine.Medicine;
-import Vaccination.Vaccine.VaccineDirectory;
-import Vaccination.Medicine.MedicinesDirectory;
+import Vaccination.Vaccine.VaccineList;
+import Vaccination.Medicine.MedicinesList;
 import Vaccination.Variant.VariantHistory;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
@@ -25,8 +25,8 @@ public class EcoSystem extends Organization {
 
     private static EcoSystem business;
     private ArrayList<Network> networkArray;
-    private VaccineDirectory vaccineArray;
-    private MedicinesDirectory medArray;
+    private VaccineList vaccineArray;
+    private MedicinesList medArray;
     private VariantHistory variantArray;
     private Medicine medicine;
     private Vaccine vaccine;
@@ -77,24 +77,24 @@ public class EcoSystem extends Organization {
         return true;
     }
 
-    public MedicinesDirectory getMedArray() {
+    public MedicinesList getMedArray() {
         if (medArray == null) {
-            MedicinesDirectory mL = new MedicinesDirectory();
+            MedicinesList mL = new MedicinesList();
             return mL;
         }
 
         return medArray;
     }
 
-    public void setMediList(MedicinesDirectory medArray) {
+    public void setMediList(MedicinesList medArray) {
         this.medArray = medArray;
     }
 
-    public VaccineDirectory getVaccineArray() {
+    public VaccineList getVaccineArray() {
         return vaccineArray;
     }
 
-    public void setVaccineListvaccineArray(VaccineDirectory vaccineArray) {
+    public void setVaccineListvaccineArray(VaccineList vaccineArray) {
         this.vaccineArray = vaccineArray;
     }
 

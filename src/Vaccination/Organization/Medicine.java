@@ -6,7 +6,6 @@
 package Vaccination.Organization;
 
 import Vaccination.VaccineInventory.VaccineMixture;
-import Vaccination.Role.MedicineRole;
 import Vaccination.Role.Role;
 import java.util.ArrayList;
 
@@ -27,7 +26,7 @@ public class Medicine extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new MedicineRole());
+        roles.add(new Vaccination.Role.MedicineRole());
         return roles;
     }
 

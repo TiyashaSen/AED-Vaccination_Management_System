@@ -1,6 +1,6 @@
 package Vaccination.DB4OUtil;
 
-import Vaccination.Configuration.AdminSystemConfigure;
+import Vaccination.Configuration.AdminSystemConfiguration;
 import Vaccination.Configuration.EcoSystem;
 import com.db4o.Db4oEmbedded;
 import com.db4o.ObjectContainer;
@@ -77,7 +77,7 @@ public class DB4OUtil {
         ObjectSet<EcoSystem> systems = Connection.query(EcoSystem.class); // Change to the object you want to save
         EcoSystem system;
         if (systems.size() == 0) {
-            system = AdminSystemConfigure.configure();  // If there's no System in the record, create a new one
+            system = AdminSystemConfiguration.configure();  // If there's no System in the record, create a new one
         } else {
             system = systems.get(systems.size() - 1);
         }

@@ -12,9 +12,9 @@ import java.util.ArrayList;
  *
  * @author abhaydeshpande
  */
-public class MedicineEnterprise extends Enterprise {
+public class Medicine extends Enterprise {
 
-    public MedicineEnterprise(String name) {
+    public Medicine(String name) {
         super(name, Enterprise.EnterpriseType.Medicine);
     }
 

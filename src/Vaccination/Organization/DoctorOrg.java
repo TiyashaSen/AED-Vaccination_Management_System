@@ -5,7 +5,7 @@
 package Vaccination.Organization;
 
 import Vaccination.Doctor.Order;
-import Vaccination.Role.DoctorRole;
+import Vaccination.Role.Doctor;
 import Vaccination.Role.Role;
 import java.util.ArrayList;
 
@@ -34,7 +34,7 @@ public class DoctorOrg extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new DoctorRole());
+        roles.add(new Doctor());
         return roles;
     }
 

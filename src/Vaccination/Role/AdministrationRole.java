@@ -8,7 +8,7 @@ import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import javax.swing.JPanel;
 import userinterface.AdministrativeRole.AdminWorkAreaJpanel;
 
@@ -19,7 +19,7 @@ import userinterface.AdministrativeRole.AdminWorkAreaJpanel;
 public class AdministrationRole extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
         return new AdminWorkAreaJpanel(userProcessContainer, enterprise);
     }
 

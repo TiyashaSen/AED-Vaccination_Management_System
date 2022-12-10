@@ -10,7 +10,7 @@ import Vaccination.Variant.Variant;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Laboratory;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 import Vaccination.WorkQueue.LabTestWorkRequest;
 import java.awt.CardLayout;
@@ -29,7 +29,7 @@ public class LabProcessWorkRequestJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private LabTestWorkRequest request;
     private Laboratory labOrganization;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Network network;
     String filePath = "./genes data.txt";
     private static Logger log = Logger.getLogger(LabProcessWorkRequestJPanel.class);
@@ -38,7 +38,7 @@ public class LabProcessWorkRequestJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ProcessWorkRequestJPanel
      */
-    public LabProcessWorkRequestJPanel(JPanel userProcessContainer, LabTestWorkRequest request, Organization organization, UserAccount userAccount, Network network) {
+    public LabProcessWorkRequestJPanel(JPanel userProcessContainer, LabTestWorkRequest request, Organization organization, UserAcc userAccount, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.request = request;

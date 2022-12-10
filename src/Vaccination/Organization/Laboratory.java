@@ -4,7 +4,7 @@
  */
 package Vaccination.Organization;
 
-import Vaccination.Role.LabRole;
+import Vaccination.Role.Lab;
 import Vaccination.Role.Role;
 import java.util.ArrayList;
 
@@ -21,7 +21,7 @@ public class Laboratory extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new LabRole());
+        roles.add(new Lab());
         return roles;
     }
 }

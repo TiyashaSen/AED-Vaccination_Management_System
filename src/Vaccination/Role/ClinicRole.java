@@ -9,7 +9,7 @@ import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Clinic;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import javax.swing.JPanel;
 import userinterface.Clinic.AssistantWorkAreaJPanel;
 
@@ -20,7 +20,7 @@ import userinterface.Clinic.AssistantWorkAreaJPanel;
 public class ClinicRole extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
         return new AssistantWorkAreaJPanel(userProcessContainer, account, (Clinic) organization, enterprise, business, network);
     }
 

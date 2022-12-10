@@ -11,11 +11,11 @@ import java.util.ArrayList;
  *
  * @author abhaydeshpande
  */
-public class MedicinesDirectory {
+public class MedicinesList {
 
     private ArrayList<Medicine> medList;
 
-    public MedicinesDirectory() {
+    public MedicinesList() {
         this.medList = new ArrayList<Medicine>();
     }
 

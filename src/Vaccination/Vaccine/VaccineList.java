@@ -10,12 +10,12 @@ import java.util.ArrayList;
  *
  * @author tiyashasen
  */
-public class VaccineDirectory {
+public class VaccineList {
      private ArrayList<Vaccine> vaccinationList;
     private ArrayList<Vaccine> vaccinationDirectory;
     private Vaccine newvaccine;
 
-    public VaccineDirectory() {
+    public VaccineList() {
         this.vaccinationList = new ArrayList<Vaccine>();
     }
 

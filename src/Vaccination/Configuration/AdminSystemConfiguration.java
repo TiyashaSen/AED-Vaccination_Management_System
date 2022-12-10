@@ -2,14 +2,14 @@ package Vaccination.Configuration;
 
 import Vaccination.Worker.Worker;
 import Vaccination.Role.SystemAdminRole;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 
 /**
  *
  * @author prakruthisomashekar
  */
 
-public class AdminSystemConfigure {
+public class AdminSystemConfiguration {
 
     public static EcoSystem configure() {
 
@@ -17,7 +17,7 @@ public class AdminSystemConfigure {
 
         Worker employee = system.getEmployeeDirectory().createEmployee("RRH");
 
-        UserAccount ua = system.getUserAccDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        UserAcc ua = system.getUserAccDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
 
         return system;
     }

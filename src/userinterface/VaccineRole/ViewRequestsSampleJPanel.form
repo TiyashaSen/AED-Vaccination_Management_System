@@ -157,9 +157,6 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/Users/tiyashasen/Desktop/images/statusofrequest_1_64.jpeg"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="jLabel3"/>
       </Properties>
       <Constraints>

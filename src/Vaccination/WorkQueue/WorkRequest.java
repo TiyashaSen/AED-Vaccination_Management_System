@@ -4,7 +4,7 @@
  */
 package Vaccination.WorkQueue;
 
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import java.util.Date;
 
 /**
@@ -14,8 +14,8 @@ import java.util.Date;
 public abstract class WorkRequest {
 
     private String message;
-    private UserAccount provider;
-    private UserAccount receiver;
+    private UserAcc provider;
+    private UserAcc receiver;
     private String status;
     private Date reqDate;
     private Date resolveDate;
@@ -32,19 +32,19 @@ public abstract class WorkRequest {
         this.message = message;
     }
 
-    public UserAccount getEndUser() {
+    public UserAcc getEndUser() {
         return provider;
     }
 
-    public void setEndUser(UserAccount sender) {
+    public void setEndUser(UserAcc sender) {
         this.provider = sender;
     }
 
-    public UserAccount getReceiver() {
+    public UserAcc getReceiver() {
         return receiver;
     }
 
-    public void setReceiver(UserAccount receiver) {
+    public void setReceiver(UserAcc receiver) {
         this.receiver = receiver;
     }
 

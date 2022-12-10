@@ -7,7 +7,7 @@ package userinterface.VaccineRole;
 
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Organization.Vaccine;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.VaccineWorkRequest;
 import Vaccination.WorkQueue.SampleWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
@@ -28,12 +28,12 @@ public class ViewRequestsSampleJPanel extends javax.swing.JPanel {
      * Creates new form ViewRequestsJPanel
      */
     private JPanel userProcessContainer;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Enterprise enterprise;
     private Vaccine drugOrganization;
      private static Logger log = Logger.getLogger(ViewRequestsSampleJPanel.class);
     private static final String CLASS_NAME = ViewRequestsSampleJPanel.class.getName();
-    public ViewRequestsSampleJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Vaccine vaccineOrganization) {
+    public ViewRequestsSampleJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Vaccine vaccineOrganization) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

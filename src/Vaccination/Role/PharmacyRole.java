@@ -10,7 +10,7 @@ import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Pharmacy;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import javax.swing.JPanel;
 import userinterface.PharmacyRole.PharmacyWorkArea;
 
@@ -21,7 +21,7 @@ import userinterface.PharmacyRole.PharmacyWorkArea;
 public class PharmacyRole extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
         return new PharmacyWorkArea(userProcessContainer, account, (Pharmacy) organization, enterprise, network);
 
     }

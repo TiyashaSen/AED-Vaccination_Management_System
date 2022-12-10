@@ -5,7 +5,7 @@ import Vaccination.DB4OUtil.DB4OUtil;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
@@ -144,7 +144,7 @@ public class MainJFrame extends javax.swing.JFrame {
         String password = String.valueOf(passwordCharArray);
 
         //Step1: Check in the system admin user account directory if you have the user
-        UserAccount userAccount = system.getUserAccDirectory().authenticateUser(userName, password);
+        UserAcc userAccount = system.getUserAccDirectory().authenticateUser(userName, password);
 
         Enterprise inEnterprise = null;
         Organization inOrganization = null;

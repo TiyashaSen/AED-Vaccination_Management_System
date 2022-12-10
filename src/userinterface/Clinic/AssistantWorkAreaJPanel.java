@@ -9,7 +9,7 @@ import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Clinic;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -26,7 +26,7 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Clinic clinicOrganization;
     private Network network;
     private Enterprise enterprise;
@@ -36,7 +36,7 @@ public class AssistantWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form LabAssistantWorkAreaJPanel
      */
-    public AssistantWorkAreaJPanel(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+    public AssistantWorkAreaJPanel(JPanel userProcessContainer, UserAcc userAccount, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

@@ -13,7 +13,7 @@ import Vaccination.Organization.Clinic;
 import Vaccination.Organization.DoctorOrg;
 import Vaccination.Organization.Laboratory;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
 import Vaccination.WorkQueue.LabTestWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
@@ -37,7 +37,7 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
      * Creates new form DoctorRequestJpanel
      */
     private JPanel userProcessContainer;
-    private UserAccount account;
+    private UserAcc account;
     private DoctorOrg docOrganization;
     private Enterprise enterprise;
 
@@ -47,7 +47,7 @@ public class DoctorRequestJpanel extends javax.swing.JPanel {
     private static Logger log = Logger.getLogger(DoctorRequestJpanel.class);
     private static final String CLASS_NAME = DoctorRequestJpanel.class.getName();
 
-    public DoctorRequestJpanel(JPanel userProcessContainer, UserAccount account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
+    public DoctorRequestJpanel(JPanel userProcessContainer, UserAcc account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
         initComponents();
         initComponents();
         this.userProcessContainer = userProcessContainer;

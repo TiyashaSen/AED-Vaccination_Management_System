@@ -6,7 +6,7 @@
 package Vaccination.Configuration;
 
 import Vaccination.Doctor.Order;
-import Vaccination.Organization.AdministrationOrganization;
+import Vaccination.Organization.Administration;
 import java.util.Random;
 
 /**
@@ -71,9 +71,9 @@ public class DataGenerator {
 
     }
 
-    public static AdministrationOrganization InitOrgName() {
+    public static Administration InitOrgName() {
 
-        AdministrationOrganization admin = new AdministrationOrganization();
+        Administration admin = new Administration();
 
         admin.setOrgName(generationOrganisationName());
         return admin;

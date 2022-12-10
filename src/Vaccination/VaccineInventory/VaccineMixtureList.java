@@ -11,11 +11,11 @@ import java.util.ArrayList;
  *
  * @author abhaydeshpande
  */
-public class VaccineMixtureDirectory {
+public class VaccineMixtureList {
 
     private ArrayList<VaccineMixture> vaccineList;
 
-    public VaccineMixtureDirectory() {
+    public VaccineMixtureList() {
         vaccineList = new ArrayList<VaccineMixture>();
     }
 

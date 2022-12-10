@@ -10,7 +10,7 @@ import Vaccination.MedicalInventory.MedicalInventory;
 import Vaccination.MedicalInventory.MedicalInventoryList;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Pharmacy;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;
@@ -19,7 +19,7 @@ import org.apache.log4j.Logger;
 
 /**
  *
- * @author deepa
+ * @author abhaydeshpande
  */
 public class ViewDetailsJPanel extends javax.swing.JPanel {
 
@@ -27,7 +27,7 @@ public class ViewDetailsJPanel extends javax.swing.JPanel {
      * Creates new form ViewDetailsJPanel
      */
     JPanel userProcessContainer;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Enterprise enterprise;
     private MedicalInventoryList medInvList;
     private Organization org;
@@ -36,7 +36,7 @@ public class ViewDetailsJPanel extends javax.swing.JPanel {
     private static Logger log = Logger.getLogger(ViewDetailsJPanel.class);
     private static final String CLASS_NAME = ViewDetailsJPanel.class.getName();
 
-    public ViewDetailsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, MedicalInventory mi) {
+    public ViewDetailsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, MedicalInventory mi) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

@@ -10,7 +10,7 @@ import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.DoctorOrg;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.DoctorWorkRequest;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -25,7 +25,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private DoctorOrg organization;
     private Enterprise enterprise;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Doctor doctor;
     private OrderArray list;
     private DoctorWorkRequest docreq;
@@ -37,7 +37,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form DoctorWorkAreaJPanel
      */
-    public DoctorMainAreaJPanel(JPanel userProcessContainer, UserAccount account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
+    public DoctorMainAreaJPanel(JPanel userProcessContainer, UserAcc account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;

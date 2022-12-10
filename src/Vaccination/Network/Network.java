@@ -5,7 +5,7 @@
  */
 package Vaccination.Network;
 
-import Vaccination.Enterprise.EnterpriseDirectory;
+import Vaccination.Enterprise.EnterpriseList;
 
 /**
  *
@@ -14,10 +14,10 @@ import Vaccination.Enterprise.EnterpriseDirectory;
 public class Network {
 
     private String name;
-    private EnterpriseDirectory enterpriseDirectory;
+    private EnterpriseList enterpriseDirectory;
 
     public Network() {
-        enterpriseDirectory = new EnterpriseDirectory();
+        enterpriseDirectory = new EnterpriseList();
     }
 
     public String getName() {
@@ -28,7 +28,7 @@ public class Network {
         this.name = name;
     }
 
-    public EnterpriseDirectory getEnterpriseDirectory() {
+    public EnterpriseList getEnterpriseDirectory() {
         return enterpriseDirectory;
     }
 

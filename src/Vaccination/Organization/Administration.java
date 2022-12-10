@@ -12,11 +12,11 @@ import java.util.ArrayList;
  *
  * @author abhaydeshpande
  */
-public class AdministrationOrganization extends Organization {
+public class Administration extends Organization {
 
     private String orgName;
 
-    public AdministrationOrganization() {
+    public Administration() {
         super(Organization.Type.Admin.getValue());
     }
 

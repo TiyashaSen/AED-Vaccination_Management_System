@@ -6,7 +6,6 @@
 package Vaccination.Organization;
 
 import Vaccination.Role.Role;
-import Vaccination.Role.SampleRole;
 import java.util.ArrayList;
 
 /**
@@ -23,7 +22,7 @@ public class Sample extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new SampleRole());
+        roles.add(new Vaccination.Role.SampleRole());
         return roles;
     }
 

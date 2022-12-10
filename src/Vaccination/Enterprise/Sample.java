@@ -12,10 +12,10 @@ import java.util.ArrayList;
  *
  * @author abhaydeshpande
  */
-public class VaccineEnterprise extends Enterprise {
+public class Sample extends Enterprise {
 
-    public VaccineEnterprise(String name) {
-        super(name, EnterpriseType.Vaccine);
+    public Sample(String name) {
+        super(name, EnterpriseType.Sample);
     }
 
     @Override

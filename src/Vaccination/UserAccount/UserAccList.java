@@ -11,21 +11,21 @@ import java.util.ArrayList;
  *
  * @author abhaydeshpande
  */
-public class UserAccountDirectory {
+public class UserAccList {
 
-    private ArrayList<UserAccount> userAccountList;
+    private ArrayList<UserAcc> userAccountList;
 
-    public UserAccountDirectory() {
+    public UserAccList() {
         userAccountList = new ArrayList();
     }
 
-    public ArrayList<UserAccount> getUserAccountList() {
+    public ArrayList<UserAcc> getUserAccountList() {
         return userAccountList;
     }
 
-    public UserAccount authenticateUser(String username, String password) {
+    public UserAcc authenticateUser(String username, String password) {
 
-        for (UserAccount ua : userAccountList) {
+        for (UserAcc ua : userAccountList) {
             System.out.println("the user account details" + ua.getUsername() + "---"
                     + ua.getPassword() + userAccountList.size());
             if (ua.getUsername().equals(username) && ua.getPassword().equals(password)) {
@@ -35,9 +35,9 @@ public class UserAccountDirectory {
         return null;
     }
 
-    public UserAccount createUserAccount(String username, String password, Worker employee,
+    public UserAcc createUserAccount(String username, String password, Worker employee,
             Role role) {
-        UserAccount userAccount = new UserAccount();
+        UserAcc userAccount = new UserAcc();
         userAccount.setUsername(username);
         userAccount.setPassword(password);
         userAccount.setEmployee(employee);
@@ -47,7 +47,7 @@ public class UserAccountDirectory {
     }
 
     public boolean UniqueUsernameCheck(String username) {
-        for (UserAccount ua : userAccountList) {
+        for (UserAcc ua : userAccountList) {
             if (ua.getUsername().equals(username)) {
                 return false;
             }

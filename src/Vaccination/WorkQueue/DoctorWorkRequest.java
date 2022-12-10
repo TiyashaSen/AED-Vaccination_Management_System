@@ -5,7 +5,7 @@
  */
 package Vaccination.WorkQueue;
 
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import java.util.Date;
 
 /**
@@ -19,8 +19,8 @@ public class DoctorWorkRequest extends WorkRequest {
     private String test;
     private int quantity;
     private String sex;
-    private UserAccount startUser;
-    private UserAccount endUser;
+    private UserAcc startUser;
+    private UserAcc endUser;
     private String medName;
     private Date reqDate;
     private String status;
@@ -49,19 +49,19 @@ public class DoctorWorkRequest extends WorkRequest {
         this.test = test;
     }
 
-    public UserAccount getStartUser() {
+    public UserAcc getStartUser() {
         return startUser;
     }
 
-    public void setStartUser(UserAccount startUser) {
+    public void setStartUser(UserAcc startUser) {
         this.startUser = startUser;
     }
 
-    public UserAccount getEndUser() {
+    public UserAcc getEndUser() {
         return endUser;
     }
 
-    public void setEndUser(UserAccount endUser) {
+    public void setEndUser(UserAcc endUser) {
         this.endUser = endUser;
     }
 

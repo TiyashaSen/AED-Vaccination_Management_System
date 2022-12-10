@@ -11,7 +11,7 @@ import Vaccination.Enterprise.Enterprise;
 import Vaccination.Network.Network;
 import Vaccination.Organization.Medicine;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.VaccineWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -28,7 +28,7 @@ public class PlaceVaccineRequestsJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Medicine drugOrganization;
     private Enterprise enterprise;
     private Network network;
@@ -38,7 +38,7 @@ public class PlaceVaccineRequestsJPanel extends javax.swing.JPanel {
     /**
      * Creates new form ViewChemicalRequestsJPanel
      */
-    public PlaceVaccineRequestsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Medicine drugOrganization, Network network) {
+    public PlaceVaccineRequestsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Medicine drugOrganization, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

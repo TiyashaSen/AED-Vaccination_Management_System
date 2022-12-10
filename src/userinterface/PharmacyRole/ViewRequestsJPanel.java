@@ -8,7 +8,7 @@ package userinterface.PharmacyRole;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -28,13 +28,13 @@ public class ViewRequestsJPanel extends javax.swing.JPanel {
      */
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Organization organization;
     private Enterprise enterprise;
     private static Logger log = Logger.getLogger(ViewRequestsJPanel.class);
     private static final String CLASS_NAME = ViewRequestsJPanel.class.getName();
 
-    public ViewRequestsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Organization organization) {
+    public ViewRequestsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Organization organization) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
