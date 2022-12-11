@@ -6,10 +6,10 @@ package userinterface.ClinicTestCenter;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Clinic;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -26,9 +26,9 @@ public class AssistantWorkJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Clinic clinicOrganization;
-    private Network network;
+    private Connection network;
     private Enterprise enterprise;
     private static Logger log = Logger.getLogger(AssistantWorkJPanel.class);
     private static final String CLASS_NAME = AssistantWorkJPanel.class.getName();
@@ -36,7 +36,7 @@ public class AssistantWorkJPanel extends javax.swing.JPanel {
     /**
      * Creates new form LabAssistantWorkAreaJPanel
      */
-    public AssistantWorkJPanel(JPanel userProcessContainer, UserAccount userAccount, Organization organization, Enterprise enterprise, EcoSystem business, Network network) {
+    public AssistantWorkJPanel(JPanel userProcessContainer, UserAcc userAccount, Organization organization, Enterprise enterprise, EcoSystem business, Connection network) {
         initComponents();
 
         this.userProcessContainer = userProcessContainer;

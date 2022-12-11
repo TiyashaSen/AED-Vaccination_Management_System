@@ -9,7 +9,7 @@ import Vaccination.VaccineInventory.VaccineMixture;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.MedicalInventory.MedicalInventoryList;
 import Vaccination.Organization.Medicine;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import java.awt.CardLayout;
 import java.awt.Component;
 import javax.swing.JOptionPane;
@@ -26,7 +26,7 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
      * Creates new form GetVaccineDetailsJPanel
      */
     JPanel userProcessContainer;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Enterprise enterprise;
     private MedicalInventoryList medInvList;
     private Medicine medOrg;
@@ -34,7 +34,7 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
     private static Logger log = Logger.getLogger(GetVaccineDetailsJPanel.class);
     private static final String CLASS_NAME = GetVaccineDetailsJPanel.class.getName();
 
-    public GetVaccineDetailsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, VaccineMixture mix) {
+    public GetVaccineDetailsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, VaccineMixture mix) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

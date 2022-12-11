@@ -8,10 +8,10 @@ package userinterface.MedicineManufactureResearch;
 import Vaccination.VaccineInventory.VaccineMixture;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Medicine;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.VaccineWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -28,17 +28,17 @@ public class AddVaccineRequestsJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Medicine drugOrganization;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(AddVaccineRequestsJPanel.class);
     private static final String CLASS_NAME = AddVaccineRequestsJPanel.class.getName();
 
     /**
      * Creates new form ViewChemicalRequestsJPanel
      */
-    public AddVaccineRequestsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Medicine drugOrganization, Network network) {
+    public AddVaccineRequestsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Medicine drugOrganization, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

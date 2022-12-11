@@ -5,18 +5,18 @@
  */
 package userinterface.Vaccine;
 
-import Vaccination.Vaccine.VaccineDirectory;
-import Vaccination.Medicine.MedicinesDirectory;
+import Vaccination.Vaccine.VaccineList;
+import Vaccination.Medicine.DrugList;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.VariantDirect;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Clinic;
 import Vaccination.Organization.Medicine;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Vaccine;
 
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 import Vaccination.WorkQueue.VaccineWorkRequest;
@@ -36,20 +36,20 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Organization vaccineOrganization;
-    private MedicinesDirectory dl;
+    private DrugList dl;
     private VariantDirect variantDirectory;
-    private VaccineDirectory vaccineDirectory;
+    private  VaccineList vaccineDirectory;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(ClinicalTrialResultsJpanel.class);
     private static final String CLASS_NAME = ClinicalTrialResultsJpanel.class.getName();
 
     /**
      * Creates new form LabResultsJpanel
      */
-    public ClinicalTrialResultsJpanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Organization vaccineOrganization, Network network, EcoSystem business) {
+    public ClinicalTrialResultsJpanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Organization vaccineOrganization, Connection network, EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

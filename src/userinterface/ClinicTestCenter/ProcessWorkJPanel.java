@@ -7,11 +7,11 @@ package userinterface.ClinicTestCenter;
 import Vaccination.Doctor.Patient;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Variant.Variant;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Clinic;
 
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 
@@ -31,15 +31,15 @@ public class ProcessWorkJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private ClinicalTrialWorkRequest request;
     private Clinic clinicOrganization;
-    private UserAccount userAccount;
-    private Network network;
+    private UserAcc userAccount;
+    private Connection network;
     private static Logger log = Logger.getLogger(ProcessWorkJPanel.class);
     private static final String CLASS_NAME = ProcessWorkJPanel.class.getName();
 
     /**
      * Creates new form ProcessWorkRequestJPanel
      */
-    public ProcessWorkJPanel(JPanel userProcessContainer, ClinicalTrialWorkRequest request, Organization organization, UserAccount userAccount, Network network) {
+    public ProcessWorkJPanel(JPanel userProcessContainer, ClinicalTrialWorkRequest request, Organization organization, UserAcc userAccount, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.request = request;

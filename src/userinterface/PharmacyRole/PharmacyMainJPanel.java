@@ -8,10 +8,10 @@ package userinterface.PharmacyRole;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.MedicalInventory.MedicalInventory;
 import Vaccination.MedicalInventory.MedicalInventoryList;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Pharmacy;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 import Vaccination.WorkQueue.PharmacyWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
@@ -31,16 +31,16 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
      * Creates new form PharmacyMainJPanel
      */
     JPanel userProcessContainer;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Enterprise enterprise;
     private MedicalInventoryList medInvList;
     private Organization org;
     private Pharmacy pharmorg;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(PharmacyMainJPanel.class);
     private static final String CLASS_NAME = PharmacyMainJPanel.class.getName();
 
-    public PharmacyMainJPanel(JPanel userProcessContainer, UserAccount userAccount, Pharmacy organization, Enterprise enterprise, Network network) {
+    public PharmacyMainJPanel(JPanel userProcessContainer, UserAcc userAccount, Pharmacy organization, Enterprise enterprise, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

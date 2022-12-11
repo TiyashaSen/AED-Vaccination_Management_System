@@ -7,9 +7,9 @@ package userinterface.SystemAdminWorkArea;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Worker.Worker;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Role.AdministrationRole;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;
@@ -46,9 +46,9 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
             DefaultTableModel model = (DefaultTableModel) enterpriseJTable.getModel();
 
             model.setRowCount(0);
-            for (Network network : system.getNetworkArray()) {
+            for (Connection network : system.getNetworkArray()) {
                 for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-                    for (UserAccount userAccount : enterprise.getUserAccDirectory().getUserAccountList()) {
+                    for (UserAcc userAccount : enterprise.getUserAccDirectory().getUserAccountList()) {
                         Object[] row = new Object[3];
                         row[0] = enterprise.getName();
                         row[1] = network.getName();
@@ -66,12 +66,12 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
     private void populateNetworkComboBox() {
         networkJComboBox.removeAllItems();
 
-        for (Network network : system.getNetworkArray()) {
+        for (Connection network : system.getNetworkArray()) {
             networkJComboBox.addItem(network);
         }
     }
 
-    private void populateEnterpriseComboBox(Network network) {
+    private void populateEnterpriseComboBox(Connection network) {
         enterpriseJComboBox.removeAllItems();
 
         for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
@@ -216,7 +216,7 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
 
     private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
 
-        Network network = (Network) networkJComboBox.getSelectedItem();
+        Connection network = (Connection) networkJComboBox.getSelectedItem();
         if (network != null) {
             populateEnterpriseComboBox(network);
         }
@@ -230,7 +230,7 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
             return;
         }
 
-        Network network = (Network) networkJComboBox.getSelectedItem();
+        Connection network = (Connection) networkJComboBox.getSelectedItem();
         log.debug("system admin creating enterprise admin\t" + CLASS_NAME);
         Enterprise enterprise = (Enterprise) enterpriseJComboBox.getSelectedItem();
 
@@ -238,7 +238,7 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
         String password = String.valueOf(passwordJPasswordField.getPassword());
         String name = nameJTextField.getText();
         ArrayList<String> userNameChck = new ArrayList<String>();
-        for (UserAccount u : enterprise.getUserAccDirectory().getUserAccountList()) {
+        for (UserAcc u : enterprise.getUserAccDirectory().getUserAccountList()) {
             userNameChck.add(u.getUsername());
 
         }
@@ -250,7 +250,7 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
         log.debug("name of the USER is: \t" + username + "name of the enterprise is: \t" + name + "name of network is\t" + network + "\t" + CLASS_NAME);
         Worker worker = enterprise.getEmployeeDirectory().createEmployee(name);
 
-        UserAccount account = enterprise.getUserAccDirectory().createUserAccount(username, password, worker, new AdministrationRole());
+        UserAcc account = enterprise.getUserAccDirectory().createUserAccount(username, password, worker, new AdministrationRole());
         populateTable();
         usernameJTextField.setText("");
         passwordJPasswordField.setText("");

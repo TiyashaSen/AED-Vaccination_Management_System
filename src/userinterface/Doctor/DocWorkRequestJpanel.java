@@ -8,12 +8,12 @@ package userinterface.Doctor;
 import Vaccination.Doctor.Patient;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Clinic;
 import Vaccination.Organization.DoctorOrg;
 import Vaccination.Organization.Laboratory;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.ClinicalTrialWorkRequest;
 import Vaccination.WorkQueue.LabTestWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
@@ -37,17 +37,17 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
      * Creates new form DocWorkRequestJpanel
      */
     private JPanel userProcessContainer;
-    private UserAccount account;
+    private UserAcc account;
     private DoctorOrg docOrganization;
     private Enterprise enterprise;
 
-    private Network network;
+    private Connection network;
     private EcoSystem system;
     private Enterprise.EnterpriseType enterpriseType;
     private static Logger log = Logger.getLogger(DocWorkRequestJpanel.class);
     private static final String CLASS_NAME = DocWorkRequestJpanel.class.getName();
 
-    public DocWorkRequestJpanel(JPanel userProcessContainer, UserAccount account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Network network) {
+    public DocWorkRequestJpanel(JPanel userProcessContainer, UserAcc account, DoctorOrg organization, Enterprise enterprise, EcoSystem system, Connection network) {
         initComponents();
         initComponents();
         this.userProcessContainer = userProcessContainer;

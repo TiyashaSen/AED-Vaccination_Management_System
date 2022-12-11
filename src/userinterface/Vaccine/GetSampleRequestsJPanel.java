@@ -8,10 +8,10 @@ package userinterface.Vaccine;
 import Vaccination.SampleInventory.SampleCompound;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Vaccine;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.SampleWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
@@ -28,17 +28,17 @@ public class GetSampleRequestsJPanel extends javax.swing.JPanel {
 
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Vaccine drugOrganization;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(GetSampleRequestsJPanel.class);
     private static final String CLASS_NAME = GetSampleRequestsJPanel.class.getName();
 
     /**
      * Creates new form ViewSampleRequestsJPanel
      */
-    public GetSampleRequestsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Organization drugOrganization, Network network, EcoSystem business) {
+    public GetSampleRequestsJPanel(JPanel userProcessContainer, UserAcc userAccount, Enterprise enterprise, Organization drugOrganization, Connection network, EcoSystem business) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;

@@ -6,7 +6,7 @@ package userinterface.SystemAdminWorkArea;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;
@@ -43,7 +43,7 @@ public class AddEnterpriseJPanel extends javax.swing.JPanel {
             DefaultTableModel model = (DefaultTableModel) enterpriseJTable.getModel();
 
             model.setRowCount(0);
-            for (Network network : system.getNetworkArray()) {
+            for (Connection network : system.getNetworkArray()) {
                 for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
                     Object[] row = new Object[3];
                     row[0] = enterprise.getName();
@@ -62,7 +62,7 @@ public class AddEnterpriseJPanel extends javax.swing.JPanel {
         networkJComboBox.removeAllItems();
         enterpriseTypeJComboBox.removeAllItems();
 
-        for (Network network : system.getNetworkArray()) {
+        for (Connection network : system.getNetworkArray()) {
             networkJComboBox.addItem(network);
         }
 
@@ -187,7 +187,7 @@ public class AddEnterpriseJPanel extends javax.swing.JPanel {
 
     private void submitJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitJButtonActionPerformed
 
-        Network network = (Network) networkJComboBox.getSelectedItem();
+        Connection network = (Connection) networkJComboBox.getSelectedItem();
         Enterprise.EnterpriseType type = (Enterprise.EnterpriseType) enterpriseTypeJComboBox.getSelectedItem();
 
         if (network == null || type == null) {

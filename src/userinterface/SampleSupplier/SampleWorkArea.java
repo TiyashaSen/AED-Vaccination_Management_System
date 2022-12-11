@@ -8,9 +8,9 @@ package userinterface.SampleSupplier;
 import userinterface.SampleSupplier.*;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Sample;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.SampleWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -31,14 +31,14 @@ public class SampleWorkArea extends javax.swing.JPanel {
      */
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Sample sampleOrganization;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(SampleWorkArea.class);
     private static final String CLASS_NAME = SampleWorkArea.class.getName();
 
-    public SampleWorkArea(JPanel userProcessContainer, UserAccount userAccount, Sample sampleOrganization, Enterprise enterprise, EcoSystem business, Network network) {
+    public SampleWorkArea(JPanel userProcessContainer, UserAcc userAccount, Sample sampleOrganization, Enterprise enterprise, EcoSystem business, Connection network) {
 
         initComponents();
         this.userProcessContainer = userProcessContainer;
@@ -90,9 +90,8 @@ public class SampleWorkArea extends javax.swing.JPanel {
         assignBtn = new javax.swing.JButton();
         processBtn = new javax.swing.JButton();
         refreshBtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 0, 255));
+        setBackground(new java.awt.Color(153, 255, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         drugSupplierLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
@@ -161,9 +160,6 @@ public class SampleWorkArea extends javax.swing.JPanel {
             }
         });
         add(refreshBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(299, 510, 91, 35));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/blood-sample.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 510, -1, 237));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignBtnActionPerformed
@@ -292,7 +288,6 @@ public class SampleWorkArea extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignBtn;
     private javax.swing.JLabel drugSupplierLbl;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton processBtn;
     private javax.swing.JButton refreshBtn;

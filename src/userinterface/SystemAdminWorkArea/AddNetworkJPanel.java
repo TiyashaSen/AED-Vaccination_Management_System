@@ -5,7 +5,7 @@
 package userinterface.SystemAdminWorkArea;
 
 import Vaccination.Configuration.EcoSystem;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import java.awt.CardLayout;
 import java.awt.Component;
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ public class AddNetworkJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) networkJTable.getModel();
 
         model.setRowCount(0);
-        for (Network network : system.getNetworkArray()) {
+        for (Connection network : system.getNetworkArray()) {
             Object[] row = new Object[1];
             row[0] = network.getName();
             model.addRow(row);
@@ -160,7 +160,7 @@ public class AddNetworkJPanel extends javax.swing.JPanel {
 
         }
         ArrayList<String> networkcheck = new ArrayList<>();
-        for (Network n : system.getNetworkArray()) {
+        for (Connection n : system.getNetworkArray()) {
             networkcheck.add(n.getName().toLowerCase());
 
         }
@@ -168,7 +168,7 @@ public class AddNetworkJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "network already existed");
             return;
         }
-        Network network = system.createAndAddNetwork();
+        Connection network = system.createAndAddNetwork();
         network.setName(name);
         log.debug("Name of network Created:\t" + name);
         populateNetworkTable();

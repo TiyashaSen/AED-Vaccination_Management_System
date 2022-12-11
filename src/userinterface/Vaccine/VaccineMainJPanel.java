@@ -7,10 +7,10 @@ package userinterface.Vaccine;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Vaccine;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.VaccineWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -32,14 +32,14 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
      */
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Organization vaccineOrganization;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(VaccineMainJPanel.class);
     private static final String CLASS_NAME = VaccineMainJPanel.class.getName();
 
-    public VaccineMainJPanel(JPanel userProcessContainer, UserAccount userAccount, Organization vaccineOrganization, Enterprise enterprise, EcoSystem business, Network network) {
+    public VaccineMainJPanel(JPanel userProcessContainer, UserAcc userAccount, Organization vaccineOrganization, Enterprise enterprise, EcoSystem business, Connection network) {
 
         initComponents();
         this.userProcessContainer = userProcessContainer;

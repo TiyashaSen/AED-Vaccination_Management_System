@@ -7,10 +7,10 @@ package userinterface.MedicineManufactureResearch;
 
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Network.Network;
+import Vaccination.Connection.Connection;
 import Vaccination.Organization.Medicine;
 import Vaccination.Organization.Organization;
-import Vaccination.UserAccount.UserAccount;
+import Vaccination.UserAccount.UserAcc;
 import Vaccination.WorkQueue.MedicineWorkRequest;
 import Vaccination.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -30,14 +30,14 @@ public class MedicineManufactureMainJpanel extends javax.swing.JPanel {
      */
     private JPanel userProcessContainer;
     private EcoSystem business;
-    private UserAccount userAccount;
+    private UserAcc userAccount;
     private Medicine medicineOrganization;
     private Enterprise enterprise;
-    private Network network;
+    private Connection network;
     private static Logger log = Logger.getLogger(MedicineManufactureMainJpanel.class);
     private static final String CLASS_NAME = MedicineManufactureMainJpanel.class.getName();
 
-    public MedicineManufactureMainJpanel(JPanel userProcessContainer, EcoSystem business, UserAccount userAccount, Organization medicineOrganization, Enterprise enterprise, Network network) {
+    public MedicineManufactureMainJpanel(JPanel userProcessContainer, EcoSystem business, UserAcc userAccount, Organization medicineOrganization, Enterprise enterprise, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
