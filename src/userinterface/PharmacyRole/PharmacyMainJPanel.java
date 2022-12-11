@@ -35,12 +35,20 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
     private MedicalInventoryList medInvList;
     private Organization org;
     private Pharmacy pharmorg;
+<<<<<<< HEAD
+    private Network network;
+    private static Logger log = Logger.getLogger(PharmacyMainJPanel.class);
+    private static final String CLASS_NAME = PharmacyMainJPanel.class.getName();
+
+    public PharmacyMainJPanel(JPanel userProcessContainer, UserAccount userAccount, Pharmacy organization, Enterprise enterprise, Network network) {
+=======
     private Connection network;
     private static Logger log = Logger.getLogger(PharmacyMainJPanel.class);
     private static final String CLASS_NAME = PharmacyMainJPanel.class.getName();
 
     public PharmacyMainJPanel(JPanel userProcessContainer, UserAcc userAccount,
             Pharmacy organization, Enterprise enterprise, Connection network) {
+>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
@@ -294,8 +302,12 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
     private void viewRequestsBtnActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_viewRequestsBtnActionPerformed
         // TODO add your handling code here:
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+<<<<<<< HEAD
+        userProcessContainer.add("ViewRequestJPanel", new GetRequestsJPanel(userProcessContainer, userAccount, enterprise, org));
+=======
         userProcessContainer.add("ViewRequestJPanel",
                 new GetRequestsJPanel(userProcessContainer, userAccount, enterprise, org));
+>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         layout.next(userProcessContainer);
     }// GEN-LAST:event_viewRequestsBtnActionPerformed
 
@@ -368,8 +380,12 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
         MedicalInventory mi = (MedicalInventory) reorderTable.getValueAt(row, 0);
 
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+<<<<<<< HEAD
+        userProcessContainer.add("UpdateEntryJPanel", new GetMedicineDetailsJPanel(userProcessContainer, userAccount, enterprise, mi));
+=======
         userProcessContainer.add("UpdateEntryJPanel",
                 new GetMedicineDetailJPanel(userProcessContainer, userAccount, enterprise, mi));
+>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         log.debug(userAccount + " " + "entering view details page");
         layout.next(userProcessContainer);
     }// GEN-LAST:event_viewDetailsBtnActionPerformed

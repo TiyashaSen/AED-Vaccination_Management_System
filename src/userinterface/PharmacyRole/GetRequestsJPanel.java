@@ -33,8 +33,12 @@ public class GetRequestsJPanel extends javax.swing.JPanel {
     private static Logger log = Logger.getLogger(GetRequestsJPanel.class);
     private static final String CLASS_NAME = GetRequestsJPanel.class.getName();
 
+<<<<<<< HEAD
+    public GetRequestsJPanel(JPanel userProcessContainer, UserAccount userAccount, Enterprise enterprise, Organization organization) {
+=======
     public GetRequestsJPanel(JPanel userProcessContainer, UserAcc userAccount,
             Enterprise enterprise, Organization organization) {
+>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = userAccount;
