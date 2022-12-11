@@ -84,16 +84,17 @@ public class ProcessWorkJPanel extends javax.swing.JPanel {
                 submitBtnActionPerformed(evt);
             }
         });
-        add(submitBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 224, -1, 35));
+        add(submitBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 300, 220, 35));
 
         resultLbl.setBackground(new java.awt.Color(0, 0, 0));
         resultLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        resultLbl.setForeground(new java.awt.Color(0, 0, 153));
         resultLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        resultLbl.setText("CLINICAL TRIAL RESULTS FOR SAMPLE DETECTION");
-        add(resultLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 80, 474, -1));
+        resultLbl.setText("RESULTS OF SAMPLE ");
+        add(resultLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 474, -1));
 
         patientTxtField.setEditable(false);
-        add(patientTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 128, 134, -1));
+        add(patientTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 130, 134, -1));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -105,12 +106,13 @@ public class ProcessWorkJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 224, 64, 35));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, 64, 35));
 
         patientNameLbl.setBackground(new java.awt.Color(0, 0, 0));
         patientNameLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        patientNameLbl.setForeground(new java.awt.Color(0, 0, 153));
         patientNameLbl.setText("PATIENT NAME:");
-        add(patientNameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(308, 131, -1, -1));
+        add(patientNameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 130, -1, 20));
 
         addSampleBtn.setBackground(new java.awt.Color(0, 0, 0));
         addSampleBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -122,22 +124,23 @@ public class ProcessWorkJPanel extends javax.swing.JPanel {
                 addSampleBtnActionPerformed(evt);
             }
         });
-        add(addSampleBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 188, 194, 30));
+        add(addSampleBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 120, 30));
 
         geneLbl.setBackground(new java.awt.Color(0, 0, 0));
         geneLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
-        geneLbl.setText("NEW SAMPLE DETECTED:");
-        add(geneLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 160, -1, -1));
+        geneLbl.setForeground(new java.awt.Color(0, 0, 153));
+        geneLbl.setText("SAMPLE NAME:");
+        add(geneLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, -1, -1));
 
         genetxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 genetxtFieldActionPerformed(evt);
             }
         });
-        add(genetxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 157, 134, -1));
+        add(genetxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, 134, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/chemical-reaction.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(292, 308, 233, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/sample_1_600x600.jpeg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 850, 730));
     }// </editor-fold>//GEN-END:initComponents
 
 
