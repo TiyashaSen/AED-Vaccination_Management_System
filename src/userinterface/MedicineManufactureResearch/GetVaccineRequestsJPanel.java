@@ -82,8 +82,6 @@ public class GetVaccineRequestsJPanel extends javax.swing.JPanel {
         drugRequestsTable = new javax.swing.JTable();
         backBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -109,7 +107,7 @@ public class GetVaccineRequestsJPanel extends javax.swing.JPanel {
         drugRequestsTable.setRowHeight(30);
         jScrollPane.setViewportView(drugRequestsTable);
 
-        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 142, 655, 213));
+        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 655, 213));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -121,18 +119,12 @@ public class GetVaccineRequestsJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 79, 30));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 79, 30));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("VIEW REQUESTS");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 108, 655, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/vaccination.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 0, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/healthcare.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 366, -1, 265));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 655, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
@@ -150,8 +142,6 @@ public class GetVaccineRequestsJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backBtn;
     private javax.swing.JTable drugRequestsTable;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane;
     // End of variables declaration//GEN-END:variables
 }

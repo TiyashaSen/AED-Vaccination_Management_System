@@ -92,21 +92,21 @@ public class MedicineManufactureMainJpanel extends javax.swing.JPanel {
         processBtn = new javax.swing.JButton();
         labRequestButton = new javax.swing.JButton();
         refreshBtn = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
+        setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MEDICINE MANUFACTURE AND RESEARCH CENTER");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 132, 675, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, 675, -1));
 
+        workRequestJTable.setBackground(new java.awt.Color(102, 102, 102));
         workRequestJTable.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N
+        workRequestJTable.setForeground(new java.awt.Color(255, 255, 255));
         workRequestJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -133,9 +133,10 @@ public class MedicineManufactureMainJpanel extends javax.swing.JPanel {
         workRequestJTable.setRowHeight(30);
         jScrollPane2.setViewportView(workRequestJTable);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 174, 675, 196));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, 675, 196));
 
-        assignBtn.setBackground(new java.awt.Color(0, 0, 255));
+        assignBtn.setBackground(new java.awt.Color(0, 0, 0));
+        assignBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         assignBtn.setForeground(new java.awt.Color(255, 255, 255));
         assignBtn.setText("ASSIGN");
         assignBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -144,9 +145,10 @@ public class MedicineManufactureMainJpanel extends javax.swing.JPanel {
                 assignBtnActionPerformed(evt);
             }
         });
-        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 388, 100, 37));
+        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 540, 100, 37));
 
-        reqChemButton.setBackground(new java.awt.Color(0, 0, 255));
+        reqChemButton.setBackground(new java.awt.Color(0, 0, 0));
+        reqChemButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         reqChemButton.setForeground(new java.awt.Color(255, 255, 255));
         reqChemButton.setText("REQUEST VACCINES");
         reqChemButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -155,9 +157,10 @@ public class MedicineManufactureMainJpanel extends javax.swing.JPanel {
                 reqChemButtonActionPerformed(evt);
             }
         });
-        add(reqChemButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(304, 443, 182, 33));
+        add(reqChemButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 590, 182, 33));
 
-        processBtn.setBackground(new java.awt.Color(0, 0, 255));
+        processBtn.setBackground(new java.awt.Color(0, 0, 0));
+        processBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         processBtn.setForeground(new java.awt.Color(255, 255, 255));
         processBtn.setText("PROCESS");
         processBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -166,20 +169,22 @@ public class MedicineManufactureMainJpanel extends javax.swing.JPanel {
                 processBtnActionPerformed(evt);
             }
         });
-        add(processBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 443, 100, 33));
+        add(processBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 590, 100, 33));
 
-        labRequestButton.setBackground(new java.awt.Color(0, 0, 255));
+        labRequestButton.setBackground(new java.awt.Color(0, 0, 0));
+        labRequestButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         labRequestButton.setForeground(new java.awt.Color(255, 255, 255));
-        labRequestButton.setText("VIEW LAB TEST AND CLINICAL TRIAL RESULTS");
+        labRequestButton.setText("VIEW LAB TEST AND ADVANCED LAB TEST RESULTS");
         labRequestButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         labRequestButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 labRequestButtonActionPerformed(evt);
             }
         });
-        add(labRequestButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 390, 306, 32));
+        add(labRequestButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 540, 360, 32));
 
-        refreshBtn.setBackground(new java.awt.Color(0, 0, 255));
+        refreshBtn.setBackground(new java.awt.Color(0, 0, 0));
+        refreshBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         refreshBtn.setForeground(new java.awt.Color(255, 255, 255));
         refreshBtn.setText("REFRESH");
         refreshBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -188,19 +193,10 @@ public class MedicineManufactureMainJpanel extends javax.swing.JPanel {
                 refreshBtnActionPerformed(evt);
             }
         });
-        add(refreshBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, 100, 33));
+        add(refreshBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 540, 100, 33));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/research-2.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(346, 513, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/chemistry.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 14, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/research.png"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(45, 518, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/pharmaceutical.png"))); // NOI18N
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 513, -1, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/med_350x350.jpeg"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 380, 290));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignBtnActionPerformed
@@ -338,10 +334,7 @@ public class MedicineManufactureMainJpanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignBtn;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton labRequestButton;
     private javax.swing.JButton processBtn;
