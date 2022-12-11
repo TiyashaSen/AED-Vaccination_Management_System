@@ -81,7 +81,7 @@ public class GetSampleDetailsJPanel extends javax.swing.JPanel {
         saveButton = new javax.swing.JButton();
         updateButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -163,8 +163,8 @@ public class GetSampleDetailsJPanel extends javax.swing.JPanel {
         jLabel1.setText("VACCINE DETAILS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 90, 260, 30));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/employee-3.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 520, 520));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/vaccinationreport.png"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 840, 670));
     }// </editor-fold>//GEN-END:initComponents
 
     private void availQuantityTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_availQuantityTextFieldActionPerformed
@@ -232,7 +232,7 @@ public class GetSampleDetailsJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField chemicalNameTextField;
     private javax.swing.JLabel drugLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton saveButton;
     private javax.swing.JLabel serialNumLabel;
     private javax.swing.JTextField serialNumTextField;
