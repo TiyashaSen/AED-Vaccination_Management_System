@@ -154,7 +154,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         add(report3Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, 400, 90));
 
         backBtn.setBackground(new java.awt.Color(153, 153, 255));
-        backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        backBtn.setFont(new java.awt.Font("Helvetica", 1, 13)); // NOI18N
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
         backBtn.setText("BACK");
         backBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
