@@ -11,6 +11,7 @@ import Vaccination.Doctor.OrderArray;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Connection.Connection;
+import Vaccination.Notify.SendEmail;
 import Vaccination.Organization.DoctorOrg;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Pharmacy;
@@ -32,6 +33,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.Date;
+import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.JFileChooser;
@@ -44,6 +46,7 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
     /**
      * Creates new form AddPrescriptionMedicineJPanel
      */
+    SendEmail s = new SendEmail();
     private OrderArray orderList;
     private DoctorOrg doctorOrganization;
     private Enterprise enterprise;
@@ -112,22 +115,22 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
 
         doctorPrescriptionLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         doctorPrescriptionLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        doctorPrescriptionLbl.setText("DOCTOR PRESCRIPTION");
-        add(doctorPrescriptionLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 683, -1));
+        doctorPrescriptionLbl.setText("BOSTON HEALTH CENTER");
+        add(doctorPrescriptionLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 683, -1));
 
         nameLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         nameLbl.setText("NAME:");
-        add(nameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 140, 132, -1));
+        add(nameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, -1, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 132, -1));
 
         ageLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         ageLbl.setText("AGE:");
-        add(ageLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, -1, -1));
-        add(ageTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 132, -1));
+        add(ageLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 120, -1, 20));
+        add(ageTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 132, -1));
 
         sexLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         sexLbl.setText("GENDER:");
-        add(sexLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, -1, -1));
+        add(sexLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, -1, -1));
 
         sexcomboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECT", "MALE", "FEMALE" }));
         sexcomboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -135,15 +138,15 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
                 sexcomboBoxActionPerformed(evt);
             }
         });
-        add(sexcomboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 132, -1));
+        add(sexcomboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 132, -1));
 
         diagnosisLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
-        diagnosisLbl.setText("COVID-19 SEVERITY LEVEL:");
-        add(diagnosisLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 300, -1, -1));
+        diagnosisLbl.setText("DISEASE SEVERITY LEVEL:");
+        add(diagnosisLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, -1, -1));
 
         medicationLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         medicationLbl.setText("MEDICINES:");
-        add(medicationLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, -1, -1));
+        add(medicationLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 220, -1, -1));
 
         diagnosisComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECT", "LOW", "MEDIUM", "HIGH", "SEVER", " " }));
         diagnosisComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -151,38 +154,38 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
                 diagnosisComboBoxActionPerformed(evt);
             }
         });
-        add(diagnosisComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, 132, 30));
+        add(diagnosisComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, 132, 30));
 
         timesADayLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         timesADayLbl.setText("NUMBER OF TIMES A DAY");
-        add(timesADayLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, -1, -1));
+        add(timesADayLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, -1, 20));
 
         forLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         forLbl.setText("FOR");
-        add(forLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, -1, 20));
+        add(forLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, -1, 20));
 
         savePrescriptionBtn.setBackground(new java.awt.Color(102, 102, 102));
         savePrescriptionBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         savePrescriptionBtn.setForeground(new java.awt.Color(255, 255, 255));
-        savePrescriptionBtn.setText("SAVE  PRESCRIPTION");
+        savePrescriptionBtn.setText("SEND PRESCRIPTION");
         savePrescriptionBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
         savePrescriptionBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 savePrescriptionBtnActionPerformed(evt);
             }
         });
-        add(savePrescriptionBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 170, 38));
+        add(savePrescriptionBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 170, 38));
 
         noofTimesTxt.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
-        add(noofTimesTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 350, 72, -1));
+        add(noofTimesTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 72, -1));
 
         noofDaysTxt.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
-        add(noofDaysTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 350, 72, 30));
-        add(patientEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 130, -1));
+        add(noofDaysTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 327, 72, -1));
+        add(patientEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 130, -1));
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel3.setText("E-MAIL:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, -1, -1));
 
         prescriptionJTable.setBackground(new java.awt.Color(102, 102, 102));
         prescriptionJTable.setForeground(new java.awt.Color(255, 255, 255));
@@ -209,7 +212,7 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
 
         dateLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         dateLbl.setText("DATE:");
-        add(dateLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 230, -1, 26));
+        add(dateLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, -1, 26));
 
         medicationCombobox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECT", "PARACETAMOL", "COMBIFLAM", "FLUDREX", "IVERMECTIN", "HYDROXYCHLOROQUINE" }));
         medicationCombobox.addActionListener(new java.awt.event.ActionListener() {
@@ -217,7 +220,7 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
                 medicationComboboxActionPerformed(evt);
             }
         });
-        add(medicationCombobox, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 320, 132, -1));
+        add(medicationCombobox, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 217, 132, -1));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -228,11 +231,11 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 640, 76, 28));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 76, 28));
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/prescription_2_1000x1000.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 730, 860));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 730, 940));
 
         sendPrescription.setBackground(new java.awt.Color(0, 0, 255));
         sendPrescription.setForeground(new java.awt.Color(255, 255, 255));
@@ -246,7 +249,7 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
         add(sendPrescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 640, 160, 30));
 
         jDateChooser2.setBackground(new java.awt.Color(0, 0, 0));
-        add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 130, -1));
+        add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 130, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void savePrescriptionBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_savePrescriptionBtnActionPerformed
@@ -322,50 +325,55 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
         }
         if (flag == true) {
 
-            doctorOrganization.addPrescription(p);
-
-            PharmacyWorkRequest request = new PharmacyWorkRequest();
-
-            request.setMedName(medicationCombobox.getSelectedItem().toString());
-            request.setQty(((Integer) noofTimesTxt.getValue()) * ((Integer) noofDaysTxt.getValue()));
-            request.setEndUser(userAccount);
-            request.setStatus("Sent");
-            System.out.println(request.getMedName());
-            JOptionPane.showMessageDialog(null, "Prescription added successfully");
-
-            System.out.println("****" + enterprise.getName());
-            Organization org = null;
-
-            for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
-                for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
-                    if (organization instanceof Pharmacy) {
-                        org = organization;
-                        System.out.println("****" + org);
-                        log.debug(org);
-                        log.debug("Current Enterprise\t" + enterprise);
-                        log.debug("Current Organization\t" + org);
-                        log.debug("Current Network\t" + network);
-                        break;
+            try {
+                doctorOrganization.addPrescription(p);
+                
+                PharmacyWorkRequest request = new PharmacyWorkRequest();
+                
+                request.setMedName(medicationCombobox.getSelectedItem().toString());
+                request.setQty(((Integer) noofTimesTxt.getValue()) * ((Integer) noofDaysTxt.getValue()));
+                request.setEndUser(userAccount);
+                request.setStatus("Sent");
+                System.out.println(request.getMedName());
+                JOptionPane.showMessageDialog(null, "Prescription added successfully");
+                
+                System.out.println("****" + enterprise.getName());
+                Organization org = null;
+                
+                for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
+                    for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
+                        if (organization instanceof Pharmacy) {
+                            org = organization;
+                            System.out.println("****" + org);
+                            log.debug(org);
+                            log.debug("Current Enterprise\t" + enterprise);
+                            log.debug("Current Organization\t" + org);
+                            log.debug("Current Network\t" + network);
+                            break;
+                        }
                     }
                 }
-            }
 
 //            if (org != null) {
-                System.out.println("adding request"+request);
-                org.getWq().getWorkRequestList().add(request);
-                userAccount.getWorkQueue().getWorkRequestList().add(request);
-                log.debug("request sent to Pharmacy");
+System.out.println("adding request"+request);
+org.getWq().getWorkRequestList().add(request);
+userAccount.getWorkQueue().getWorkRequestList().add(request);
+log.debug("request sent to Pharmacy");
 //            }
 
-            populateWorkRequestTable();
+populateWorkRequestTable();
+s.sendMail(nameTxtField.getText(), patientEmail.getText(), medicationCombobox.getSelectedItem().toString(), ageTxtField.getText());
 
-            nameTxtField.setText("");
-            ageTxtField.setText("");
-            noofTimesTxt.setValue(0);
-            noofDaysTxt.setValue(0);
-            sexcomboBox.setSelectedIndex(0);
-            medicationCombobox.setSelectedIndex(0);
-            patientEmail.setText("");
+nameTxtField.setText("");
+ageTxtField.setText("");
+noofTimesTxt.setValue(0);
+noofDaysTxt.setValue(0);
+sexcomboBox.setSelectedIndex(0);
+medicationCombobox.setSelectedIndex(0);
+patientEmail.setText("");
+            } catch (Exception ex) {
+                java.util.logging.Logger.getLogger(AddPrescriptionMedicineJPanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
 
 
