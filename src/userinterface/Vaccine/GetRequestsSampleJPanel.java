@@ -106,7 +106,7 @@ public class GetRequestsSampleJPanel extends javax.swing.JPanel {
         drugRequestsTable.setRowHeight(30);
         jScrollPane.setViewportView(drugRequestsTable);
 
-        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 700, 260));
+        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 700, 260));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -125,7 +125,7 @@ public class GetRequestsSampleJPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(0, 51, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("VIEW STATUS OF REQUEST");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 655, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, 655, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/statusofrequest_1_64.jpeg"))); // NOI18N
         jLabel3.setText("jLabel3");
