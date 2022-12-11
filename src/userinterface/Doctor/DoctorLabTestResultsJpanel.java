@@ -48,12 +48,9 @@ public class DoctorLabTestResultsJpanel extends javax.swing.JPanel {
         patientTxtField = new javax.swing.JTextField();
         patientLbl = new javax.swing.JLabel();
         backBtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         txtGene = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
         patientLbl1 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setPreferredSize(new java.awt.Dimension(2000, 1200));
@@ -62,14 +59,14 @@ public class DoctorLabTestResultsJpanel extends javax.swing.JPanel {
         LabTestLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         LabTestLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabTestLbl.setText("VARIANT DETECTED");
-        add(LabTestLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 334, -1));
+        add(LabTestLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, 334, -1));
 
         patientTxtField.setEditable(false);
-        add(patientTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 179, -1));
+        add(patientTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 210, 179, -1));
 
         patientLbl.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         patientLbl.setText("PATIENT NAME:");
-        add(patientLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 161, -1, -1));
+        add(patientLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 210, -1, -1));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -81,24 +78,15 @@ public class DoctorLabTestResultsJpanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 260, 59, 27));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 59, 27));
+        add(txtGene, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 250, 179, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/images.jpeg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 400, 310));
-        add(txtGene, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 179, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/sample_1_600x600.jpeg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-130, -30, 590, 740));
 
         patientLbl1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         patientLbl1.setText("VARIANT NAME:");
-        add(patientLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, -1, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/coronavirus.png"))); // NOI18N
-        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(421, 683, -1, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/coronavirus.png"))); // NOI18N
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 847, -1, -1));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/variant.jpeg"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 72, 525, -1));
+        add(patientLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 250, -1, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
@@ -116,9 +104,6 @@ public class DoctorLabTestResultsJpanel extends javax.swing.JPanel {
     private javax.swing.JLabel LabTestLbl;
     private javax.swing.JButton backBtn;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel patientLbl;
     private javax.swing.JLabel patientLbl1;
     private javax.swing.JTextField patientTxtField;
