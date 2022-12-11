@@ -274,38 +274,38 @@ public class AssistantWorkJPanel extends javax.swing.JPanel {
         }
         //to check whether the task is completed 
         ClinicalTrialWorkRequest request = (ClinicalTrialWorkRequest) workRequestJTable.getValueAt(selectedRow, 0);
-        if (workRequestJTable.getValueAt(selectedRow, 6) != null) {
-            if (((workRequestJTable.getValueAt(selectedRow, 6).equals("Completed")))) {
+//        if (workRequestJTable.getValueAt(selectedRow, 6) != null) {
+//            if (((workRequestJTable.getValueAt(selectedRow, 6).equals("Completed")))) {
+//
+//                JOptionPane.showMessageDialog(null, "Task is already completed");
+//                return;
+//            }
+//        }
+//        //to check whether task is assigned forr process
+//        if (workRequestJTable.getValueAt(selectedRow, 5) != null) {
+//            if (workRequestJTable.getValueAt(selectedRow, 6) == null || !userAccount.getUsername().equalsIgnoreCase(workRequestJTable.getValueAt(selectedRow, 5).toString())) {
+//                JOptionPane.showMessageDialog(null, "Task is not assigned to you for process");
+//                return;
+//            }
+//        }
+//        int flag = 0;
+//        if (workRequestJTable.getValueAt(selectedRow, 5) != null) {
+//            if (workRequestJTable.getValueAt(selectedRow, 6).equals("Processing")) {
+//
+//                flag = 1;
+//            }
+//        }
+//        if (flag != 1) {
+//            if (workRequestJTable.getValueAt(selectedRow, 6) != null) {
+//
+//                if ((!(workRequestJTable.getValueAt(selectedRow, 6).equals("Pending")))) {
+//                    JOptionPane.showMessageDialog(null, "Task is not assigned to you for process");
+//                    return;
+//                }
+//            }
+//        }
 
-                JOptionPane.showMessageDialog(null, "Task is already completed");
-                return;
-            }
-        }
-        //to check whether task is assigned forr process
-        if (workRequestJTable.getValueAt(selectedRow, 5) != null) {
-            if (workRequestJTable.getValueAt(selectedRow, 6) == null || !userAccount.getUsername().equalsIgnoreCase(workRequestJTable.getValueAt(selectedRow, 5).toString())) {
-                JOptionPane.showMessageDialog(null, "Task is not assigned to you for process");
-                return;
-            }
-        }
-        int flag = 0;
-        if (workRequestJTable.getValueAt(selectedRow, 5) != null) {
-            if (workRequestJTable.getValueAt(selectedRow, 6).equals("Processing")) {
-
-                flag = 1;
-            }
-        }
-        if (flag != 1) {
-            if (workRequestJTable.getValueAt(selectedRow, 6) != null) {
-
-                if ((!(workRequestJTable.getValueAt(selectedRow, 6).equals("Pending")))) {
-                    JOptionPane.showMessageDialog(null, "Task is not assigned to you for process");
-                    return;
-                }
-            }
-        }
-
-        request.setStatus("Processing");
+        request.setStatus("Completed");
 
         ProcessWorkJPanel processWorkRequestJPanel = new ProcessWorkJPanel(userProcessContainer, request, clinicOrganization, userAccount, network);
         userProcessContainer.add("processWorkRequestJPanel", processWorkRequestJPanel);
