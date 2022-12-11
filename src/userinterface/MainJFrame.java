@@ -60,6 +60,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         container = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
 
@@ -68,13 +69,12 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setBackground(new java.awt.Color(255, 255, 255));
         jSplitPane1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 0, 255)));
-        jSplitPane1.setDividerSize(10);
 
         jPanel1.setBackground(new java.awt.Color(233, 235, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         loginBtn.setBackground(new java.awt.Color(204, 204, 255));
-        loginBtn.setForeground(new java.awt.Color(255, 255, 255));
+        loginBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         loginBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/login.png"))); // NOI18N
         loginBtn.setText("LOGIN");
         loginBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -83,21 +83,26 @@ public class MainJFrame extends javax.swing.JFrame {
                 loginBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(loginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 702, 206, 39));
+        jPanel1.add(loginBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 590, 206, 39));
 
         userNameTxt.setBackground(new java.awt.Color(204, 204, 255));
-        userNameTxt.setForeground(new java.awt.Color(255, 255, 255));
+        userNameTxt.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         userNameTxt.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
-        jPanel1.add(userNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 390, 225, 55));
+        userNameTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                userNameTxtActionPerformed(evt);
+            }
+        });
+        jPanel1.add(userNameTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 390, 190, 40));
 
         passwordTxt.setBackground(new java.awt.Color(204, 204, 255));
-        passwordTxt.setForeground(new java.awt.Color(255, 255, 255));
+        passwordTxt.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         passwordTxt.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        jPanel1.add(passwordTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(121, 488, 225, 48));
+        jPanel1.add(passwordTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 470, 190, 40));
         jPanel1.add(loginJLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 741, -1, -1));
 
         logoutBtn.setBackground(new java.awt.Color(255, 204, 204));
-        logoutBtn.setForeground(new java.awt.Color(255, 255, 255));
+        logoutBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         logoutBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/logout.png"))); // NOI18N
         logoutBtn.setText("LOGOUT");
         logoutBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -107,21 +112,25 @@ public class MainJFrame extends javax.swing.JFrame {
                 logoutBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(logoutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 773, 206, 40));
+        jPanel1.add(logoutBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 670, 206, 40));
 
         jLabel4.setBackground(new java.awt.Color(255, 204, 204));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/username.jpeg"))); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 390, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, -1, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/padlock_2_55x55.png"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 488, -1, 48));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 470, -1, 48));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/images.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 92, -1, 148));
 
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 25)); // NOI18N
-        jLabel7.setText("Vaccination Management System");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 12, -1, 74));
+        jLabel7.setText("System");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, -1, 74));
+
+        jLabel9.setFont(new java.awt.Font("Helvetica Neue", 1, 25)); // NOI18N
+        jLabel9.setText("Vaccination Management");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 50));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
@@ -221,6 +230,10 @@ public class MainJFrame extends javax.swing.JFrame {
         dB4OUtil.saveSystem(system);
     }//GEN-LAST:event_logoutBtnActionPerformed
 
+    private void userNameTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_userNameTxtActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -263,6 +276,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton loginBtn;
