@@ -9,7 +9,7 @@ import Vaccination.Worker.Worker;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Organization.Organization;
 import Vaccination.Role.Role;
-import Vaccination.UserAccount.UserAcc;
+import Vaccination.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -191,7 +191,7 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
         Worker employee = (Worker) employeeComboBox.getSelectedItem();
         Role role = (Role) roleComboBox.getSelectedItem();
         ArrayList<String> usernamecheck = new ArrayList<>();
-        for (UserAcc e : organization.getUserAccDirectory().getUserAccountList()) {
+        for (UserAccount e : organization.getUserAccDirectory().getUserAccountList()) {
             usernamecheck.add(e.getUsername());
 
         }
@@ -240,7 +240,7 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
         model.setRowCount(0);
 
         for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
-            for (UserAcc ua : organization.getUserAccDirectory().getUserAccountList()) {
+            for (UserAccount ua : organization.getUserAccDirectory().getUserAccountList()) {
                 Object row[] = new Object[2];
                 row[0] = ua;
                 row[1] = ua.getRole();

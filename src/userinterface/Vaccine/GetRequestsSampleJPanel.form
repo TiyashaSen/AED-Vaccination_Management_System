@@ -16,11 +16,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-<<<<<<< HEAD
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,15,0,0,3,-25"/>
-=======
     <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,75,0,0,4,26"/>
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -28,24 +24,17 @@
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JScrollPane" name="jScrollPane">
-<<<<<<< HEAD
-=======
       <Properties>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
       </Properties>
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< HEAD
-          <AbsoluteConstraints x="50" y="142" width="655" height="213"/>
-=======
           <AbsoluteConstraints x="330" y="170" width="700" height="260"/>
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         </Constraint>
       </Constraints>
 
@@ -61,11 +50,7 @@
             </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="5" rowCount="0">
-<<<<<<< HEAD
-                <Column editable="false" title="VACCINE NAME" type="java.lang.Object"/>
-=======
                 <Column editable="false" title="SAMPLE NAME" type="java.lang.Object"/>
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
                 <Column editable="false" title="REQUIRED QUANTITY" type="java.lang.Object"/>
                 <Column editable="false" title="RECIEVER" type="java.lang.Object"/>
                 <Column editable="false" title="STATUS" type="java.lang.Object"/>
@@ -117,12 +102,6 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Helvetica Neue" size="13" style="1"/>
         </Property>
-<<<<<<< HEAD
-=======
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Helvetica Neue" size="13" style="1"/>
-        </Property>
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
@@ -140,65 +119,11 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< HEAD
-          <AbsoluteConstraints x="50" y="380" width="79" height="30"/>
-=======
-          <AbsoluteConstraints x="60" y="490" width="78" height="28"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="reqmedicineLbl">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Grande" size="18" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="0" red="33" type="rgb"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="RE-ORDER STATUS"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="60" y="220" width="726" height="-1"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-<<<<<<<< HEAD:src/userinterface/Vaccine/VaccineMainJPanel.form
-    <Component class="javax.swing.JButton" name="jButton1">
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="880" y="510" width="90" height="40"/>
-========
-    <Component class="javax.swing.JLabel" name="jLabel10">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Image/truck.png"/>
           <AbsoluteConstraints x="20" y="20" width="90" height="30"/>
->>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597:src/userinterface/Vaccine/GetRequestsSampleJPanel.form
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
-<<<<<<< HEAD
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-<<<<<<<< HEAD:src/userinterface/Vaccine/GetRequestsSampleJPanel.form
-          <Font name="Lucida Grande" size="24" style="1"/>
-========
-          <Font name="Lucida Grande" size="18" style="1"/>
->>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597:src/userinterface/MedicineManufactureResearch/GetVaccineRequestsJPanel.form
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="VIEW REQUESTS"/>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="50" y="108" width="655" height="-1"/>
-=======
-<<<<<<<< HEAD:src/userinterface/Vaccine/VaccineMainJPanel.form
-========
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="0" red="0" type="rgb"/>
@@ -209,105 +134,31 @@
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="VIEW STATUS OF REQUEST"/>
       </Properties>
->>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597:src/userinterface/Vaccine/GetRequestsSampleJPanel.form
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="360" y="120" width="655" height="-1"/>
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-<<<<<<< HEAD
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Image/vaccination.png"/>
-=======
-<<<<<<<< HEAD:src/userinterface/Vaccine/VaccineMainJPanel.form
-        <Property name="text" type="java.lang.String" value="jLabel2"/>
-========
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Image/search.png"/>
         </Property>
->>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597:src/userinterface/Vaccine/GetRequestsSampleJPanel.form
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="400" y="30" width="-1" height="150"/>
-          <AbsoluteConstraints x="1078" y="498" width="-1" height="124"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel11">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Image/truck.png"/>
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/userinterface/Vaccine/GetRequestsSampleJPanel.form
-          <AbsoluteConstraints x="400" y="30" width="-1" height="150"/>
-========
-          <AbsoluteConstraints x="336" y="0" width="-1" height="-1"/>
->>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597:src/userinterface/MedicineManufactureResearch/GetVaccineRequestsJPanel.form
-=======
-          <AbsoluteConstraints x="10" y="80" width="400" height="450"/>
-          <AbsoluteConstraints x="1211" y="498" width="-1" height="124"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel12">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Image/truck.png"/>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="1352" y="498" width="-1" height="124"/>
-        </Constraint>
-      </Constraints>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel13">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Image/truck.png"/>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="1500" y="498" width="-1" height="124"/>
-          <AbsoluteConstraints x="400" y="30" width="-1" height="150"/>
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/userinterface/Vaccine/GetRequestsSampleJPanel.form
-=======
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         <Property name="text" type="java.lang.String" value="jLabel3"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="10" y="80" width="400" height="450"/>
-<<<<<<< HEAD
-========
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Image/healthcare.png"/>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="269" y="366" width="-1" height="265"/>
->>>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597:src/userinterface/MedicineManufactureResearch/GetVaccineRequestsJPanel.form
-=======
->>>>>>> 7a02d3000f345dd2ac9bff2e10b2b70de3cbb597
         </Constraint>
       </Constraints>
     </Component>
