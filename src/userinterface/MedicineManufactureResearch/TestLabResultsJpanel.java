@@ -117,7 +117,8 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 159, 790, 185));
 
-        backBtn.setBackground(new java.awt.Color(0, 0, 255));
+        backBtn.setBackground(new java.awt.Color(0, 0, 0));
+        backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
         backBtn.setText("BACK");
         backBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -129,12 +130,12 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
         add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 362, 84, 20));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("LAB AND CLINICAL TRIAL RESULTS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 117, 790, -1));
 
-        assignBtn.setBackground(new java.awt.Color(0, 0, 255));
+        assignBtn.setBackground(new java.awt.Color(0, 0, 0));
+        assignBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         assignBtn.setForeground(new java.awt.Color(255, 255, 255));
         assignBtn.setText("ASSIGN");
         assignBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -144,16 +145,16 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
             }
         });
         add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(353, 426, 119, 24));
-        add(txtDrugName, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 362, 119, -1));
-        add(txtChemicalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(353, 388, 119, -1));
+        add(txtDrugName, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 119, -1));
+        add(txtChemicalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 390, 119, -1));
 
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel3.setText("MEDICINE ASSIGNED:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, -1, -1));
 
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel4.setText("VACCINE ASSIGNED:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 390, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 390, -1, -1));
 
         relationTbl.setBackground(new java.awt.Color(102, 102, 102));
         relationTbl.setForeground(new java.awt.Color(255, 255, 255));
