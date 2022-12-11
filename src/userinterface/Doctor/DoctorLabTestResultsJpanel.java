@@ -61,7 +61,7 @@ public class DoctorLabTestResultsJpanel extends javax.swing.JPanel {
 
         LabTestLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         LabTestLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabTestLbl.setText("COVID-19 VARIANT DETECTED");
+        LabTestLbl.setText("VARIANT DETECTED");
         add(LabTestLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 334, -1));
 
         patientTxtField.setEditable(false);
@@ -97,7 +97,7 @@ public class DoctorLabTestResultsJpanel extends javax.swing.JPanel {
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/coronavirus.png"))); // NOI18N
         add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 847, -1, -1));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/stay-at-home.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/variant.jpeg"))); // NOI18N
         add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(574, 72, 525, -1));
     }// </editor-fold>//GEN-END:initComponents
 

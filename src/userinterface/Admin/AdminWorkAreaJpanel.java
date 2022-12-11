@@ -60,56 +60,56 @@ public class AdminWorkAreaJpanel extends javax.swing.JPanel {
 
         jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("ADMINISTRATION");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 512, 40));
+        jLabel3.setText("MANAGE ORGANIZATION");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 40, 512, 40));
 
         valuelbl.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         valuelbl.setText("<value>");
-        add(valuelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
+        add(valuelbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, -1, -1));
 
         manageEmployeebtn.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
-        manageEmployeebtn.setText("Manage Employee");
+        manageEmployeebtn.setText("Add Employee");
         manageEmployeebtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         manageEmployeebtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageEmployeebtnActionPerformed(evt);
             }
         });
-        add(manageEmployeebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, 177, 44));
+        add(manageEmployeebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 390, 150, 44));
 
         enterpriseLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         enterpriseLabel1.setText("ENTERPRISE:");
-        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, -1, -1));
+        add(enterpriseLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, -1, -1));
 
         userbtn.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
-        userbtn.setText("Manage User");
+        userbtn.setText("Add User");
         userbtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         userbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 userbtnActionPerformed(evt);
             }
         });
-        add(userbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 380, 177, 45));
+        add(userbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 390, 140, 45));
 
         manageOrganizationbtn.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
-        manageOrganizationbtn.setText("Manage Organization");
+        manageOrganizationbtn.setText("Add Organization");
         manageOrganizationbtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         manageOrganizationbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageOrganizationbtnActionPerformed(evt);
             }
         });
-        add(manageOrganizationbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 177, 46));
+        add(manageOrganizationbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 177, 46));
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/organization.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, 100));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, -1, 100));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user.png"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 90, 90));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, 90, 90));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/employee_100x100.png"))); // NOI18N
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 280, 110, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 110, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void manageOrganizationbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageOrganizationbtnActionPerformed

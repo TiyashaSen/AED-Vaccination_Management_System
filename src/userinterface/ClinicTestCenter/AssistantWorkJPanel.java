@@ -128,9 +128,10 @@ public class AssistantWorkJPanel extends javax.swing.JPanel {
         workRequestJTable.setRowHeight(30);
         jScrollPane.setViewportView(workRequestJTable);
 
-        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 86, 704, 234));
+        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 86, 840, 234));
 
-        assignBtn.setBackground(new java.awt.Color(0, 0, 255));
+        assignBtn.setBackground(new java.awt.Color(0, 0, 0));
+        assignBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         assignBtn.setForeground(new java.awt.Color(255, 255, 255));
         assignBtn.setText("ASSIGN TO ME");
         assignBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -139,9 +140,10 @@ public class AssistantWorkJPanel extends javax.swing.JPanel {
                 assignBtnActionPerformed(evt);
             }
         });
-        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 340, 115, 28));
+        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 115, 28));
 
-        processBtn.setBackground(new java.awt.Color(0, 0, 255));
+        processBtn.setBackground(new java.awt.Color(0, 0, 0));
+        processBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         processBtn.setForeground(new java.awt.Color(255, 255, 255));
         processBtn.setText("PROCESS");
         processBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -150,9 +152,10 @@ public class AssistantWorkJPanel extends javax.swing.JPanel {
                 processBtnActionPerformed(evt);
             }
         });
-        add(processBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 340, 84, 28));
+        add(processBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, 84, 28));
 
-        refreshJButton.setBackground(new java.awt.Color(0, 0, 255));
+        refreshJButton.setBackground(new java.awt.Color(0, 0, 0));
+        refreshJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         refreshJButton.setForeground(new java.awt.Color(255, 255, 255));
         refreshJButton.setText("REFRESH");
         refreshJButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -161,13 +164,12 @@ public class AssistantWorkJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, 79, 28));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 340, 79, 28));
 
         LabLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        LabLbl.setForeground(new java.awt.Color(255, 255, 255));
         LabLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabLbl.setText("CLINICAL TESTING CENTER");
-        add(LabLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 51, 704, -1));
+        LabLbl.setText("TESTING CENTER");
+        add(LabLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 704, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignBtnActionPerformed
