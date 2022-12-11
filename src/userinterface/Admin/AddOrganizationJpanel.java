@@ -5,12 +5,12 @@
  */
 package userinterface.Admin;
 
-import Vaccination.Enterprise.VaccineEnterprise;
-import Vaccination.Enterprise.MedicineEnterprise;
+import Vaccination.Enterprise.Vaccine;
+import Vaccination.Enterprise.Medicine;
 import Vaccination.Enterprise.Enterprise;
-import Vaccination.Enterprise.HospitalEnterprise;
-import Vaccination.Enterprise.PharmacyEnterprise;
-import Vaccination.Enterprise.SampleEnterprise;
+import Vaccination.Enterprise.Hospital;
+import Vaccination.Enterprise.Pharmacy;
+import Vaccination.Enterprise.Sample;
 import Vaccination.Organization.Organization;
 import Vaccination.Organization.Organization.Type;
 import Vaccination.Organization.OrganizationList;
@@ -49,24 +49,24 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
         for (Organization.Type type : Organization.Type.values()) {
 
             if (!type.getValue().equals(Organization.Type.Admin.getValue())) {
-                if (enterprise instanceof HospitalEnterprise) {
+                if (enterprise instanceof Hospital) {
 
                     organizationComboBox.addItem(Organization.Type.Doctor);
                     organizationComboBox.addItem(Organization.Type.Laboratory);
                     organizationComboBox.addItem(Organization.Type.Clinic);
                     break;
-                } else if (enterprise instanceof PharmacyEnterprise) {
+                } else if (enterprise instanceof Pharmacy) {
 
                     organizationComboBox.addItem(Organization.Type.Pharmacy);
                     break;
 
-                } else if (enterprise instanceof MedicineEnterprise) {
+                } else if (enterprise instanceof Medicine) {
                     organizationComboBox.addItem(Organization.Type.Medicine);
                     break;
-                } else if (enterprise instanceof VaccineEnterprise) {
+                } else if (enterprise instanceof Vaccine) {
                     organizationComboBox.addItem(Organization.Type.Vaccine);
                     break;
-                } else if (enterprise instanceof SampleEnterprise) {
+                } else if (enterprise instanceof Sample) {
                     organizationComboBox.addItem(Organization.Type.Sample);
                     break;
                 }
