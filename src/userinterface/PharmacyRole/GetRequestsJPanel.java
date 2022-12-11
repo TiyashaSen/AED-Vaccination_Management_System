@@ -123,7 +123,7 @@ public class GetRequestsJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 78, 28));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 78, 28));
 
         reqmedicineLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         reqmedicineLbl.setForeground(new java.awt.Color(51, 0, 51));

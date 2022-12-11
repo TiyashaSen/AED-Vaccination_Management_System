@@ -49,8 +49,6 @@ public class SampleProcessRequestJpanel extends javax.swing.JPanel {
         dateTxt = new javax.swing.JTextField();
         backBtn = new javax.swing.JButton();
         updateBtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         dateFld = new com.toedter.calendar.JDateChooser();
 
         setBackground(new java.awt.Color(233, 235, 204));
@@ -58,21 +56,26 @@ public class SampleProcessRequestJpanel extends javax.swing.JPanel {
 
         processlbl.setBackground(new java.awt.Color(153, 153, 255));
         processlbl.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        processlbl.setForeground(new java.awt.Color(255, 255, 255));
+        processlbl.setForeground(new java.awt.Color(0, 0, 153));
         processlbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         processlbl.setText("PROCESSING SAMPLE REQUEST ");
-        add(processlbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, 400, 50));
+        add(processlbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 400, 50));
 
-        datedeliveryBtn.setForeground(new java.awt.Color(255, 255, 255));
+        datedeliveryBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         datedeliveryBtn.setText("SELECT DATE OF DELIVERY : ");
-        add(datedeliveryBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, -1, -1));
+        add(datedeliveryBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 177, -1, 30));
 
         dateTxt.setEditable(false);
-        dateTxt.setBackground(new java.awt.Color(102, 102, 255));
-        dateTxt.setForeground(new java.awt.Color(255, 255, 255));
-        add(dateTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 290, 140, 40));
+        dateTxt.setBackground(new java.awt.Color(255, 255, 255));
+        dateTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dateTxtActionPerformed(evt);
+            }
+        });
+        add(dateTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, 140, 30));
 
-        backBtn.setBackground(new java.awt.Color(0, 0, 255));
+        backBtn.setBackground(new java.awt.Color(0, 0, 0));
+        backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
         backBtn.setText("BACK");
         backBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -81,9 +84,10 @@ public class SampleProcessRequestJpanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 89, 36));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 36));
 
-        updateBtn.setBackground(new java.awt.Color(0, 0, 255));
+        updateBtn.setBackground(new java.awt.Color(0, 0, 0));
+        updateBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         updateBtn.setForeground(new java.awt.Color(255, 255, 255));
         updateBtn.setText("UPDATE STATUS ");
         updateBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -92,16 +96,10 @@ public class SampleProcessRequestJpanel extends javax.swing.JPanel {
                 updateBtnActionPerformed(evt);
             }
         });
-        add(updateBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 420, 142, 36));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/bacteria.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(222, 43, -1, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/biology.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 344, -1, 296));
+        add(updateBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 240, 142, 36));
 
         dateFld.setBackground(new java.awt.Color(102, 102, 255));
-        add(dateFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 240, 130, 30));
+        add(dateFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 180, 130, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
@@ -136,14 +134,16 @@ public class SampleProcessRequestJpanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_updateBtnActionPerformed
 
+    private void dateTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dateTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dateTxtActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backBtn;
     private com.toedter.calendar.JDateChooser dateFld;
     private javax.swing.JTextField dateTxt;
     private javax.swing.JLabel datedeliveryBtn;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel processlbl;
     private javax.swing.JButton updateBtn;
     // End of variables declaration//GEN-END:variables
