@@ -113,7 +113,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
         manageorglbl.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 18)); // NOI18N
         manageorglbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         manageorglbl.setText("ADD ORGANIZATION");
-        add(manageorglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 454, -1));
+        add(manageorglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, 454, -1));
 
         organizationtbl.setBackground(new java.awt.Color(102, 102, 102));
         organizationtbl.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N

@@ -87,7 +87,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
         labTestBtn.setBackground(new java.awt.Color(0, 0, 0));
         labTestBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         labTestBtn.setForeground(new java.awt.Color(255, 255, 255));
-        labTestBtn.setText("COVID-19 VARIANT TEST & CLINICAL TRIALS");
+        labTestBtn.setText("LAB AND ADVANCED LAB TEST REQUEST");
         labTestBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         labTestBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,7 +100,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 160, 260, 250));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/test.jpeg"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 160, 240, 240));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, 240, 240));
     }// </editor-fold>//GEN-END:initComponents
 
     private void PrecriptionBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrecriptionBtnActionPerformed
