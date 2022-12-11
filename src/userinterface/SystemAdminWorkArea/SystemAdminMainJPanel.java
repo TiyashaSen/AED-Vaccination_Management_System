@@ -10,12 +10,22 @@ import Vaccination.Enterprise.Enterprise;
 import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+import static java.time.Clock.system;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import org.apache.log4j.Logger;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartFrame;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
 
 /**
  *
@@ -166,11 +176,26 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
 
     private void btnReportsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportsActionPerformed
         // TODO add your handling code here:
-                GetCovidReportsJPanel viewCovidReportsJPanel = new GetCovidReportsJPanel(userProcessContainer, ecosystem);
-        log.debug("user adding enterpirse admins" + CLASS_NAME);
-        userProcessContainer.add("manageEnterpriseAdminJPanel", viewCovidReportsJPanel);
-        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-        layout.next(userProcessContainer);
+//                GetCovidReportsJPanel viewCovidReportsJPanel = new GetCovidReportsJPanel(userProcessContainer, ecosystem);
+//        log.debug("user adding enterpirse admins" + CLASS_NAME);
+//        userProcessContainer.add("manageEnterpriseAdminJPanel", viewCovidReportsJPanel);
+//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+//        layout.next(userProcessContainer);
+
+         DefaultCategoryDataset barchartdata = new DefaultCategoryDataset();
+//        barchartdata.setValue(10, "No. Of Work Request","Day1");
+//        barchartdata.setValue(20, "No. Of Work Request","Day2");
+//        barchartdata.setValue(7, "No. Of Work Request","Day3");
+       // barchartdata.setValue(ecosystem.getVaccineArray().getVaccinationList().size(),"Patients/Donors","BoneMarrow Donor");
+        barchartdata.setValue(ecosystem.getMedArray().getMedList().size(),"Patients/Donors","BoneMarrow Patient(Receiver)");
+        JFreeChart barchart = ChartFactory.createBarChart3D("Requests", "Patients/Donors", "Patients/Donors", barchartdata, PlotOrientation.VERTICAL, false, true, false);
+        CategoryPlot barchrt = barchart.getCategoryPlot();
+        barchrt.setRangeGridlinePaint(Color.ORANGE);
+        ChartFrame chrtframe = new ChartFrame("Contribution", barchart, true);
+        chrtframe.setVisible(true);
+        chrtframe.setSize(1200,850);
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        chrtframe.setLocation(dim.width/2-this.getSize().width/2, dim.height/2- this.getSize().height/2);
     }//GEN-LAST:event_btnReportsActionPerformed
 
 
