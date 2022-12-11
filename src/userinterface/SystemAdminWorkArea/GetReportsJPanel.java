@@ -113,11 +113,12 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         report3Btn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 0, 255));
+        setBackground(new java.awt.Color(233, 235, 204));
         setPreferredSize(new java.awt.Dimension(2000, 1200));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        report1Btn.setBackground(new java.awt.Color(0, 0, 255));
+        report1Btn.setBackground(new java.awt.Color(0, 0, 0));
+        report1Btn.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         report1Btn.setForeground(new java.awt.Color(255, 255, 255));
         report1Btn.setText("TOP MEDICINE SALES ACROSS NETWORKS");
         report1Btn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -126,9 +127,10 @@ public class GetReportsJPanel extends javax.swing.JPanel {
                 report1BtnActionPerformed(evt);
             }
         });
-        add(report1Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 58, 298, 38));
+        add(report1Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 108, 400, 90));
 
-        report2Btn.setBackground(new java.awt.Color(0, 0, 255));
+        report2Btn.setBackground(new java.awt.Color(0, 0, 0));
+        report2Btn.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         report2Btn.setForeground(new java.awt.Color(255, 255, 255));
         report2Btn.setText("MOST COMMON DISEASES ACROSS NETWORKS");
         report2Btn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -137,9 +139,10 @@ public class GetReportsJPanel extends javax.swing.JPanel {
                 report2BtnActionPerformed(evt);
             }
         });
-        add(report2Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 102, -1, 42));
+        add(report2Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, 460, 90));
 
-        report3Btn.setBackground(new java.awt.Color(0, 0, 255));
+        report3Btn.setBackground(new java.awt.Color(0, 0, 0));
+        report3Btn.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         report3Btn.setForeground(new java.awt.Color(255, 255, 255));
         report3Btn.setText("MOST AFFECTED GENES");
         report3Btn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -148,18 +151,19 @@ public class GetReportsJPanel extends javax.swing.JPanel {
                 report3BtnActionPerformed(evt);
             }
         });
-        add(report3Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 150, 298, 39));
+        add(report3Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, 400, 90));
 
-        backBtn.setBackground(new java.awt.Color(0, 0, 255));
+        backBtn.setBackground(new java.awt.Color(153, 153, 255));
+        backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
-        backBtn.setText("Back");
+        backBtn.setText("BACK");
         backBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         backBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 433, 298, 46));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void report1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_report1BtnActionPerformed
