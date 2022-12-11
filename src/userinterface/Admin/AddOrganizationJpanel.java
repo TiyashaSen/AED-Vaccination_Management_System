@@ -170,7 +170,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
                 backbtnActionPerformed(evt);
             }
         });
-        add(backbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 450, 70, 32));
+        add(backbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 32));
 
         addBtn.setBackground(new java.awt.Color(0, 0, 0));
         addBtn.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 14)); // NOI18N

@@ -223,7 +223,7 @@ public class MainJFrame extends javax.swing.JFrame {
         passwordTxt.setText("");
         container.removeAll();
         JPanel blankJP = new JPanel();
-        blankJP.setBackground(Color.blue);
+        blankJP.setBackground(Color.DARK_GRAY);
         container.add("blank", blankJP);
         CardLayout crdLyt = (CardLayout) container.getLayout();
         crdLyt.next(container);

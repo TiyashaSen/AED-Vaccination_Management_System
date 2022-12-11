@@ -66,11 +66,11 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("ADD EMPLOYEE");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 454, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 70, 454, -1));
 
         orglbl.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
         orglbl.setText("ORGANIZATION:");
-        add(orglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
+        add(orglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 140, -1));
 
         organizationComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +78,7 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
                 organizationComboBoxActionPerformed(evt);
             }
         });
-        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, 161, -1));
+        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 180, -1));
 
         organizationTbl.setBackground(new java.awt.Color(102, 102, 102));
         organizationTbl.setForeground(new java.awt.Color(255, 255, 255));
@@ -141,7 +141,7 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 570, 60, 31));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 31));
 
         addJButton.setBackground(new java.awt.Color(0, 0, 0));
         addJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
