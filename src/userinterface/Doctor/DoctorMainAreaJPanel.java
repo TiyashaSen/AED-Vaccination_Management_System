@@ -114,7 +114,7 @@ public class DoctorMainAreaJPanel extends javax.swing.JPanel {
     private void labTestBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_labTestBtnActionPerformed
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         log.debug("inside doctor's lab request");
-        userProcessContainer.add("TestJPanel", new userinterface.Doctor.DoctorRequestJpanel(userProcessContainer, userAccount, organization, enterprise, system, network));
+        userProcessContainer.add("TestJPanel", new userinterface.Doctor.DocWorkRequestJpanel(userProcessContainer, userAccount, organization, enterprise, system, network));
         layout.next(userProcessContainer);
     }//GEN-LAST:event_labTestBtnActionPerformed
 

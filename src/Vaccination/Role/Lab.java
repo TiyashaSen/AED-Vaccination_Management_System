@@ -1,6 +1,5 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template, choose Tools | Templates and open the template in the editor.
  */
 package Vaccination.Role;
 
@@ -10,7 +9,7 @@ import Vaccination.Connection.Connection;
 import Vaccination.Organization.Laboratory;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAcc;
-import userinterface.LabAssistant.LabAssistantMainWorkAreaJPanel;
+import userinterface.LabTechnician.LabTechnicianMainJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -20,8 +19,11 @@ import javax.swing.JPanel;
 public class Lab extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, Organization organization, Enterprise enterprise, EcoSystem business,Connection network) {
-        return new LabAssistantMainWorkAreaJPanel(userProcessContainer,account,(Laboratory)organization,enterprise,business,network);
+
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account,
+            Organization organization, Enterprise enterprise, EcoSystem business, Connection network) {
+        return new LabTechnicianMainJPanel(userProcessContainer, account, (Laboratory) organization,
+                enterprise, business, network);
     }
-    
+
 }

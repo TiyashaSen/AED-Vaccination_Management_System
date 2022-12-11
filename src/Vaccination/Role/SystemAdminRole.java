@@ -1,6 +1,5 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template, choose Tools | Templates and open the template in the editor.
  */
 package Vaccination.Role;
 
@@ -9,7 +8,7 @@ import Vaccination.Enterprise.Enterprise;
 import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAcc;
-import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
+import userinterface.SystemAdminWorkArea.SystemAdminMainJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -19,8 +18,10 @@ import javax.swing.JPanel;
 public class SystemAdminRole extends Role {
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account, Organization organization, Enterprise enterprise, EcoSystem system, Connection network) {
-        return new SystemAdminWorkAreaJPanel(userProcessContainer, system);
+
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAcc account,
+            Organization organization, Enterprise enterprise, EcoSystem system, Connection network) {
+        return new SystemAdminMainJPanel(userProcessContainer, system);
     }
 
 }
