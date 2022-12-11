@@ -56,7 +56,6 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
         this.enterprise = enterprise;
         this.network = network;
         this.system = system;
-        valueLbl.setText(enterprise.getName());
         populateRequestTable();
         populateClinicalRequestTable();
      
@@ -99,8 +98,6 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
     private void initComponents() {
 
         resultsLbl = new javax.swing.JLabel();
-        enterpriseLbl = new javax.swing.JLabel();
-        valueLbl = new javax.swing.JLabel();
         refreshbtn = new javax.swing.JButton();
         requestTestBtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -115,34 +112,23 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
         ageTxtField = new javax.swing.JTextField();
         viewResultsbtn = new javax.swing.JButton();
         sexcomboBox = new javax.swing.JComboBox<>();
-        jLabel1 = new javax.swing.JLabel();
         btnClinicalTrial = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         doctorClinicRequestTbl = new javax.swing.JTable();
         resultsLbl1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         patientEmail = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
+        setForeground(new java.awt.Color(0, 0, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         resultsLbl.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        resultsLbl.setForeground(new java.awt.Color(0, 0, 153));
         resultsLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        resultsLbl.setText("COVID-19 LAB TEST RESULTS");
-        add(resultsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 615, 22));
-
-        enterpriseLbl.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        enterpriseLbl.setForeground(new java.awt.Color(255, 255, 255));
-        enterpriseLbl.setText("HELLO!");
-        add(enterpriseLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 30, -1, 41));
-
-        valueLbl.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        valueLbl.setForeground(new java.awt.Color(255, 255, 255));
-        valueLbl.setText("<value>");
-        add(valueLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, -1, 41));
+        resultsLbl.setText("LAB TEST RESULTS");
+        add(resultsLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 615, 40));
 
         refreshbtn.setBackground(new java.awt.Color(0, 0, 0));
         refreshbtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -154,7 +140,7 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
                 refreshbtnActionPerformed(evt);
             }
         });
-        add(refreshbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 80, 32));
+        add(refreshbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 210, 80, 30));
 
         requestTestBtn.setBackground(new java.awt.Color(0, 0, 0));
         requestTestBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -166,7 +152,7 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
                 requestTestBtnActionPerformed(evt);
             }
         });
-        add(requestTestBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 110, 33));
+        add(requestTestBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 110, 30));
 
         doctorRequestTbl.setBackground(new java.awt.Color(102, 102, 102));
         doctorRequestTbl.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N
@@ -197,7 +183,7 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
         doctorRequestTbl.setRowHeight(25);
         jScrollPane1.setViewportView(doctorRequestTbl);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 615, 160));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 615, 170));
 
         backJButton.setBackground(new java.awt.Color(0, 0, 0));
         backJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -209,26 +195,30 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 680, 69, 30));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 69, 30));
 
         nameLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        nameLbl.setForeground(new java.awt.Color(0, 0, 153));
         nameLbl.setText("NAME:");
-        add(nameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
-        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 162, -1));
+        add(nameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, -1, -1));
+        add(nameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, 162, -1));
 
         sexLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        sexLbl.setForeground(new java.awt.Color(0, 0, 153));
         sexLbl.setText("GENDER:");
-        add(sexLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
-        add(testTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 168, -1));
+        add(sexLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, -1, -1));
+        add(testTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 168, -1));
 
         diagnosisLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        diagnosisLbl.setForeground(new java.awt.Color(0, 0, 153));
         diagnosisLbl.setText("TEST NAME:");
-        add(diagnosisLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, -1, -1));
+        add(diagnosisLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, -1, -1));
 
         ageLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        ageLbl.setForeground(new java.awt.Color(0, 0, 153));
         ageLbl.setText("AGE:");
-        add(ageLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, -1, -1));
-        add(ageTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, 162, -1));
+        add(ageLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 90, -1, -1));
+        add(ageTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 90, 162, -1));
 
         viewResultsbtn.setBackground(new java.awt.Color(0, 0, 0));
         viewResultsbtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -240,7 +230,7 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
                 viewResultsbtnActionPerformed(evt);
             }
         });
-        add(viewResultsbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 210, 120, 30));
+        add(viewResultsbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 120, 30));
 
         sexcomboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECT", "MALE", "FEMALE" }));
         sexcomboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -248,22 +238,19 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
                 sexcomboBoxActionPerformed(evt);
             }
         });
-        add(sexcomboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/new-normality.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(721, 582, -1, -1));
+        add(sexcomboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, -1, -1));
 
         btnClinicalTrial.setBackground(new java.awt.Color(0, 0, 0));
         btnClinicalTrial.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         btnClinicalTrial.setForeground(new java.awt.Color(255, 255, 255));
-        btnClinicalTrial.setText("ADVANCED CLINICAL TRIALS");
+        btnClinicalTrial.setText("REQUST ADVANCED TEST");
         btnClinicalTrial.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         btnClinicalTrial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClinicalTrialActionPerformed(evt);
             }
         });
-        add(btnClinicalTrial, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 210, 30));
+        add(btnClinicalTrial, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 210, 180, 30));
 
         doctorClinicRequestTbl.setBackground(new java.awt.Color(102, 102, 102));
         doctorClinicRequestTbl.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N
@@ -294,27 +281,25 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
         doctorClinicRequestTbl.setRowHeight(25);
         jScrollPane2.setViewportView(doctorClinicRequestTbl);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 615, 160));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 480, 615, 170));
 
         resultsLbl1.setBackground(new java.awt.Color(0, 0, 0));
         resultsLbl1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        resultsLbl1.setForeground(new java.awt.Color(0, 0, 153));
         resultsLbl1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        resultsLbl1.setText("ADVANCED CLINICAL TRIAL RESULTS");
-        add(resultsLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 615, 22));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/safety-suit.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(721, 11, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/new-normality.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(721, 205, -1, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/safety-suit.png"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(721, 394, -1, -1));
+        resultsLbl1.setText("ADVANCED LAB TEST RESULTS");
+        add(resultsLbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 450, 615, 40));
 
         jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 153));
         jLabel5.setText("E-MAIL:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
-        add(patientEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 161, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, -1, -1));
+        add(patientEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 161, -1));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 153));
+        jLabel1.setText("REQUEST FOR ADVANCED LAB TEST AND LAB TEST ");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void refreshbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshbtnActionPerformed
@@ -526,11 +511,7 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
     private javax.swing.JLabel diagnosisLbl;
     private javax.swing.JTable doctorClinicRequestTbl;
     private javax.swing.JTable doctorRequestTbl;
-    private javax.swing.JLabel enterpriseLbl;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -544,7 +525,6 @@ public class DocWorkRequestJpanel extends javax.swing.JPanel {
     private javax.swing.JLabel sexLbl;
     private javax.swing.JComboBox<String> sexcomboBox;
     private javax.swing.JTextField testTxtField;
-    private javax.swing.JLabel valueLbl;
     private javax.swing.JButton viewResultsbtn;
     // End of variables declaration//GEN-END:variables
     public void populateClinicalRequestTable() {
