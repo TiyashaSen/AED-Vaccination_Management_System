@@ -65,7 +65,7 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("MANAGE EMPLOYEE");
+        jLabel4.setText("ADD EMPLOYEE");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 454, -1));
 
         orglbl.setFont(new java.awt.Font("Helvetica Neue", 1, 16)); // NOI18N
@@ -131,7 +131,9 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
         jLabel2.setText("ADD NAME:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 530, -1, -1));
 
+        backJButton.setBackground(new java.awt.Color(0, 0, 0));
         backJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("BACK");
         backJButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         backJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -139,9 +141,11 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 570, 55, 31));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 570, 60, 31));
 
+        addJButton.setBackground(new java.awt.Color(0, 0, 0));
         addJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        addJButton.setForeground(new java.awt.Color(255, 255, 255));
         addJButton.setText("CREATE EMPLOYEE");
         addJButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         addJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -149,10 +153,10 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
                 addJButtonActionPerformed(evt);
             }
         });
-        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 570, 144, 31));
+        add(addJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 570, 150, 31));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/division.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, 350, 390));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 180, 640, 390));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backJButtonActionPerformed
