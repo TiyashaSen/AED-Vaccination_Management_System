@@ -79,9 +79,9 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
         txtMessage = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtMessage1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
-        setForeground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(233, 235, 204));
@@ -115,7 +115,7 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
         workRequestJTable.setRowHeight(30);
         jScrollPane1.setViewportView(workRequestJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 240, 620, 200));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 680, 260));
 
         backBtn.setBackground(new java.awt.Color(51, 0, 51));
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -126,12 +126,12 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 82, 31));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 82, 31));
 
-        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("COVID-19 LAB TEST");
+        jLabel1.setText("LAB TEST");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 200, 585, -1));
 
         assignBtn.setBackground(new java.awt.Color(0, 0, 0));
@@ -144,22 +144,33 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
                 assignBtnActionPerformed(evt);
             }
         });
-        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 550, 80, 30));
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -30, 340, 690));
+        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 560, 80, 30));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/covid19labtest.png"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 200, 310));
 
         txtMessage.setBackground(new java.awt.Color(51, 51, 51));
-        txtMessage.setFont(new java.awt.Font("Helvetica", 1, 18)); // NOI18N
+        txtMessage.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         txtMessage.setForeground(new java.awt.Color(255, 255, 255));
-        txtMessage.setText("CLINICAL TRIAL RESULTS");
-        add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 300, 50));
+        txtMessage.setText("TRIAL RESULTS FOR CLINIC");
+        txtMessage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMessageActionPerformed(evt);
+            }
+        });
+        add(txtMessage, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 280, 60));
 
         jLabel3.setBackground(new java.awt.Color(51, 0, 51));
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel3.setText("MORE INFORMATION ON VIRUS SAMPLE:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 490, -1, 30));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 560, -1, 30));
 
         txtMessage1.setBackground(new java.awt.Color(204, 204, 204));
-        add(txtMessage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 550, 220, 30));
+        add(txtMessage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 560, 220, 30));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/covidlabtest2.png"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 32, 630, 530));
     }// </editor-fold>//GEN-END:initComponents
 
     public void populateTable() {
@@ -230,6 +241,10 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_assignBtnActionPerformed
 
+    private void txtMessageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMessageActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMessageActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton assignBtn;
@@ -237,6 +252,7 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField txtMessage;
     private javax.swing.JTextField txtMessage1;
