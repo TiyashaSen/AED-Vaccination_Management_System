@@ -10,7 +10,7 @@ import Vaccination.Connection.Connection;
 import Vaccination.Organization.Organization;
 import Vaccination.UserAccount.UserAcc;
 import javax.swing.JPanel;
-import userinterface.AdministrativeRole.AdminWorkAreaJpanel;
+import userinterface.Admin.AdminWorkAreaJpanel;
 
 /**
  *

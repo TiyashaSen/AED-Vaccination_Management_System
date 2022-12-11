@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package userinterface.AdministrativeRole;
+package userinterface.Admin;
 
 import Vaccination.Enterprise.Vaccine;
 import Vaccination.Enterprise.Medicine;
