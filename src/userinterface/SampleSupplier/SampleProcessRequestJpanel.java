@@ -5,7 +5,7 @@
  */
 package userinterface.SampleSupplier;
 
-import userinterface.VaccineRole.VaccineWorkArea;
+import userinterface.Vaccine.VaccineMainJPanel;
 import Vaccination.WorkQueue.SampleWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Component;
