@@ -169,7 +169,6 @@ public class ClinicalTrialResultsJpanel extends javax.swing.JPanel {
         add(txtMessage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 560, 220, 30));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/covidlabtest2.png"))); // NOI18N
-        jLabel4.setText("jLabel4");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 32, 630, 530));
     }// </editor-fold>//GEN-END:initComponents
 

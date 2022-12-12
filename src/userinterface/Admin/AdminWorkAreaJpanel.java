@@ -50,7 +50,6 @@ public class AdminWorkAreaJpanel extends javax.swing.JPanel {
         enterpriseLabel1 = new javax.swing.JLabel();
         userbtn = new javax.swing.JButton();
         manageOrganizationbtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -100,10 +99,9 @@ public class AdminWorkAreaJpanel extends javax.swing.JPanel {
             }
         });
         add(manageOrganizationbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 177, 46));
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/organization.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, -1, 100));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/organization.png"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 130, 100));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/user.png"))); // NOI18N
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, 90, 90));
@@ -165,7 +163,6 @@ public class AdminWorkAreaJpanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel enterpriseLabel1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

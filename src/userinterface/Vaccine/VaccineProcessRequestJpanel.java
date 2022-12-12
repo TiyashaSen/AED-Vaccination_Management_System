@@ -66,7 +66,7 @@ public class VaccineProcessRequestJpanel extends javax.swing.JPanel {
         datedeliveryBtn.setText("SELECT DATE OF DELIVERY : ");
         add(datedeliveryBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, -1, -1));
 
-        backBtn.setBackground(new java.awt.Color(153, 153, 255));
+        backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
         backBtn.setText("BACK");
@@ -76,7 +76,7 @@ public class VaccineProcessRequestJpanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 94, 39));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 80, 40));
 
         updateBtn.setBackground(new java.awt.Color(0, 0, 255));
         updateBtn.setForeground(new java.awt.Color(255, 255, 255));
