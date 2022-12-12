@@ -11,6 +11,7 @@ import Vaccination.Doctor.OrderArray;
 import Vaccination.Configuration.EcoSystem;
 import Vaccination.Enterprise.Enterprise;
 import Vaccination.Connection.Connection;
+import Vaccination.Medicine.Drug;
 import Vaccination.Notify.SendEmail;
 import Vaccination.Organization.DoctorOrg;
 import Vaccination.Organization.Organization;
@@ -32,11 +33,14 @@ import java.awt.CardLayout;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.JFileChooser;
+import userinterface.SystemAdminWorkArea.GetReportsJPanel;
 /**
  *
  * @author prakruthisomashekar
@@ -58,7 +62,7 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
     private EcoSystem system;
     private static Logger log = Logger.getLogger(AddPrescriptionMedicineJPanel.class);
     private static final String CLASS_NAME = AddPrescriptionMedicineJPanel.class.getName();
-
+   
     public AddPrescriptionMedicineJPanel(JPanel userProcessContainer, OrderArray List, UserAcc account, Enterprise enterprise, DoctorOrg organization, EcoSystem system, Connection network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
@@ -107,6 +111,7 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         sendPrescription = new javax.swing.JButton();
         jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        generateReports = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 48)); // NOI18N
@@ -250,6 +255,14 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
 
         jDateChooser2.setBackground(new java.awt.Color(0, 0, 0));
         add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 130, -1));
+
+        generateReports.setText("jButton1");
+        generateReports.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                generateReportsActionPerformed(evt);
+            }
+        });
+        add(generateReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void savePrescriptionBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_savePrescriptionBtnActionPerformed
@@ -405,6 +418,18 @@ patientEmail.setText("");
 
     }//GEN-LAST:event_sendPrescriptionActionPerformed
 
+    private void generateReportsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generateReportsActionPerformed
+        // TODO add your handling code here:
+        String medicineString= medicationCombobox.getSelectedItem().toString();
+        List<String> medList = new ArrayList<>();
+        medList.add(medicineString);
+        
+        GetReportsJPanel getReportsJPanel = new GetReportsJPanel(userProcessContainer, system, medList, system.getNetworkArray() );
+                userProcessContainer.add("getReportsJPanel", getReportsJPanel);
+                CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+            layout.next(userProcessContainer);
+    }//GEN-LAST:event_generateReportsActionPerformed
+
     public void populateWorkRequestTable() {
         try {
             System.out.println("hitting here");
@@ -445,6 +470,7 @@ patientEmail.setText("");
     private javax.swing.JLabel diagnosisLbl;
     private javax.swing.JLabel doctorPrescriptionLbl;
     private javax.swing.JLabel forLbl;
+    private javax.swing.JButton generateReports;
     private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
