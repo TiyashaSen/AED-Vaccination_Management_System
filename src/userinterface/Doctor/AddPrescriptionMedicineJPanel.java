@@ -179,7 +179,7 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
                 savePrescriptionBtnActionPerformed(evt);
             }
         });
-        add(savePrescriptionBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, 170, 38));
+        add(savePrescriptionBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 170, 38));
 
         noofTimesTxt.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         add(noofTimesTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 72, -1));
@@ -256,13 +256,16 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
         jDateChooser2.setBackground(new java.awt.Color(0, 0, 0));
         add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 130, -1));
 
-        generateReports.setText("jButton1");
+        generateReports.setBackground(new java.awt.Color(102, 102, 102));
+        generateReports.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        generateReports.setForeground(new java.awt.Color(255, 255, 255));
+        generateReports.setText("GENERATE REPORT");
         generateReports.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 generateReportsActionPerformed(evt);
             }
         });
-        add(generateReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, -1));
+        add(generateReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 403, 180, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void savePrescriptionBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_savePrescriptionBtnActionPerformed

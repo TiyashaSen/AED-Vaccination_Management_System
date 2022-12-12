@@ -63,8 +63,6 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
         btnManageEnterprise = new javax.swing.JButton();
         btnManageAdmin = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        btnReports = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -84,7 +82,7 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnManageNetworkActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 620, 144, 40));
+        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 640, 144, 40));
 
         btnManageEnterprise.setBackground(new java.awt.Color(0, 0, 255));
         btnManageEnterprise.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -96,7 +94,7 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 610, 144, 40));
+        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 640, 144, 40));
 
         btnManageAdmin.setBackground(new java.awt.Color(0, 0, 255));
         btnManageAdmin.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -108,34 +106,19 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnManageAdminActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 610, 150, 40));
+        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 630, 150, 40));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/233-2339657_smart-city-icon-png-transparent-png.png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 130, 100));
-
-        btnReports.setBackground(new java.awt.Color(0, 0, 255));
-        btnReports.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
-        btnReports.setForeground(new java.awt.Color(255, 255, 255));
-        btnReports.setText("REPORTS");
-        btnReports.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
-        btnReports.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReportsActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 610, 144, 40));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/6-61974_open-reporting-icon-png-green-transparent-png_96x96.png"))); // NOI18N
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 490, -1, 120));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 530, 130, 100));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/mainframeimage.jpeg"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 490));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 500));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-enterprise-58_96x96.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 510, 110, 100));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 530, 110, 100));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-administrator-male-96.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 500, 100, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 520, 100, -1));
 
         add(jPanel2, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
@@ -180,46 +163,15 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
     }//GEN-LAST:event_btnManageAdminActionPerformed
 
-    private void btnReportsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportsActionPerformed
-        // TODO add your handling code here:
-//                GetCovidReportsJPanel viewCovidReportsJPanel = new GetCovidReportsJPanel(userProcessContainer, ecosystem);
-//        log.debug("user adding enterpirse admins" + CLASS_NAME);
-//        userProcessContainer.add("manageEnterpriseAdminJPanel", viewCovidReportsJPanel);
-//        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//        layout.next(userProcessContainer);
-//                GetReportsJPanel getReportsJPanel = new GetReportsJPanel(userProcessContainer, ecosystem, drugList);
-//                userProcessContainer.add("getReportsJPanel", getReportsJPanel);
-//                CardLayout layout = (CardLayout) userProcessContainer.getLayout();
-//            layout.next(userProcessContainer);
-
-//         DefaultCategoryDataset barchartdata = new DefaultCategoryDataset();
-//        barchartdata.setValue(10, "No. Of Work Request","Day1");
-//        barchartdata.setValue(20, "No. Of Work Request","Day2");
-//        barchartdata.setValue(7, "No. Of Work Request","Day3");
-//        System.out.println("userinterface.SystemAdminWorkArea.SystemAdminMainJPanel.btnReportsActionPerformed()"+ecosystem.getVaccineArray().);
-//        barchartdata.setValue(ecosystem.getVaccineArray().getVaccinationList().size(),"Patients","Vaccines");
-//        barchartdata.setValue(ecosystem.getMedArray().getMedList().size(),"Patients/Donors","");
-//        JFreeChart barchart = ChartFactory.createBarChart3D("Requests", "Patients/Donors", "Patients/Donors", barchartdata, PlotOrientation.VERTICAL, false, true, false);
-//        CategoryPlot barchrt = barchart.getCategoryPlot();
-//        barchrt.setRangeGridlinePaint(Color.ORANGE);
-//        ChartFrame chrtframe = new ChartFrame("Contribution", barchart, true);
-//        chrtframe.setVisible(true);
-//        chrtframe.setSize(1200,850);
-//        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-//        chrtframe.setLocation(dim.width/2-this.getSize().width/2, dim.height/2- this.getSize().height/2);
-    }//GEN-LAST:event_btnReportsActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnManageAdmin;
     private javax.swing.JButton btnManageEnterprise;
     private javax.swing.JButton btnManageNetwork;
-    private javax.swing.JButton btnReports;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
