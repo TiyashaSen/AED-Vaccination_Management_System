@@ -82,7 +82,7 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnManageNetworkActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 600, 144, 40));
+        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, 144, 40));
 
         btnManageEnterprise.setBackground(new java.awt.Color(0, 0, 255));
         btnManageEnterprise.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -94,7 +94,7 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 600, 144, 40));
+        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 600, 144, 40));
 
         btnManageAdmin.setBackground(new java.awt.Color(0, 0, 255));
         btnManageAdmin.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -106,10 +106,10 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnManageAdminActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 600, 144, 40));
+        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 600, 144, 40));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/enterprise.png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 510, 100, 80));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 100, 80));
 
         btnReports.setBackground(new java.awt.Color(0, 0, 255));
         btnReports.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -121,19 +121,19 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnReportsActionPerformed(evt);
             }
         });
-        jPanel2.add(btnReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 600, 144, 40));
+        jPanel2.add(btnReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 600, 144, 40));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/search.png"))); // NOI18N
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 500, 90, 90));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 500, 90, 90));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/mainframeimage.jpeg"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1060, 470));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 490));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-enterprise-58_96x96.png"))); // NOI18N
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 500, 110, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, 110, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-administrator-male-96.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 500, 100, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 500, 100, -1));
 
         add(jPanel2, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
