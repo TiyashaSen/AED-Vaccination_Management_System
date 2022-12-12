@@ -26,7 +26,8 @@ import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
-
+import Vaccination.Medicine.DrugList;
+import Vaccination.Medicine.Drug;
 /**
  *
  * @author tiyashasen
@@ -40,11 +41,12 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
     EcoSystem ecosystem;
     private static Logger log = Logger.getLogger(SystemAdminMainJPanel.class);
     private static final String CLASS_NAME = SystemAdminMainJPanel.class.getName();
-
+    ArrayList<Drug> drugList;
     public SystemAdminMainJPanel(JPanel userProcessContainer, EcoSystem ecosystem) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.ecosystem = ecosystem;
+        this.drugList = ecosystem.getListofMedicine();
     }
 
     /**
@@ -185,21 +187,26 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
 //        userProcessContainer.add("manageEnterpriseAdminJPanel", viewCovidReportsJPanel);
 //        CardLayout layout = (CardLayout) userProcessContainer.getLayout();
 //        layout.next(userProcessContainer);
+//                GetReportsJPanel getReportsJPanel = new GetReportsJPanel(userProcessContainer, ecosystem, drugList);
+//                userProcessContainer.add("getReportsJPanel", getReportsJPanel);
+//                CardLayout layout = (CardLayout) userProcessContainer.getLayout();
+//            layout.next(userProcessContainer);
 
-         DefaultCategoryDataset barchartdata = new DefaultCategoryDataset();
+//         DefaultCategoryDataset barchartdata = new DefaultCategoryDataset();
 //        barchartdata.setValue(10, "No. Of Work Request","Day1");
 //        barchartdata.setValue(20, "No. Of Work Request","Day2");
 //        barchartdata.setValue(7, "No. Of Work Request","Day3");
-       // barchartdata.setValue(ecosystem.getVaccineArray().getVaccinationList().size(),"Patients/Donors","BoneMarrow Donor");
-        barchartdata.setValue(ecosystem.getMedArray().getMedList().size(),"Patients/Donors","BoneMarrow Patient(Receiver)");
-        JFreeChart barchart = ChartFactory.createBarChart3D("Requests", "Patients/Donors", "Patients/Donors", barchartdata, PlotOrientation.VERTICAL, false, true, false);
-        CategoryPlot barchrt = barchart.getCategoryPlot();
-        barchrt.setRangeGridlinePaint(Color.ORANGE);
-        ChartFrame chrtframe = new ChartFrame("Contribution", barchart, true);
-        chrtframe.setVisible(true);
-        chrtframe.setSize(1200,850);
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        chrtframe.setLocation(dim.width/2-this.getSize().width/2, dim.height/2- this.getSize().height/2);
+//        System.out.println("userinterface.SystemAdminWorkArea.SystemAdminMainJPanel.btnReportsActionPerformed()"+ecosystem.getVaccineArray().);
+//        barchartdata.setValue(ecosystem.getVaccineArray().getVaccinationList().size(),"Patients","Vaccines");
+//        barchartdata.setValue(ecosystem.getMedArray().getMedList().size(),"Patients/Donors","");
+//        JFreeChart barchart = ChartFactory.createBarChart3D("Requests", "Patients/Donors", "Patients/Donors", barchartdata, PlotOrientation.VERTICAL, false, true, false);
+//        CategoryPlot barchrt = barchart.getCategoryPlot();
+//        barchrt.setRangeGridlinePaint(Color.ORANGE);
+//        ChartFrame chrtframe = new ChartFrame("Contribution", barchart, true);
+//        chrtframe.setVisible(true);
+//        chrtframe.setSize(1200,850);
+//        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+//        chrtframe.setLocation(dim.width/2-this.getSize().width/2, dim.height/2- this.getSize().height/2);
     }//GEN-LAST:event_btnReportsActionPerformed
 
 

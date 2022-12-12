@@ -6,6 +6,7 @@
 package userinterface.SystemAdminWorkArea;
 
 import Vaccination.Configuration.EcoSystem;
+import Vaccination.Connection.Connection;
 import java.awt.CardLayout;
 import java.awt.Color;
 import javax.swing.JPanel;
@@ -23,8 +24,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.general.DefaultPieDataset;
 import org.apache.log4j.Logger;
 import org.jfree.chart.plot.PiePlot3D;
-
-
+import Vaccination.UserAccount.UserAcc;
 /**
  *
  * @author prakruthisomashekar
@@ -38,23 +38,28 @@ public class GetReportsJPanel extends javax.swing.JPanel {
     EcoSystem system;
     String[] values;
     String geneValues;
-    List<String> networkList;
+    UserAcc userAcc;
+    List<Connection> networkList;
     List<String> diseaseList;
     List<String> medicineList;
     List<String> geneList;
+    List<String> medList;
+    Connection connection;
     private static Logger log = Logger.getLogger(GetReportsJPanel.class);
     private static final String CLASS_NAME = GetReportsJPanel.class.getName();
 
-    public GetReportsJPanel(JPanel userProcessContainer, EcoSystem system) {
+    public GetReportsJPanel(JPanel userProcessContainer, EcoSystem system, List<String> medList,List<Connection> networkList ) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;
-        this.networkList = new ArrayList<>();
+        this.networkList = networkList;
         this.diseaseList = new ArrayList<>();
         this.medicineList = new ArrayList<>();
         this.geneList = new ArrayList<>();
+        System.out.println("the network list"+ networkList.size());
+        this.medList = medList;
         addMedicines();
-        addGenes();
+//        addGenes();
     }
 
     public void addGenes() {
@@ -79,18 +84,12 @@ public class GetReportsJPanel extends javax.swing.JPanel {
 
     public void addMedicines() {
         try {
-            String filePath = "./prescription data.txt";
-            File file = new File(filePath);
-            Scanner input = new Scanner(file);
+                for(String s:medList){
+                      medicineList.add(s.toString());
 
-            while (input.hasNext()) {
-                String data = input.next();
-                values = data.split(",");
-                networkList.add(values[0].trim());
-                diseaseList.add(values[1].trim());
-                medicineList.add(values[2].trim());
-                System.out.println(values[2]);
-            }
+                }
+
+                    diseaseList.add("Achondroplasia");
 
         } catch (Exception ex) {
             log.error("prescription data.txt not found" + ex);
@@ -167,18 +166,21 @@ public class GetReportsJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void report1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_report1BtnActionPerformed
-
+        System.out.println("medicineList.size()"+medicineList.size());
         DefaultCategoryDataset dcd = new DefaultCategoryDataset();
         int Galafold = 0, Onpattro = 0, Revcovi = 0, Tegsedi = 0, Haegarda = 0, Brineura = 0, Mepsevii = 0, Spinraza = 0;
         int Galafold1 = 0, Onpattro1 = 0, Revcovi1 = 0, Tegsedi1 = 0, Haegarda1 = 0, Brineura1 = 0, Mepsevii1 = 0, Spinraza1 = 0;
         int Galafold2 = 0, Onpattro2 = 0, Revcovi2 = 0, Tegsedi2 = 0, Haegarda2 = 0, Brineura2 = 0, Mepsevii2 = 0, Spinraza2 = 0;
-
+//        System.out.println("userAccount.getWorkQueue().getWorkRequestList().size()",userAccount.getWorkQueue().getWorkRequestList().size());
         for (int i = 0; i < medicineList.size(); i++) {
-            String network = networkList.get(i);
+            String network = networkList.get(i).toString();
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
+            System.out.println("the network and the medicine"+network+"the asdasdasd"+medicine);
+            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("IVERMECTIN")) {
+                  System.out.println("hitting here"+medicineList.get(0).toString());
+                    System.out.println("hitting here network"+networkList.get(0).toString());
 
-            if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("Galafold")) {
                 Galafold++;
             }
             if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("Onpattro")) {
@@ -223,11 +225,12 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         chartFrame.setSize(800, 600);
 
         for (int i = 0; i < medicineList.size(); i++) {
-            String network = networkList.get(i);
+            String network = networkList.get(i).toString();
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
 
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Galafold")) {
+            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Ivermectin")) {
+                System.out.println("hitting here network"+networkList.get(0).toString());
                 Galafold1++;
             }
             if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Onpattro")) {
@@ -266,7 +269,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         plot1.setRangeGridlinePaint(Color.BLACK);
 
         for (int i = 0; i < medicineList.size(); i++) {
-            String network = networkList.get(i);
+            String network = networkList.get(i).toString();
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
 
@@ -317,7 +320,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         int Achondroplasia2 = 0, Marfansyndrome2 = 0, Cysticfibrosis2 = 0, TaySachs2 = 0, Haemophilia2 = 0, Mosaicism2 = 0, Downsyndrome2 = 0, Turnersyndrome2 = 0;
 
         for (int i = 0; i < medicineList.size(); i++) {
-            String network = networkList.get(i);
+            String network = networkList.get(i).toString();
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
 
@@ -366,7 +369,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         chartFrame.setSize(800, 600);
 
         for (int i = 0; i < medicineList.size(); i++) {
-            String network = networkList.get(i);
+            String network = networkList.get(i).toString();
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
 
@@ -409,7 +412,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         plot1.setRangeGridlinePaint(Color.BLACK);
 
         for (int i = 0; i < medicineList.size(); i++) {
-            String network = networkList.get(i);
+            String network = networkList.get(i).toString();
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
 
@@ -426,7 +429,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
                 TaySachs2++;
             }
             if ((network.equalsIgnoreCase("Dallas")) && disease.equalsIgnoreCase("Haemophilia")) {
-                Haemophilia2++;
+                Haemophilia2++; 
             }
             if ((network.equalsIgnoreCase("Dallas")) && disease.equalsIgnoreCase("Mosaicism")) {
                 Mosaicism2++;
