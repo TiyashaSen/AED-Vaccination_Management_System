@@ -141,7 +141,7 @@ public class AddEmployeeJpanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 31));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 60, 31));
 
         addJButton.setBackground(new java.awt.Color(0, 0, 0));
         addJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N

@@ -99,7 +99,7 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
         userTbl.setRowHeight(22);
         jScrollPane1.setViewportView(userTbl);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 90, 387, 258));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 387, 258));
 
         manageuserLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         manageuserLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -108,7 +108,7 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
 
         jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel5.setText("ORGANIZATION:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 400, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, -1, -1));
 
         organizationComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -116,31 +116,31 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
                 organizationComboBoxActionPerformed(evt);
             }
         });
-        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 400, 176, -1));
+        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 410, 176, -1));
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel3.setText("EMPLOYEE:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 430, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, -1, -1));
 
         employeeComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(employeeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 430, 176, -1));
+        add(employeeComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 440, 176, -1));
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel4.setText("ROLE:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 470, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 480, -1, -1));
 
         roleComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(roleComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 470, 176, -1));
+        add(roleComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 480, 176, -1));
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel1.setText("USERNAME:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 500, -1, -1));
-        add(nametxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 500, 176, -1));
-        add(passwordTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 530, 176, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, -1, -1));
+        add(nametxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 510, 176, -1));
+        add(passwordTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 540, 176, -1));
 
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel2.setText("PASSWORD:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 530, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 540, -1, -1));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -152,7 +152,7 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 73, 31));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 73, 31));
 
         createUserbtn.setBackground(new java.awt.Color(0, 0, 0));
         createUserbtn.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -164,15 +164,15 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
                 createUserbtnActionPerformed(evt);
             }
         });
-        add(createUserbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 570, 176, 31));
+        add(createUserbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 580, 176, 31));
 
         jLabel6.setBackground(new java.awt.Color(245, 245, 245));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/organization_2_500x500.jpeg"))); // NOI18N
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 770, 440));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 510, 440));
 
         jLabel7.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel7.setText("ADD USER ACCOUNT");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 40, 230, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 50, 230, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed

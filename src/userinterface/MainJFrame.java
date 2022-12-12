@@ -75,7 +75,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
         loginBtn.setBackground(new java.awt.Color(204, 204, 255));
         loginBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
-        loginBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/login.png"))); // NOI18N
         loginBtn.setText("LOGIN");
         loginBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         loginBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -103,7 +102,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
         logoutBtn.setBackground(new java.awt.Color(255, 204, 204));
         logoutBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
-        logoutBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/logout.png"))); // NOI18N
         logoutBtn.setText("LOGOUT");
         logoutBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         logoutBtn.setEnabled(false);
@@ -142,7 +140,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setRightComponent(container);
 
-        getContentPane().add(jSplitPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, -5, 1310, 1370));
+        getContentPane().add(jSplitPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, -5, 1450, 2010));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

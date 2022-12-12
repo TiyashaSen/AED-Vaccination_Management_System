@@ -113,7 +113,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
         manageorglbl.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 18)); // NOI18N
         manageorglbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         manageorglbl.setText("ADD ORGANIZATION");
-        add(manageorglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 70, 454, -1));
+        add(manageorglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 70, 454, -1));
 
         organizationtbl.setBackground(new java.awt.Color(102, 102, 102));
         organizationtbl.setFont(new java.awt.Font("Lucida Grande", 0, 13)); // NOI18N
@@ -146,11 +146,11 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
         organizationtbl.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(organizationtbl);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 100, 390, 269));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 100, 390, 269));
 
         orglbl.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 14)); // NOI18N
         orglbl.setText("ORGANIZATION TYPE:");
-        add(orglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 400, -1, -1));
+        add(orglbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 400, -1, -1));
 
         organizationComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -158,7 +158,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
                 organizationComboBoxActionPerformed(evt);
             }
         });
-        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 400, 129, -1));
+        add(organizationComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 400, 129, -1));
 
         backbtn.setBackground(new java.awt.Color(0, 0, 0));
         backbtn.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 14)); // NOI18N
@@ -170,7 +170,7 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
                 backbtnActionPerformed(evt);
             }
         });
-        add(backbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 32));
+        add(backbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 70, 32));
 
         addBtn.setBackground(new java.awt.Color(0, 0, 0));
         addBtn.setFont(new java.awt.Font(".AppleSystemUIFont", 1, 14)); // NOI18N
@@ -182,10 +182,10 @@ public class AddOrganizationJpanel extends javax.swing.JPanel {
                 addBtnActionPerformed(evt);
             }
         });
-        add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 450, -1, 32));
+        add(addBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 450, -1, 32));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/partners.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 520, 530));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 520, 530));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnActionPerformed

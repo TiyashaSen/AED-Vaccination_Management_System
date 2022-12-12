@@ -84,6 +84,7 @@ public class GetSampleDetailsJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
+        setForeground(new java.awt.Color(0, 0, 153));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         serialNumLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -134,7 +135,7 @@ public class GetSampleDetailsJPanel extends javax.swing.JPanel {
         add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 74, 32));
 
         saveButton.setBackground(new java.awt.Color(0, 0, 0));
-        saveButton.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        saveButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         saveButton.setForeground(new java.awt.Color(255, 255, 255));
         saveButton.setText("SAVE");
         saveButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -146,7 +147,7 @@ public class GetSampleDetailsJPanel extends javax.swing.JPanel {
         add(saveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, 70, 40));
 
         updateButton.setBackground(new java.awt.Color(0, 0, 0));
-        updateButton.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        updateButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         updateButton.setForeground(new java.awt.Color(255, 255, 255));
         updateButton.setText("UPDATE");
         updateButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -159,6 +160,7 @@ public class GetSampleDetailsJPanel extends javax.swing.JPanel {
 
         jLabel1.setBackground(new java.awt.Color(51, 153, 0));
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("VACCINE DETAILS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 90, 260, 30));

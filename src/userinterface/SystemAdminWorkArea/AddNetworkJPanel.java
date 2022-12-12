@@ -110,6 +110,7 @@ public class AddNetworkJPanel extends javax.swing.JPanel {
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 448, 60, 30));
 
         submitJButton.setBackground(new java.awt.Color(0, 0, 0));
+        submitJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         submitJButton.setForeground(new java.awt.Color(255, 255, 255));
         submitJButton.setText("SUBMIT");
         submitJButton.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -139,11 +140,11 @@ public class AddNetworkJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 110, 30));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 90, 30));
 
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("MANAGE CITY");
+        jLabel6.setText("ADD CITY");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 229, -1));
 
         jLabel3.setText("jLabel3");

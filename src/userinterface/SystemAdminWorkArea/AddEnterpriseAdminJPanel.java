@@ -112,6 +112,7 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         enterpriseJTable.setBackground(new java.awt.Color(102, 102, 102));
+        enterpriseJTable.setForeground(new java.awt.Color(255, 255, 255));
         enterpriseJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -131,11 +132,11 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
         enterpriseJTable.setRowHeight(25);
         jScrollPane1.setViewportView(enterpriseJTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 400, 530, 220));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 530, 220));
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
-        jLabel1.setText("NETWORK:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 240, 80, -1));
+        jLabel1.setText("CITY");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, 80, -1));
 
         networkJComboBox.setBackground(new java.awt.Color(102, 102, 102));
         networkJComboBox.setForeground(new java.awt.Color(255, 255, 255));
@@ -145,26 +146,26 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
                 networkJComboBoxActionPerformed(evt);
             }
         });
-        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 230, 220, 30));
+        add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 140, 220, 30));
 
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel2.setText("USERNAME:");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 350, -1, 30));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, -1, 30));
 
         usernameJTextField.setBackground(new java.awt.Color(102, 102, 102));
         usernameJTextField.setForeground(new java.awt.Color(255, 255, 255));
-        add(usernameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 350, 220, 30));
+        add(usernameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 260, 220, 30));
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel3.setText("ENTERPRISE:");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 290, -1, 30));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 200, -1, 30));
 
         enterpriseJComboBox.setBackground(new java.awt.Color(102, 102, 102));
         enterpriseJComboBox.setForeground(new java.awt.Color(255, 255, 255));
         enterpriseJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(enterpriseJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 290, 220, 30));
+        add(enterpriseJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 200, 220, 30));
 
-        submitJButton.setBackground(new java.awt.Color(102, 102, 102));
+        submitJButton.setBackground(new java.awt.Color(0, 0, 0));
         submitJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         submitJButton.setForeground(new java.awt.Color(255, 255, 255));
         submitJButton.setText("SUBMIT");
@@ -174,25 +175,25 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
                 submitJButtonActionPerformed(evt);
             }
         });
-        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 550, 127, 31));
+        add(submitJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 460, 127, 31));
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel4.setText("PASSWORD:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 330, -1, -1));
 
         nameJTextField.setBackground(new java.awt.Color(102, 102, 102));
         nameJTextField.setForeground(new java.awt.Color(255, 255, 255));
-        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 470, 220, 30));
+        add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, 220, 30));
 
         jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel5.setText("NAME:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 470, -1, 30));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, -1, 30));
 
         passwordJPasswordField.setBackground(new java.awt.Color(102, 102, 102));
         passwordJPasswordField.setForeground(new java.awt.Color(255, 255, 255));
-        add(passwordJPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 410, 220, 30));
+        add(passwordJPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 220, 30));
 
-        backJButton.setBackground(new java.awt.Color(102, 102, 102));
+        backJButton.setBackground(new java.awt.Color(0, 0, 0));
         backJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         backJButton.setForeground(new java.awt.Color(255, 255, 255));
         backJButton.setText("BACK");
@@ -202,16 +203,16 @@ public class AddEnterpriseAdminJPanel extends javax.swing.JPanel {
                 backJButtonActionPerformed(evt);
             }
         });
-        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 30));
+        add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 90, 30));
 
         jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("ENTERPRISE ADMIN");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 90, 360, 50));
+        jLabel6.setText("ADD ENTERPRISE ADMIN");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 360, 50));
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 90, 90));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/enterprise-management.jpeg"))); // NOI18N
-        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, -40, 1050, 540));
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1050, 540));
     }// </editor-fold>//GEN-END:initComponents
 
     private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
