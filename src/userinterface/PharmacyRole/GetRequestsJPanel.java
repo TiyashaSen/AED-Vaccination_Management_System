@@ -84,10 +84,6 @@ public class GetRequestsJPanel extends javax.swing.JPanel {
         drugRequestsTable = new javax.swing.JTable();
         backBtn = new javax.swing.JButton();
         reqmedicineLbl = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -130,18 +126,6 @@ public class GetRequestsJPanel extends javax.swing.JPanel {
         reqmedicineLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         reqmedicineLbl.setText("RE-ORDER STATUS");
         add(reqmedicineLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 726, -1));
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/truck.png"))); // NOI18N
-        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1078, 498, -1, 124));
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/truck.png"))); // NOI18N
-        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1211, 498, -1, 124));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/truck.png"))); // NOI18N
-        add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1352, 498, -1, 124));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/truck.png"))); // NOI18N
-        add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1500, 498, -1, 124));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
@@ -158,10 +142,6 @@ public class GetRequestsJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backBtn;
     private javax.swing.JTable drugRequestsTable;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JScrollPane jScrollPane;
     private javax.swing.JLabel reqmedicineLbl;
     // End of variables declaration//GEN-END:variables
