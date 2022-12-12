@@ -109,7 +109,6 @@ public class GetReportsJPanel extends javax.swing.JPanel {
 
         report1Btn = new javax.swing.JButton();
         report2Btn = new javax.swing.JButton();
-        report3Btn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(233, 235, 204));
@@ -119,14 +118,14 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         report1Btn.setBackground(new java.awt.Color(0, 0, 0));
         report1Btn.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         report1Btn.setForeground(new java.awt.Color(255, 255, 255));
-        report1Btn.setText("TOP MEDICINE SALES ACROSS NETWORKS");
+        report1Btn.setText("TOP DRUG SALES ACROSS NETWORKS");
         report1Btn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         report1Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 report1BtnActionPerformed(evt);
             }
         });
-        add(report1Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 108, 400, 90));
+        add(report1Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 400, 90));
 
         report2Btn.setBackground(new java.awt.Color(0, 0, 0));
         report2Btn.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
@@ -138,19 +137,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
                 report2BtnActionPerformed(evt);
             }
         });
-        add(report2Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, 460, 90));
-
-        report3Btn.setBackground(new java.awt.Color(0, 0, 0));
-        report3Btn.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
-        report3Btn.setForeground(new java.awt.Color(255, 255, 255));
-        report3Btn.setText("MOST AFFECTED GENES");
-        report3Btn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
-        report3Btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                report3BtnActionPerformed(evt);
-            }
-        });
-        add(report3Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, 400, 90));
+        add(report2Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 460, 90));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica", 1, 13)); // NOI18N
@@ -455,63 +442,6 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         plot2.setRangeGridlinePaint(Color.BLACK);
     }//GEN-LAST:event_report2BtnActionPerformed
 
-    private void report3BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_report3BtnActionPerformed
-
-        DefaultPieDataset dcd = new DefaultPieDataset();
-        int A2M = 0, BAX = 0, CAT = 0, DLL3 = 0, EGF = 0, FOS = 0, GH1 = 0, HSF1 = 0, IGF1 = 0, LEP = 0;
-        for (int i = 0; i < geneList.size(); i++) {
-            String gene = geneList.get(i);
-
-            if (gene.equalsIgnoreCase("A2M")) {
-                A2M++;
-            }
-            if (gene.equalsIgnoreCase("BAX")) {
-                BAX++;
-            }
-            if (gene.equalsIgnoreCase("CAT")) {
-                CAT++;
-            }
-            if (gene.equalsIgnoreCase("DLL3")) {
-                DLL3++;
-            }
-            if (gene.equalsIgnoreCase("EGF")) {
-                EGF++;
-            }
-            if (gene.equalsIgnoreCase("FOS")) {
-                FOS++;
-            }
-            if (gene.equalsIgnoreCase("GH1")) {
-                GH1++;
-            }
-            if (gene.equalsIgnoreCase("HSF1")) {
-                HSF1++;
-            }
-            if (gene.equalsIgnoreCase("IGF1")) {
-                IGF1++;
-            }
-            if (gene.equalsIgnoreCase("LEP")) {
-                LEP++;
-            }
-        }
-        dcd.setValue("A2M", A2M);
-        dcd.setValue("BAX", BAX);
-        dcd.setValue("CAT", CAT);
-        dcd.setValue("DLL3", DLL3);
-        dcd.setValue("EGF", EGF);
-        dcd.setValue("FOS", FOS);
-        dcd.setValue("GH1", GH1);
-        dcd.setValue("HSF1", HSF1);
-        dcd.setValue("IGF1", IGF1);
-        dcd.setValue("LEP", LEP);
-
-        JFreeChart chart = ChartFactory.createPieChart3D("Predominent Gene in Diseases", dcd, true, true, true);
-        PiePlot3D plot = (PiePlot3D) chart.getPlot();
-
-        ChartFrame panel = new ChartFrame("Pie Chart", chart);
-        panel.setVisible(true);
-        panel.setSize(800, 600);
-    }//GEN-LAST:event_report3BtnActionPerformed
-
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         userProcessContainer.remove(this);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
@@ -523,6 +453,5 @@ public class GetReportsJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backBtn;
     private javax.swing.JButton report1Btn;
     private javax.swing.JButton report2Btn;
-    private javax.swing.JButton report3Btn;
     // End of variables declaration//GEN-END:variables
 }
