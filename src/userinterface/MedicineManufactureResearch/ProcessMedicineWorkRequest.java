@@ -51,9 +51,7 @@ public class ProcessMedicineWorkRequest extends javax.swing.JPanel {
         backBtn = new javax.swing.JButton();
         dateTxt = new javax.swing.JTextField();
         dateFld = new com.toedter.calendar.JDateChooser();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setPreferredSize(new java.awt.Dimension(2000, 1200));
@@ -62,12 +60,14 @@ public class ProcessMedicineWorkRequest extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PROCESSING PHARMACY REQUEST ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 124, 407, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 407, -1));
 
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel2.setText("SELECT DATE OF DELIVERY : ");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 200, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
 
-        updateBtn.setBackground(new java.awt.Color(0, 0, 255));
+        updateBtn.setBackground(new java.awt.Color(0, 0, 0));
+        updateBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         updateBtn.setForeground(new java.awt.Color(255, 255, 255));
         updateBtn.setText("UPDATE STATUS ");
         updateBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -76,9 +76,10 @@ public class ProcessMedicineWorkRequest extends javax.swing.JPanel {
                 updateBtnActionPerformed(evt);
             }
         });
-        add(updateBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(456, 248, 118, 29));
+        add(updateBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 118, 29));
 
-        backBtn.setBackground(new java.awt.Color(0, 0, 255));
+        backBtn.setBackground(new java.awt.Color(0, 0, 0));
+        backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
         backBtn.setText("BACK");
         backBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -87,23 +88,17 @@ public class ProcessMedicineWorkRequest extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 248, 70, 29));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 29));
 
         dateTxt.setForeground(new java.awt.Color(0, 0, 102));
         dateTxt.setEnabled(false);
-        add(dateTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 195, 105, -1));
+        add(dateTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 105, -1));
 
         dateFld.setBackground(new java.awt.Color(0, 0, 255));
-        add(dateFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 195, -1, -1));
+        add(dateFld, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/fast-delivery.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(325, 6, 120, -1));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/medicine-2.png"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 260, 270));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/location.png"))); // NOI18N
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 320, 260, 270));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/pharmacy_600x600.jpeg"))); // NOI18N
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, -30, 750, 720));
     }// </editor-fold>//GEN-END:initComponents
 
     private void updateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateBtnActionPerformed
@@ -142,9 +137,7 @@ public class ProcessMedicineWorkRequest extends javax.swing.JPanel {
     private javax.swing.JTextField dateTxt;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JButton updateBtn;
     // End of variables declaration//GEN-END:variables
 }

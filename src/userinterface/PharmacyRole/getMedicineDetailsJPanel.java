@@ -75,21 +75,21 @@ public class GetMedicineDetailsJPanel extends javax.swing.JPanel {
 
         serialNumLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         serialNumLbl.setText("SERIAL NUMBER:");
-        add(serialNumLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 142, -1, -1));
+        add(serialNumLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 120, 20));
 
         serialNumTxtField.setEditable(false);
-        add(serialNumTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 167, -1));
+        add(serialNumTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 167, -1));
 
         drugLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         drugLbl.setText("MEDICINE NAME:");
-        add(drugLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 173, -1, -1));
+        add(drugLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, -1, -1));
 
         drugNameTxtField.setEditable(false);
-        add(drugNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 167, -1));
+        add(drugNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 167, -1));
 
         availLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         availLbl.setText("AVAILABILITY:");
-        add(availLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
+        add(availLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, -1, -1));
 
         availQuantityTxtField.setEditable(false);
         availQuantityTxtField.addActionListener(new java.awt.event.ActionListener() {
@@ -97,7 +97,7 @@ public class GetMedicineDetailsJPanel extends javax.swing.JPanel {
                 availQuantityTxtFieldActionPerformed(evt);
             }
         });
-        add(availQuantityTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 106, -1));
+        add(availQuantityTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 106, -1));
 
         updateButton.setBackground(new java.awt.Color(0, 0, 0));
         updateButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -109,7 +109,7 @@ public class GetMedicineDetailsJPanel extends javax.swing.JPanel {
                 updateButtonActionPerformed(evt);
             }
         });
-        add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 75, 31));
+        add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, 75, 31));
 
         saveButton.setBackground(new java.awt.Color(0, 0, 0));
         saveButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -121,7 +121,7 @@ public class GetMedicineDetailsJPanel extends javax.swing.JPanel {
                 saveButtonActionPerformed(evt);
             }
         });
-        add(saveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 65, 31));
+        add(saveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 330, 65, 31));
 
         backButton.setBackground(new java.awt.Color(0, 0, 0));
         backButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -133,15 +133,15 @@ public class GetMedicineDetailsJPanel extends javax.swing.JPanel {
                 backButtonActionPerformed(evt);
             }
         });
-        add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 72, 31));
+        add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 72, 31));
 
         medicineLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         medicineLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         medicineLbl.setText("MEDICINE INFORMATION");
-        add(medicineLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 86, 279, -1));
+        add(medicineLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 279, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/vitamin.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 8, 460, 540));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 650, 550));
     }// </editor-fold>//GEN-END:initComponents
 
     private void availQuantityTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_availQuantityTxtFieldActionPerformed

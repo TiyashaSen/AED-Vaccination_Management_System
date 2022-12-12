@@ -81,7 +81,6 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
         saveButton = new javax.swing.JButton();
         updateButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
@@ -89,21 +88,21 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
 
         serialNumLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         serialNumLabel.setText("SERIAL NUMBER:");
-        add(serialNumLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 224, -1, -1));
+        add(serialNumLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 230, -1, -1));
 
         serialNumTextField.setEditable(false);
-        add(serialNumTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 172, -1));
+        add(serialNumTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 230, 172, -1));
 
         drugLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         drugLabel.setText("VACCINE NAME:");
-        add(drugLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 255, -1, -1));
+        add(drugLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
 
         chemicalNameTextField.setEditable(false);
-        add(chemicalNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 172, -1));
+        add(chemicalNameTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 270, 172, -1));
 
         availLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         availLabel.setText("AVAILABILITY:");
-        add(availLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(67, 286, -1, -1));
+        add(availLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, -1, -1));
 
         availQuantityTextField.setEditable(false);
         availQuantityTextField.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +110,7 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
                 availQuantityTextFieldActionPerformed(evt);
             }
         });
-        add(availQuantityTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 172, -1));
+        add(availQuantityTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 172, -1));
 
         backButton.setBackground(new java.awt.Color(0, 0, 0));
         backButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -123,7 +122,7 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
                 backButtonActionPerformed(evt);
             }
         });
-        add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 329, 88, 33));
+        add(backButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 88, 33));
 
         saveButton.setBackground(new java.awt.Color(0, 0, 0));
         saveButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -135,7 +134,7 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
                 saveButtonActionPerformed(evt);
             }
         });
-        add(saveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 380, 127, 32));
+        add(saveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 350, 127, 32));
 
         updateButton.setBackground(new java.awt.Color(0, 0, 0));
         updateButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -147,18 +146,15 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
                 updateButtonActionPerformed(evt);
             }
         });
-        add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 329, 127, 33));
+        add(updateButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, 127, 33));
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("VACCINE DETAILS");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 286, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 286, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/search.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(161, 28, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/doctor-4.png"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 146, -1, 297));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/vaccine1_650x650.png"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, -30, 590, 720));
     }// </editor-fold>//GEN-END:initComponents
 
     private void availQuantityTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_availQuantityTextFieldActionPerformed
@@ -226,7 +222,6 @@ public class GetVaccineDetailsJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField chemicalNameTextField;
     private javax.swing.JLabel drugLabel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JButton saveButton;
     private javax.swing.JLabel serialNumLabel;

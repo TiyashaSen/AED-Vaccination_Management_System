@@ -138,7 +138,7 @@ public class LabTechnicianMainJPanel extends javax.swing.JPanel {
                 assignBtnActionPerformed(evt);
             }
         });
-        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 351, 115, 32));
+        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 115, 32));
 
         processBtn.setBackground(new java.awt.Color(0, 0, 0));
         processBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -150,7 +150,7 @@ public class LabTechnicianMainJPanel extends javax.swing.JPanel {
                 processBtnActionPerformed(evt);
             }
         });
-        add(processBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 351, 78, 32));
+        add(processBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 78, 32));
 
         refreshJButton.setBackground(new java.awt.Color(0, 0, 0));
         refreshJButton.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -162,7 +162,7 @@ public class LabTechnicianMainJPanel extends javax.swing.JPanel {
                 refreshJButtonActionPerformed(evt);
             }
         });
-        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(307, 351, 88, 32));
+        add(refreshJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 380, 88, 32));
 
         LabLbl.setBackground(new java.awt.Color(0, 0, 0));
         LabLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
