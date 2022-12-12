@@ -216,7 +216,7 @@ public class GetSampleRequestsJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 82, 30));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 82, 30));
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Helvetica", 1, 24)); // NOI18N

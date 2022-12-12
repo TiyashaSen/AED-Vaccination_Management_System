@@ -180,7 +180,7 @@ public class AddEnterpriseJPanel extends javax.swing.JPanel {
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("MANAGE ENTERPRISE");
+        jLabel6.setText("ADD ENTERPRISE");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 413, -1));
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 20, 290, -1));
     }// </editor-fold>//GEN-END:initComponents

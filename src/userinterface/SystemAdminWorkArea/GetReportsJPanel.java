@@ -152,7 +152,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
         });
         add(report3Btn, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, 400, 90));
 
-        backBtn.setBackground(new java.awt.Color(153, 153, 255));
+        backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica", 1, 13)); // NOI18N
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
         backBtn.setText("BACK");
@@ -162,7 +162,7 @@ public class GetReportsJPanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 40));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 90, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void report1BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_report1BtnActionPerformed
