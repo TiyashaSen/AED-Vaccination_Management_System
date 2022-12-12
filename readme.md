@@ -27,11 +27,9 @@
 
 ### Sequence Diagram
 
-![Vaccin![UML_Diagram](https://user-images.githubusercontent.com/20876434/206961425-e3f47afc-cf8f-4e06-936a-610ec8de715f.svg)
+![UML diagram](https://user-images.githubusercontent.com/20876434/206961425-e3f47afc-cf8f-4e06-936a-610ec8de715f.svg)
 ation_Sequence] (UML_diagram.svg)
 
-### [VaccinationManagementClassDiagram.pdf](https://github.com/abhaydee/Aed_Final/files/10204576/VaccinationManagementClassDiagram.pdf)
-
-lass diagram
+### [VaccinationManagementClassDiagram.svg](https://www.mediafire.com/view/ox4w6bvz1y4285s)
 
 ![Vaccination_Class] (Class_Diagram.pdf)
