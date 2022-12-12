@@ -152,7 +152,7 @@ public class AddUserAccountJpanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 570, 73, 31));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 73, 31));
 
         createUserbtn.setBackground(new java.awt.Color(0, 0, 0));
         createUserbtn.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N

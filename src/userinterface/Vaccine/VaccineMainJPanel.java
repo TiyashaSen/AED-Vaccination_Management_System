@@ -88,8 +88,8 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
         processBtn = new javax.swing.JButton();
         btnRequest = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -99,7 +99,7 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
         drugSupplierLbl.setForeground(new java.awt.Color(0, 0, 153));
         drugSupplierLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         drugSupplierLbl.setText("VACCINE SUPPLIER WORK AREA ");
-        add(drugSupplierLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, 450, 70));
+        add(drugSupplierLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 450, 70));
 
         workRequestTbl.setBackground(new java.awt.Color(102, 102, 102));
         workRequestTbl.setModel(new javax.swing.table.DefaultTableModel(
@@ -128,7 +128,7 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
         workRequestTbl.setRowHeight(30);
         jScrollPane2.setViewportView(workRequestTbl);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 750, 230));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 750, 230));
 
         assignBtn.setBackground(new java.awt.Color(102, 0, 255));
         assignBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -140,7 +140,7 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
                 assignBtnActionPerformed(evt);
             }
         });
-        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 180, 50));
+        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 430, 180, 50));
 
         processBtn.setBackground(new java.awt.Color(153, 0, 204));
         processBtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -151,7 +151,7 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
                 processBtnActionPerformed(evt);
             }
         });
-        add(processBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 470, 90, 40));
+        add(processBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 560, 90, 40));
 
         btnRequest.setBackground(new java.awt.Color(102, 0, 255));
         btnRequest.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -163,12 +163,16 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
                 btnRequestActionPerformed(evt);
             }
         });
-        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, 200, 50));
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 510, 90, 40));
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 130, 120));
+        add(btnRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, 200, 50));
 
-        jLabel2.setText("jLabel2");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 160, 170, 250));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-right-arrow-48.png"))); // NOI18N
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 600, 90, 40));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/medicinetruck_256x256.jpeg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 150, 250, 270));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-supplier-96.png"))); // NOI18N
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 100, 90));
     }// </editor-fold>//GEN-END:initComponents
 
     private void assignBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignBtnActionPerformed
@@ -302,8 +306,8 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnRequest;
     private javax.swing.JLabel drugSupplierLbl;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton processBtn;
     private javax.swing.JTable workRequestTbl;

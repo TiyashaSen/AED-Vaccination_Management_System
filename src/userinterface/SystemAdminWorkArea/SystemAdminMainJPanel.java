@@ -60,12 +60,12 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
         btnManageNetwork = new javax.swing.JButton();
         btnManageEnterprise = new javax.swing.JButton();
         btnManageAdmin = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         btnReports = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -73,17 +73,19 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnManageNetwork.setBackground(new java.awt.Color(0, 0, 255));
+        btnManageNetwork.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         btnManageNetwork.setForeground(new java.awt.Color(255, 255, 255));
-        btnManageNetwork.setText("CONNECTIONS");
+        btnManageNetwork.setText("CITY");
         btnManageNetwork.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         btnManageNetwork.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnManageNetworkActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 144, 40));
+        jPanel2.add(btnManageNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, 144, 40));
 
         btnManageEnterprise.setBackground(new java.awt.Color(0, 0, 255));
+        btnManageEnterprise.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         btnManageEnterprise.setForeground(new java.awt.Color(255, 255, 255));
         btnManageEnterprise.setText("ENTERPRISE");
         btnManageEnterprise.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -92,9 +94,10 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnManageEnterpriseActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 144, 40));
+        jPanel2.add(btnManageEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 600, 144, 40));
 
         btnManageAdmin.setBackground(new java.awt.Color(0, 0, 255));
+        btnManageAdmin.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         btnManageAdmin.setForeground(new java.awt.Color(255, 255, 255));
         btnManageAdmin.setText("ENTERPRISE ADMIN");
         btnManageAdmin.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -103,21 +106,13 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnManageAdminActionPerformed(evt);
             }
         });
-        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, 144, 40));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/networking.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        jPanel2.add(btnManageAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 600, 144, 40));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/enterprise.png"))); // NOI18N
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, 81));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/admin.png"))); // NOI18N
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, -1, 81));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/covid-19.png"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(353, 120, -1, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 100, 80));
 
         btnReports.setBackground(new java.awt.Color(0, 0, 255));
+        btnReports.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         btnReports.setForeground(new java.awt.Color(255, 255, 255));
         btnReports.setText("REPORTS");
         btnReports.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -126,10 +121,19 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
                 btnReportsActionPerformed(evt);
             }
         });
-        jPanel2.add(btnReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 670, 144, 40));
+        jPanel2.add(btnReports, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 600, 144, 40));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/search.png"))); // NOI18N
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 570, -1, 90));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 500, 90, 90));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/mainframeimage.jpeg"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 490));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-enterprise-58_96x96.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, 110, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8-administrator-male-96.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 500, 100, -1));
 
         add(jPanel2, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
@@ -206,8 +210,8 @@ public class SystemAdminMainJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnReports;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

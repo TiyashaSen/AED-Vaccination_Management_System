@@ -81,8 +81,6 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         relationTbl = new javax.swing.JTable();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -127,11 +125,11 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 362, 84, 20));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 30));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("LAB AND CLINICAL TRIAL RESULTS");
+        jLabel1.setText("LAB AND ADVANCED LAB TEST RESULTS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 117, 790, -1));
 
         assignBtn.setBackground(new java.awt.Color(0, 0, 0));
@@ -144,7 +142,7 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
                 assignBtnActionPerformed(evt);
             }
         });
-        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(353, 426, 119, 24));
+        add(assignBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 430, 119, 24));
         add(txtDrugName, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 119, -1));
         add(txtChemicalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 390, 119, -1));
 
@@ -172,12 +170,6 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
         jScrollPane2.setViewportView(relationTbl);
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 485, -1, 127));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/test-results.png"))); // NOI18N
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 11, 124, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/vaccine-4.png"))); // NOI18N
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 388, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     public void populateTable() {
@@ -274,8 +266,6 @@ public class TestLabResultsJpanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable relationTbl;

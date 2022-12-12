@@ -123,11 +123,8 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
         viewDetailsBtn = new javax.swing.JButton();
         statusCheckBtn = new javax.swing.JButton();
         pharmacyLbl = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         btnDeliver = new javax.swing.JButton();
         btnPending = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -152,10 +149,11 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
         docrequestTable.setRowHeight(25);
         jScrollPane.setViewportView(docrequestTable);
 
-        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 520, 714, 154));
+        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 714, 154));
 
         reorderTable.setBackground(new java.awt.Color(102, 102, 102));
         reorderTable.setBorder(new javax.swing.border.MatteBorder(null));
+        reorderTable.setForeground(new java.awt.Color(255, 255, 255));
         reorderTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -182,35 +180,36 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
         reorderTable.setRowHeight(25);
         jScrollPane1.setViewportView(reorderTable);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 708, 181));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 708, 181));
 
-        serialNumLbl.setForeground(new java.awt.Color(51, 0, 51));
+        serialNumLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         serialNumLbl.setText("SERIAL NUMBER: ");
-        add(serialNumLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, -1, -1));
-        add(serialNumberTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, 141, -1));
+        add(serialNumLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, -1, -1));
+        add(serialNumberTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, 141, -1));
 
-        medicineNameLbl.setForeground(new java.awt.Color(51, 0, 51));
+        medicineNameLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         medicineNameLbl.setText("MEDICINE NAME: ");
-        add(medicineNameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 350, -1, -1));
-        add(medicineNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 141, -1));
+        add(medicineNameLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, -1, -1));
+        add(medicineNameTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 141, -1));
 
-        availQuantityLbl.setForeground(new java.awt.Color(51, 0, 51));
+        availQuantityLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         availQuantityLbl.setText("AVAILABLE QUANTITY:");
-        add(availQuantityLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 380, -1, -1));
-        add(availQuantityTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, 141, -1));
+        add(availQuantityLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, -1, -1));
+        add(availQuantityTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, 141, -1));
 
-        reqQuantityLbl.setForeground(new java.awt.Color(51, 0, 51));
+        reqQuantityLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         reqQuantityLbl.setText("REQUIRED QUANTITY:");
-        add(reqQuantityLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, -1, -1));
+        add(reqQuantityLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, -1, -1));
 
         reqQuantityTxtField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reqQuantityTxtFieldActionPerformed(evt);
             }
         });
-        add(reqQuantityTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 420, 141, -1));
+        add(reqQuantityTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, 141, -1));
 
-        viewRequestsBtn.setBackground(new java.awt.Color(51, 0, 51));
+        viewRequestsBtn.setBackground(new java.awt.Color(0, 0, 0));
+        viewRequestsBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         viewRequestsBtn.setForeground(new java.awt.Color(255, 255, 255));
         viewRequestsBtn.setText("REQUEST STATUS");
         viewRequestsBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -221,7 +220,8 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
         });
         add(viewRequestsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 200, 206, 33));
 
-        addMedicineBtn.setBackground(new java.awt.Color(51, 0, 51));
+        addMedicineBtn.setBackground(new java.awt.Color(0, 0, 0));
+        addMedicineBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         addMedicineBtn.setForeground(new java.awt.Color(255, 255, 255));
         addMedicineBtn.setText("ADD MEDICINE");
         addMedicineBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -230,9 +230,10 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
                 addMedicineBtnActionPerformed(evt);
             }
         });
-        add(addMedicineBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 460, 141, 32));
+        add(addMedicineBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, 141, 32));
 
-        viewDetailsBtn.setBackground(new java.awt.Color(51, 0, 51));
+        viewDetailsBtn.setBackground(new java.awt.Color(0, 0, 0));
+        viewDetailsBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         viewDetailsBtn.setForeground(new java.awt.Color(255, 255, 255));
         viewDetailsBtn.setText("UPDATE MEDICINE INFO");
         viewDetailsBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -243,7 +244,8 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
         });
         add(viewDetailsBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 160, 206, 32));
 
-        statusCheckBtn.setBackground(new java.awt.Color(51, 0, 51));
+        statusCheckBtn.setBackground(new java.awt.Color(0, 0, 0));
+        statusCheckBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         statusCheckBtn.setForeground(new java.awt.Color(255, 255, 255));
         statusCheckBtn.setText("RE-ORDER MEDICINE");
         statusCheckBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -255,15 +257,13 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
         add(statusCheckBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 120, 206, 30));
 
         pharmacyLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        pharmacyLbl.setForeground(new java.awt.Color(51, 0, 51));
+        pharmacyLbl.setForeground(new java.awt.Color(0, 0, 102));
         pharmacyLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         pharmacyLbl.setText("PHARMACY CENTER ");
-        add(pharmacyLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 708, -1));
+        add(pharmacyLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 708, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/medicine.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 350, 160, -1));
-
-        btnDeliver.setBackground(new java.awt.Color(51, 0, 51));
+        btnDeliver.setBackground(new java.awt.Color(0, 0, 0));
+        btnDeliver.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         btnDeliver.setForeground(new java.awt.Color(255, 255, 255));
         btnDeliver.setText("SUPPLIED TO HOSPITAL");
         btnDeliver.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -274,7 +274,8 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
         });
         add(btnDeliver, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 520, 200, 31));
 
-        btnPending.setBackground(new java.awt.Color(51, 0, 51));
+        btnPending.setBackground(new java.awt.Color(0, 0, 0));
+        btnPending.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         btnPending.setForeground(new java.awt.Color(255, 255, 255));
         btnPending.setText("ASSIGN");
         btnPending.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
@@ -284,12 +285,6 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
             }
         });
         add(btnPending, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 560, 200, 30));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/medicine.png"))); // NOI18N
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 350, 160, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/pharmacy.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 120, 90));
     }// </editor-fold>//GEN-END:initComponents
 
     private void reqQuantityTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reqQuantityTxtFieldActionPerformed
@@ -497,9 +492,6 @@ public class PharmacyMainJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnDeliver;
     private javax.swing.JButton btnPending;
     private javax.swing.JTable docrequestTable;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel medicineNameLbl;

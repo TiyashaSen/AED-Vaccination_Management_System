@@ -86,8 +86,8 @@ public class LabWorkRequestJPanel extends javax.swing.JPanel {
 
         resultLbl.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         resultLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        resultLbl.setText("VARIANT DETECTION ON THE COVID-19 LAB TEST");
-        add(resultLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(123, 59, 551, -1));
+        resultLbl.setText("VARIANT DETECTION LAB TEST");
+        add(resultLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, 551, -1));
 
         patientTxtField.setEditable(false);
         add(patientTxtField, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 100, 134, -1));
@@ -95,14 +95,14 @@ public class LabWorkRequestJPanel extends javax.swing.JPanel {
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         backBtn.setForeground(new java.awt.Color(255, 255, 255));
-        backBtn.setText("Back");
+        backBtn.setText("BACK");
         backBtn.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
         backBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backBtnActionPerformed(evt);
             }
         });
-        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 218, 50, 30));
+        add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 30));
 
         patientNameLbl.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         patientNameLbl.setText("PATIENT NAME:");
