@@ -170,13 +170,13 @@ public class GetReportsJPanel extends javax.swing.JPanel {
 
                 Galafold++;
             }
-            if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("Onpattro")) {
+            if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("PARACETAMOL")) {
                 Onpattro++;
             }
-            if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("Revcovi")) {
+            if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("COMBIFLAM")) {
                 Revcovi++;
             }
-            if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("Tegsedi")) {
+            if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("FLUDREX")) {
                 Tegsedi++;
             }
             if ((network.equalsIgnoreCase("Boston")) && medicine.equalsIgnoreCase("Haegarda")) {
@@ -193,16 +193,16 @@ public class GetReportsJPanel extends javax.swing.JPanel {
             }
 
         }
-        dcd.setValue(Galafold, "Boston", "Galafold");
-        dcd.setValue(Onpattro, "Boston", "Onpattro");
-        dcd.setValue(Revcovi, "Boston", "Revcovi");
-        dcd.setValue(Tegsedi, "Boston", "Tegsedi");
+        dcd.setValue(Galafold, "Boston", "IVERMECTIN");
+        dcd.setValue(Onpattro, "Boston", "PARACETAMOL");
+        dcd.setValue(Revcovi, "Boston", "COMBIFLAM");
+        dcd.setValue(Tegsedi, "Boston", "FLUDREX");
         dcd.setValue(Haegarda, "Boston", "Haegarda");
         dcd.setValue(Brineura, "Boston", "Brineura");
         dcd.setValue(Mepsevii, "Boston", "Mepsevii");
         dcd.setValue(Spinraza, "Boston", "Spinraza");
 
-        JFreeChart jchart = ChartFactory.createBarChart("Top Medicines By Sales", "Networks", "Sales", dcd, PlotOrientation.VERTICAL, true, true, false);
+        JFreeChart jchart = ChartFactory.createBarChart("Top Medicines By City", "City", "Sales", dcd, PlotOrientation.VERTICAL, true, true, false);
 
         CategoryPlot plot = jchart.getCategoryPlot();
         plot.setRangeGridlinePaint(Color.BLACK);
@@ -216,37 +216,26 @@ public class GetReportsJPanel extends javax.swing.JPanel {
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
 
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Ivermectin")) {
+            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("IVERMECTIN")) {
                 System.out.println("hitting here network"+networkList.get(0).toString());
                 Galafold1++;
             }
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Onpattro")) {
+            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Paracetamol")) {
                 Onpattro1++;
             }
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Revcovi")) {
+            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Combiflam")) {
                 Revcovi1++;
             }
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Tegsedi")) {
+            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Fludrex")) {
                 Tegsedi1++;
             }
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Haegarda")) {
-                Haegarda1++;
-            }
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Brineura")) {
-                Brineura1++;
-            }
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Mepsevii")) {
-                Mepsevii1++;
-            }
-            if ((network.equalsIgnoreCase("California")) && medicine.equalsIgnoreCase("Spinraza")) {
-                Spinraza1++;
-            }
+           
 
         }
-        dcd.setValue(Galafold1, "California", "Galafold");
-        dcd.setValue(Onpattro1, "California", "Onpattro");
-        dcd.setValue(Revcovi1, "California", "Revcovi");
-        dcd.setValue(Tegsedi1, "California", "Tegsedi");
+        dcd.setValue(Galafold1, "California", "IVERMECTIN");
+        dcd.setValue(Onpattro1, "California", "PARACETAMOL");
+        dcd.setValue(Revcovi1, "California", "COMBIFLAM");
+        dcd.setValue(Tegsedi1, "California", "FLUDREX");
         dcd.setValue(Haegarda1, "California", "Haegarda");
         dcd.setValue(Brineura1, "California", "Brineura");
         dcd.setValue(Mepsevii1, "California", "Mepsevii");
@@ -260,36 +249,25 @@ public class GetReportsJPanel extends javax.swing.JPanel {
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
 
-            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Galafold")) {
+            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Ivermectin")) {
                 Galafold2++;
             }
-            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Onpattro")) {
+            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Paracetamol")) {
                 Onpattro2++;
             }
-            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Revcovi")) {
+            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Combiflam")) {
                 Revcovi2++;
             }
-            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Tegsedi")) {
+            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Fludrex")) {
                 Tegsedi2++;
             }
-            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Haegarda")) {
-                Haegarda2++;
-            }
-            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Brineura")) {
-                Brineura2++;
-            }
-            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("Mepsevii")) {
-                Mepsevii2++;
-            }
-            if ((network.equalsIgnoreCase("Dallas")) && medicine.equalsIgnoreCase("")) {
-                Spinraza2++;
-            }
+            
 
         }
-        dcd.setValue(Galafold2, "Dallas", "Galafold");
-        dcd.setValue(Onpattro2, "Dallas", "Onpattro");
-        dcd.setValue(Revcovi2, "Dallas", "Revcovi");
-        dcd.setValue(Tegsedi2, "Dallas", "Tegsedi");
+        dcd.setValue(Galafold2, "Dallas", "Ivermectin");
+        dcd.setValue(Onpattro2, "Dallas", "Paracetamol");
+        dcd.setValue(Revcovi2, "Dallas", "Combiflam");
+        dcd.setValue(Tegsedi2, "Dallas", "Fludrex");
         dcd.setValue(Haegarda2, "Dallas", "Haegarda");
         dcd.setValue(Brineura2, "Dallas", "Brineura");
         dcd.setValue(Mepsevii2, "Dallas", "Mepsevii");
@@ -311,36 +289,25 @@ public class GetReportsJPanel extends javax.swing.JPanel {
             String disease = diseaseList.get(i);
             String medicine = medicineList.get(i);
 
-            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Achondroplasia")) {
+            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Ivermectin")) {
                 Achondroplasia++;
             }
-            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Marfansyndrome")) {
+            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Paracetamol")) {
                 Marfansyndrome++;
             }
-            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Cysticfibrosis")) {
+            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Combiflam")) {
                 Cysticfibrosis++;
             }
-            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("TaySachs")) {
+            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Fludrex")) {
                 TaySachs++;
             }
-            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Haemophilia")) {
-                Haemophilia++;
-            }
-            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Mosaicism")) {
-                Mosaicism++;
-            }
-            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Downsyndrome")) {
-                Downsyndrome++;
-            }
-            if ((network.equalsIgnoreCase("Boston")) && disease.equalsIgnoreCase("Turnersyndrome")) {
-                Turnersyndrome++;
-            }
+            
 
         }
-        dcd.setValue(Achondroplasia, "Boston", "Achondroplasia");
-        dcd.setValue(Marfansyndrome, "Boston", "Marfansyndrome");
-        dcd.setValue(Cysticfibrosis, "Boston", "Cysticfibrosis");
-        dcd.setValue(TaySachs, "Boston", "TaySachs");
+        dcd.setValue(Achondroplasia, "Boston", "Ivermectin");
+        dcd.setValue(Marfansyndrome, "Boston", "Paracetamol");
+        dcd.setValue(Cysticfibrosis, "Boston", "Combiflam");
+        dcd.setValue(TaySachs, "Boston", "Fludrex");
         dcd.setValue(Haemophilia, "Boston", "Haemophilia");
         dcd.setValue(Mosaicism, "Boston", "Mosaicism");
         dcd.setValue(Downsyndrome, "Boston", "Downsyndrome");
