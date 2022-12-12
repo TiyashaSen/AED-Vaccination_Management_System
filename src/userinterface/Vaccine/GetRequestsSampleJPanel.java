@@ -78,7 +78,6 @@ public class GetRequestsSampleJPanel extends javax.swing.JPanel {
         drugRequestsTable = new javax.swing.JTable();
         backBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
@@ -107,7 +106,7 @@ public class GetRequestsSampleJPanel extends javax.swing.JPanel {
         drugRequestsTable.setRowHeight(30);
         jScrollPane.setViewportView(drugRequestsTable);
 
-        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 700, 260));
+        add(jScrollPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 700, 260));
 
         backBtn.setBackground(new java.awt.Color(0, 0, 0));
         backBtn.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -123,15 +122,14 @@ public class GetRequestsSampleJPanel extends javax.swing.JPanel {
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 255));
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 51, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("VIEW STATUS OF REQUEST");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 120, 655, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, 655, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/search.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, -1, 150));
-
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/statusofrequest_1_64.jpeg"))); // NOI18N
         jLabel3.setText("jLabel3");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 400, 450));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 70, 470, 520));
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
@@ -149,7 +147,6 @@ public class GetRequestsSampleJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backBtn;
     private javax.swing.JTable drugRequestsTable;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane;
     // End of variables declaration//GEN-END:variables

@@ -77,7 +77,7 @@ public class AddNetworkJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "CONNECTION NAME"
+                "CITY NAME"
             }
         ) {
             Class[] types = new Class [] {
@@ -141,10 +141,10 @@ public class AddNetworkJPanel extends javax.swing.JPanel {
         });
         add(backJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 110, 30));
 
-        jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("MANAGE CONNECTIONS");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 229, -1));
+        jLabel6.setText("MANAGE CITY");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 229, -1));
 
         jLabel3.setText("jLabel3");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 20, 770, 860));

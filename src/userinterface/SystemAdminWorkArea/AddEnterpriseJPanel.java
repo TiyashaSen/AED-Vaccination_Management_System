@@ -104,7 +104,7 @@ public class AddEnterpriseJPanel extends javax.swing.JPanel {
 
             },
             new String [] {
-                "ENTERPRISE NAME", "NETWORK", "TYPE OF ENTERPRISE"
+                "ENTERPRISE NAME", "CITY", "TYPE OF ENTERPRISE"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -120,16 +120,16 @@ public class AddEnterpriseJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 220, 560, 170));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
-        jLabel1.setText("NETWORK:");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, -1, -1));
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jLabel1.setText("CITY");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 50, 20));
 
         networkJComboBox.setBackground(new java.awt.Color(102, 51, 255));
         networkJComboBox.setForeground(new java.awt.Color(255, 255, 255));
         networkJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(networkJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 430, 166, 30));
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel2.setText("NAME:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 540, -1, -1));
 
@@ -145,7 +145,7 @@ public class AddEnterpriseJPanel extends javax.swing.JPanel {
         });
         add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 530, 166, 30));
 
-        jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel3.setText("ENTERPRISE TYPE:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 490, -1, -1));
 
@@ -181,7 +181,7 @@ public class AddEnterpriseJPanel extends javax.swing.JPanel {
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("MANAGE ENTERPRISE");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 413, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 413, -1));
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 20, 290, -1));
     }// </editor-fold>//GEN-END:initComponents
 

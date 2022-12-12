@@ -95,8 +95,8 @@ public class GetSampleRequestsJPanel extends javax.swing.JPanel {
         reqQuantityTextField = new javax.swing.JTextField();
         backBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -223,10 +223,11 @@ public class GetSampleRequestsJPanel extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("SAMPLE REQUESTS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 703, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/chemistry-2.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(343, 30, -1, -1));
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 440, 120, 180));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/statusofrequest.jpeg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1040, 650));
     }// </editor-fold>//GEN-END:initComponents
 
     private void addMedicineButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addMedicineButtonActionPerformed
