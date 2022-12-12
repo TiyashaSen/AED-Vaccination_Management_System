@@ -68,7 +68,6 @@ public class GetMedicineDetailsJPanel extends javax.swing.JPanel {
         saveButton = new javax.swing.JButton();
         backButton = new javax.swing.JButton();
         medicineLbl = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(233, 235, 204));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -139,9 +138,6 @@ public class GetMedicineDetailsJPanel extends javax.swing.JPanel {
         medicineLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         medicineLbl.setText("MEDICINE INFORMATION");
         add(medicineLbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, 279, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/vitamin.png"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 650, 550));
     }// </editor-fold>//GEN-END:initComponents
 
     private void availQuantityTxtFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_availQuantityTxtFieldActionPerformed
@@ -209,7 +205,6 @@ public class GetMedicineDetailsJPanel extends javax.swing.JPanel {
     private javax.swing.JButton backButton;
     private javax.swing.JLabel drugLbl;
     private javax.swing.JTextField drugNameTxtField;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel medicineLbl;
     private javax.swing.JButton saveButton;
     private javax.swing.JLabel serialNumLbl;

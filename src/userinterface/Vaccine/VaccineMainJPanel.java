@@ -55,7 +55,7 @@ public class VaccineMainJPanel extends javax.swing.JPanel {
         try{
         DefaultTableModel model = (DefaultTableModel) workRequestTbl.getModel();
         model.setRowCount(0);
-
+            System.out.println("work request size"+vaccineOrganization.getWq().getWorkRequestList().size());
         for (WorkRequest request : vaccineOrganization.getWq().getWorkRequestList()) {
             Object[] row = new Object[6];
             row[0] = ((VaccineWorkRequest) request);

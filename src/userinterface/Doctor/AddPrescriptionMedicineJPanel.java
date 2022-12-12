@@ -311,7 +311,7 @@ public class AddPrescriptionMedicineJPanel extends javax.swing.JPanel {
             flag = false;
         }
         if (sexcomboBox.getSelectedIndex() <= 0) {
-            JOptionPane.showMessageDialog(null, "Please select the Medication Name !");
+            JOptionPane.showMessageDialog(null, "Please select the Gender !");
             flag = false;
             return;
         }
